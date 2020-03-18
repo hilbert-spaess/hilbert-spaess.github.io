@@ -11,6 +11,6 @@ still a bit alienated from the words i'm writing. feels related to an inability 
 1. three years of undergrad maths. would be nice to gather my knowledge and intuitions. 
 2. scattered ideas about statistics. want them bundled and disciplined: particular ideas about particular problems 
 3. set theory, foundations of maths, and logics, which are the bits of maths that have felt most alive for me recently. 
-4. earning money for the summer by basically scamming a tech company aka "working remotely" (~1% chance someone important sees this?? probably okay)
+4. earning money for the summer by basically scamming a tech company ie "working remotely" (~1% chance someone important sees this?? probably okay)
 
 

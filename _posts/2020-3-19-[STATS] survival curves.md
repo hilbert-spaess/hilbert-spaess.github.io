@@ -1,7 +1,10 @@
 **Summary**
 
+- If you want to model survival data, you can make a massive Bayesian survival curve model, and do inference on the parameters.
 - You can model the time until death (for a specific cause) with an exponential distribution, a gamma distribution, a Weibull distribution, or some combination of these. 
-- Anything involving the human body (eg death due to some disease) is probably not simple enough to be modelled with
+- Anything involving the human body (eg death due to some disease) is probably not simple enough to be modelled with a single distribution. You could model it as due to some mixture of independent causes, each occurring with some probability.
+
+TODO: -> compare some samples from priors for single gamma and gamma mixture.
 
 **Survival Analysis**  
 
@@ -17,7 +20,7 @@ The data available for fitting these functions often looks like a vector of deat
 
 **Relevant distributions**
 
-The *Exponential distribution*, $f(t | \lambda) \propto e^{-\lambda t}$. If this is the death rate, the condition has a constant hazard function. (ie death could occur at any time with rate $\lambda$ ). This works as a model for death by meteor strike or spontaneous combustion or something.
+The *Exponential distribution*, $f(t)$, and $f(t | \lambda) \propto e^{-\lambda t}$. If this is the death rate, the condition has a constant hazard function. (ie death could occur at any time with rate $\lambda$ ). This works as a model for death by meteor strike or spontaneous combustion or something.
 
 The *Gamma distribution* is a more flexible two-parameter generalisation of an exponential distribution, also useful as the conjugate prior for an exponential distribution. Another reason to care about it in this context is that it's the distribution of a sum of a set of exponential variables, which could models a death that occurs after several stages of ailment, each with exponential lifetime. The distribution is $\Gamma(t | m, r) \propto t^{m-1} e^{-rt}$. The parameters $m$ and $r$ are the 'shape' and 'rate' respectively. The exact density function: $\Gamma(t | m,r) = \frac{r^m}{\Gamma(m)}t^{m-1}e^{-rt}$ When $m=1$, the distribution is exponential and the hazard function is constant. When $m > 1$, the hazard function is concave and increasing, and when $m < 1$, the hazard function is convex and decreasing. 
 

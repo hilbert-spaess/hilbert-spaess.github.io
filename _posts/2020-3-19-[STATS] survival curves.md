@@ -12,17 +12,18 @@ The data available for fitting these functions often looks like a vector of deat
 
 **Relevant distributions**
 
-The *Exponential distribution* $\textrm{Exp}(t | \lambda) \propto e^{-\lambda t}$. If this is the death rate, the condition has a constant hazard function. (ie death could occur at any time with rate $\lambda$ ). This works as a model for death by meteor strike or spontaneous combustion or something.
+The *Exponential distribution* $f(t | \lambda) \propto e^{-\lambda t}$. If this is the death rate, the condition has a constant hazard function. (ie death could occur at any time with rate $\lambda$ ). This works as a model for death by meteor strike or spontaneous combustion or something.
 
 The *Gamma distribution* is a more flexible two-parameter generalisation of an exponential distribution, also useful as the conjugate prior for an exponential distribution. Another reason to care about it in this context is that it's the distribution of a sum of a set of exponential variables, which could models a death that occurs after several stages of ailment, each with exponential lifetime. The distribution is $\Gamma(t | m, r) \propto t^{m-1} e^{-rt}$. The parameters $m$ and $r$ are the 'shape' and 'rate' respectively. The exact density function: $\Gamma(t | m,r) = \frac{r^m}{\Gamma(m)}t^{m-1}e^{-rt}$ When $m=1$, the distribution is exponential and the hazard function is constant. When $m > 1$, the hazard function is concave and increasing, and when $m < 1$, the hazard function is convex and decreasing. 
-     * Weibull distribution
-         * The Weibull distribution also gives increasing or decreasing hazard functions, and is also a generalisation of the exponential distribution.
-         * $W(t | \lambda, p) \propto t^{p-1} e^{-(t/\lambda)^p}$, where $\lambda > 0$ is scale, and $p > 0$ is shape.
-         * A Weibull survival curve gives rise to a hazard function that is proportional to a power of time. If $p < 1$, the hazard rate decreases over time. If $p = 1$, the distribution is exponential and hazard rate is constant. If $p > 1$, failure rate is constant.
-     * Log-logistic distribution
- * Flexible Bayesian model shown to me
-   (by Roger Sewell)
-     * Specification of the model
+
+The *Weibull distribution* also gives increasing or decreasing hazard functions, and is also a generalisation of the exponential distribution. W(t | \lambda, p) \propto t^{p-1} e^{-(t/\lambda)^p}$, where $\lambda > 0$ is scale, and $p > 0$ is shape. A Weibull death rate gives rise to a hazard function that is proportional to a power of time. If $p < 1$, the hazard rate decreases over time. If $p = 1$, the distribution is exponential and hazard rate is constant. If $p > 1$, failure rate is constant.
+
+Apparently the *log-logistic distribution* might be useful as well, but I don't know what it is.
+
+** A Bayesian Model**
+(shown to me by Roger Sewell)
+
+
          * We are working with right-censored death data (ie, for some patients only a lower bound on time of death is known). We want to work with a full model
          * We assume that there are a number of potential causes of death, each occurring with some probability. Use a Gamma distribution for each cause of death, with an extra parameter to incorporate Weibull-like increasing or decreasing hazard functions. We now consider the parameters of the model in turn.
          * Let $J$ be the number of causes of death. $j \in \{1, ..., J\}$ will denote a particular cause of death.

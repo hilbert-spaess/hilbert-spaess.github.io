@@ -1,13 +1,14 @@
-* Overview of the problem
-     * Problem description
-         * Canonical application: want to understand the expected timeline of death of patients with a severe disease.
-         * In general, want to understand the expected period of time before the occurrence of some event. Typically death or failure of some sort. In what follows, will use the language pertaining to death.
-         * Two examples I've worked with so far:
-             * Estimating expected lifetime for MTB patients, given death data with some censoring.
-             * Estimating incubation period of infectious disease, with uncertain time of infection.
-         * Applications that seem interesting, but I haven't looked at
-             * survival curves for different species of wild animal.
-             * survival curves for soldiers in different wars.
+**Survival Analysis**  
+
+The canonical example of survival analysis is understanding the death timeline of patients with a life-threatening disease. It's a special case of the more general problem of figuring out the expected period of time before the occurrence of some event. Other examples are the relapse of an addict or the failure of some mechanical system. The two examples I've looked at myself are the occurences of deaths in MTB patients, and the incubation period of the new coronavirus. From now on I'll use the language of the death example.
+
+**The functions of interest**
+
+Suppose we have patients who test positive for some disease. Let $T$ be the variable denoting time of death. The *survival curve* or *survival function* is $S(t) = \mathbb{P}(T > t)$. If the probability of eventual death is $p$, this looks like a function decreasing from 1 and approaching $p$ asymptotically.
+
+The *death rate* or *event density* is the rate of death (in expectation) per unit time. Given that $1 - S(t)$ is the cumulative probability of death, we may compute it as $f(t) = (1 - S(t))' = -S'(t)$.
+
+      
      * Functions to be estimated:
          * Let $T$ be the time of death. The *survival curve* or *survival function* is $S(t) = \mathbb{P}(T > t)$. If the probability of eventual death is $p$, this looks like a curve decreasing from 1 and approaching $p$ asymptotically.
          * The **death rate** (or **event density**)  is the rate of deaths per unit time. Given that $1 - S(t)$ is the cumulative probability of death, we may compute  It is computed as $f(t) = (1 - S(t))' = -S'(t)$.

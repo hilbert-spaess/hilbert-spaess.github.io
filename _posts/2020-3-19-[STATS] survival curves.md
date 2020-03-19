@@ -28,7 +28,7 @@ The *Weibull distribution* also gives increasing or decreasing hazard functions,
 
 Apparently the *log-logistic distribution* might be useful as well, but I don't know what it is.
 
-**A Bayesian Model**
+**A more expressive model**
 (shown to me by Roger Sewell)
 
 Suppose we are working with a dataset of times until death, some values of which have been right-censored (ie we know the last time at which the patient was guaranteed to be alive, but we have no information about the time of death). We want to completely model the survival curve of the condition. 
@@ -37,11 +37,10 @@ We assume that death is due to some number of independent causes, each affecting
 
 Now we can make the above precise. Let $J \geq 0$ be the number of causes of death. We can put a geometric prior on $J$. For each cause of death $j$, let $x_j$ be the vector of times at which $j$ would have killed each patient. (Possibly some entries of $x_j$ are $\infty$ ). Let $x = \min_{1 \leq j \leq J}x_j$ denote the time of death of each patient. Since the data might be censored, we will have to do inference on $x$ itself. Dropping the subscript $j$ (and assuming that what follows will be repeated for each cause of death), we assume that every entry in $x$ is distributed according to $P(x \vert p, k, m, r)$, meaning that with probability $p$, $x^k$ is Gamma distributed with parameters $m' = m$ and $r' = mr^k$, and otherwise $x  = \infty$. (ie with probability $p$ the cause of death pertains, and has parameters $m, r, k$ ). We use sensible conjugate priors for $p, k, m, r$. 
 
-**Carrying 
-             * Specifically, $P(y|p,k,m,r,u) = 
-             * Assign conjugate priors to all parameters $p, k, m, r$.
-         * Given censored death data, we perform inference on $J, x, p, k, m, r$ simultaneously.
-     * Carrying out inference with this model
-         * MCMC, in particular Gibbs sampling, suffices to get good samples from the posterior.
+**Performing inference with this model**
 
-** Comparing the model
+We can get good samples from the posterior using MCMC, in particular using Gibbs sampling.
+
+**Comparing expressivity of models**
+
+**Applications**

@@ -20,7 +20,7 @@ The data available for fitting these functions often looks like a vector of deat
 
 **Relevant distributions**
 
-The *Exponential distribution*, $f(t)$, and $f(t | \lambda) \propto e^{-\lambda t}$. If this is the death rate, the condition has a constant hazard function. (ie death could occur at any time with rate $\lambda$ ). This works as a model for death by meteor strike or spontaneous combustion or something.
+The *Exponential distribution*, $f(t)$, and $f(t | \lambda) e^{-\lambda t}$. If this is the death rate, the condition has a constant hazard function. (ie death could occur at any time with rate $\lambda$ ). This works as a model for death by meteor strike or spontaneous combustion or something.
 
 The *Gamma distribution* is a more flexible two-parameter generalisation of an exponential distribution, also useful as the conjugate prior for an exponential distribution. Another reason to care about it in this context is that it's the distribution of a sum of a set of exponential variables, which could models a death that occurs after several stages of ailment, each with exponential lifetime. The distribution is $\Gamma(t | m, r) \propto t^{m-1} e^{-rt}$. The parameters $m$ and $r$ are the 'shape' and 'rate' respectively. The exact density function: $\Gamma(t | m,r) = \frac{r^m}{\Gamma(m)}t^{m-1}e^{-rt}$ When $m=1$, the distribution is exponential and the hazard function is constant. When $m > 1$, the hazard function is concave and increasing, and when $m < 1$, the hazard function is convex and decreasing. 
 
@@ -50,5 +50,5 @@ Now we can make the above precise. Let $J$ be the number of causes
          * Given censored death data, we perform inference on $J, x, p, k, m, r$ simultaneously.
      * Carrying out inference with this model
          * MCMC, in particular Gibbs sampling, suffices to get good samples from the posterior.
- * Alternative models
-     * 
+
+** Comparing the model

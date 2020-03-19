@@ -2,30 +2,19 @@
 
 The canonical example of survival analysis is understanding the death timeline of patients with a life-threatening disease. It's a special case of the more general problem of figuring out the expected period of time before the occurrence of some event. Other examples are the relapse of an addict or the failure of some mechanical system. The two examples I've looked at myself are the occurences of deaths in MTB patients, and the incubation period of the new coronavirus. From now on I'll use the language of the death example.
 
-**The functions of interest**
+**The functions we're trying to understand**
 
 Suppose we have patients who test positive for some disease. Let $T$ be the variable denoting time of death. The *survival curve* or *survival function* is $S(t) = \mathbb{P}(T > t)$. If the probability of eventual death is $p$, this looks like a function decreasing from 1 and approaching $p$ asymptotically.
 
-The *death rate* or *event density* is the rate of death (in expectation) per unit time. Given that $1 - S(t)$ is the cumulative probability of death, we may compute it as $f(t) = (1 - S(t))' = -S'(t)$.
+The *death rate* or *event density* is the rate of death (in expectation) per unit time. Given that $1 - S(t)$ is the cumulative probability of death, we may compute it as $f(t) = (1 - S(t))' = -S'(t)$. The *hazard function* $\lambda(t)$ (or *hazard rate*, or *force of mortality*) is the death rate at time $t$, conditioning on survival up until this point. $\lambda(t) = \frac{f(t)}{S(t)} = \frac{-S'(t)}{S(t)}$. It's roughly "how scared" you should be at time $t$.
 
-      
-     * Functions to be estimated:
-         * Let $T$ be the time of death. The *survival curve* or *survival function* is $S(t) = \mathbb{P}(T > t)$. If the probability of eventual death is $p$, this looks like a curve decreasing from 1 and approaching $p$ asymptotically.
-         * The **death rate** (or **event density**)  is the rate of deaths per unit time. Given that $1 - S(t)$ is the cumulative probability of death, we may compute  It is computed as $f(t) = (1 - S(t))' = -S'(t)$.
-         * The **hazard function** (or **hazard rate** or **force of mortality**) is the event density at time $t$, conditioning on survival until time $t$. This is $\lambda(t) = \frac{f(t)}{S(t)} = \frac{-S'(t)}{S(t)}$. Roughly speaking, it's "how scared" you should be at time $t$.
-             * Whereas the survival curve decreases monotonically, you can get more interesting shapes from the hazard function.
-     * Data available:
-         * Most often, data is available as a vector of times of death $t$. So the problem looks something like "fitting a survival curve" to the observed points.
-         * We often get data **censoring**, when not all data is available. For **right-censored** data, the exact time of death is not known. This might happen if the last observation was made before death. For **left-censored** data, the time of onset is important and unknown.
- * Relevant distributions
-     * Exponential distribution
-         * $\textrm{Exp}(t | \lambda) \propto e^{-\lambda t}$.
-         * This turns up as the event density for a condition with a constant hazard function. (ie death could occur at any time with rate $\lambda$ ). Not many human diseases have constant hazard functions, but it's a good model for radioactive decay.
-     * Gamma distribution
-         * More flexible generalisation of an exponential distribution, also useful as the conjugate prior for an exponential distribution. It is also the form of the sum of a set of exponential variables, which models a final failure that occurs after several stages of failing with exponential lifetime.
-         * $\Gamma(t | m, r) \propto t^{m-1} e^{-rt}$. The parameters $m$ and $r$ are the 'shape' and 'rate' respectively.
-         * Precise density function: $\Gamma(t | m,r) = \frac{r^m}{\Gamma(m)}t^{m-1}e^{-rt}$
-         * When $m=1$, the distribution is exponential and the hazard function is constant. When $m > 1$, the hazard function is concave and increasing, and when $m < 1$, the hazard function is convex and decreasing. 
+The data available for fitting these functions often looks like a vector of death times, sometimes with uncertainty (censored data). The precise time of death might be unknown, as the last observation was made while the patient was still alive.
+
+**Relevant distributions**
+
+The *Exponential distribution* $\textrm{Exp}(t | \lambda) \propto e^{-\lambda t}$. If this is the death rate, the condition has a constant hazard function. (ie death could occur at any time with rate $\lambda$ ). This works as a model for death by meteor strike or spontaneous combustion or something.
+
+The *Gamma distribution* is a more flexible two-parameter generalisation of an exponential distribution, also useful as the conjugate prior for an exponential distribution. Another reason to care about it in this context is that it's the distribution of a sum of a set of exponential variables, which could models a death that occurs after several stages of ailment, each with exponential lifetime. The distribution is $\Gamma(t | m, r) \propto t^{m-1} e^{-rt}$. The parameters $m$ and $r$ are the 'shape' and 'rate' respectively. The exact density function: $\Gamma(t | m,r) = \frac{r^m}{\Gamma(m)}t^{m-1}e^{-rt}$ When $m=1$, the distribution is exponential and the hazard function is constant. When $m > 1$, the hazard function is concave and increasing, and when $m < 1$, the hazard function is convex and decreasing. 
      * Weibull distribution
          * The Weibull distribution also gives increasing or decreasing hazard functions, and is also a generalisation of the exponential distribution.
          * $W(t | \lambda, p) \propto t^{p-1} e^{-(t/\lambda)^p}$, where $\lambda > 0$ is scale, and $p > 0$ is shape.

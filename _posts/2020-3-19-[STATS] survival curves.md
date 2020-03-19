@@ -1,3 +1,8 @@
+**Summary**
+
+- You can model the time until death (for a specific cause) with an exponential distribution, a gamma distribution, a Weibull distribution, or some combination of these. 
+- Anything involving the human body (eg death due to some disease) is probably not simple enough to be modelled with
+
 **Survival Analysis**  
 
 The canonical example of survival analysis is understanding the death timeline of patients with a life-threatening disease. It's a special case of the more general problem of figuring out the expected period of time before the occurrence of some event. Other examples are the relapse of an addict or the failure of some mechanical system. The two examples I've looked at myself are the occurences of deaths in MTB patients, and the incubation period of the new coronavirus. From now on I'll use the language of the death example.
@@ -16,11 +21,11 @@ The *Exponential distribution*, $f(t | \lambda) \propto e^{-\lambda t}$. If this
 
 The *Gamma distribution* is a more flexible two-parameter generalisation of an exponential distribution, also useful as the conjugate prior for an exponential distribution. Another reason to care about it in this context is that it's the distribution of a sum of a set of exponential variables, which could models a death that occurs after several stages of ailment, each with exponential lifetime. The distribution is $\Gamma(t | m, r) \propto t^{m-1} e^{-rt}$. The parameters $m$ and $r$ are the 'shape' and 'rate' respectively. The exact density function: $\Gamma(t | m,r) = \frac{r^m}{\Gamma(m)}t^{m-1}e^{-rt}$ When $m=1$, the distribution is exponential and the hazard function is constant. When $m > 1$, the hazard function is concave and increasing, and when $m < 1$, the hazard function is convex and decreasing. 
 
-The *Weibull distribution* also gives increasing or decreasing hazard functions, and is also a generalisation of the exponential distribution. W(t | \lambda, p) \propto t^{p-1} e^{-(t/\lambda)^p}$, where $\lambda > 0$ is scale, and $p > 0$ is shape. A Weibull death rate gives rise to a hazard function that is proportional to a power of time. If $p < 1$, the hazard rate decreases over time. If $p = 1$, the distribution is exponential and hazard rate is constant. If $p > 1$, failure rate is constant.
+The *Weibull distribution* also gives increasing or decreasing hazard functions, and is also a generalisation of the exponential distribution. $W(t | \lambda, p) \propto t^{p-1} e^{-(t/\lambda)^p}$, where $\lambda > 0$ is scale, and $p > 0$ is shape. A Weibull death rate gives rise to a hazard function that is proportional to a power of time. If $p < 1$, the hazard rate decreases over time. If $p = 1$, the distribution is exponential and hazard rate is constant. If $p > 1$, failure rate is constant.
 
 Apparently the *log-logistic distribution* might be useful as well, but I don't know what it is.
 
-** A Bayesian Model**
+**A Bayesian Model**
 (shown to me by Roger Sewell)
 
 Suppose we are working with a dataset of times until death, some values of which have been right-censored (ie we know the last time at which the patient was guaranteed to be alive, but we have no information about the time of death). We want to completely model the survival curve of the condition. 

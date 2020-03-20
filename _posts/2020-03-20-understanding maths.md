@@ -1,4 +1,4 @@
-There are a few key questions I want to consider. What does it mean to understand a mathematical concept? Why do we care about understanding? How do you go about attaining understanding?
+I'm currently going over three years of undergrad maths topics (studied with a range of levels of diligence). There are a few key questions I want to consider. What does it mean to understand a mathematical concept? Why do we care about understanding? How do you go about attaining understanding?
 
 **What is (mathematical) understanding?**
 

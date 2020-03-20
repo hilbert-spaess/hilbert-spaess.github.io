@@ -1,4 +1,4 @@
-I'm currently going over three years of undergrad maths topics (studied with a range of levels of diligence). There are a few key questions I want to consider. What does it mean to understand a mathematical concept? Why do we care about understanding? How do you go about attaining understanding?
+I'm currently going over three years of undergrad maths topics (studied with a range of levels of diligence). There are a few key questions I want to consider. What does it mean to understand a mathematical concept? Why do we care about understanding? How do you go about attaining understanding? (I'm not discussing research skill here, just comprehension of previously developed areas of maths).
 
 ## What is (mathematical) understanding?
 
@@ -28,6 +28,16 @@ It looks like there are two steps here: building the corpus, and then training m
 
 I'm envisaging the training process looking a lot like active recall learning. I should be presented with a definition, loosely phrased concept, or label for an area of maths, and attempt to produce examples, intuitions, and true statements about the area. Initially it'll be a combination of memory work (remembering what is true) as well as intuition work (checking what feels true), but the distinction between these should blur as time passes. I'll then compare against my previously assimmilated 'intuition cluster', to look for both true things that I haven't produced, as well as false things that I have. Spaced repetition seems like a natural framework for this recall process.
 
-I'll attempt to produce intuition clusters for Representation Theory and Galois Theory over the next week, and I'll post them as I go.
+I'll attempt to produce intuition clusters for Representation Theory and Galois Theory over the next week, and I'll post them as I go. I also expect my strategy for quickly attaining understanding to evolve over time.
 
 ## What's the role of proof?
+
+The traditional wisdom appears to be that studying and learning proofs is a vital component of a mathematical education. I'll give three reasons for studying proofs: two that don't seem relevant for what I've labelled 'understanding', and one that does.
+
+Reason 1: Seeing proofs is important for learning how to prove things. If my goal is to prove new theorems, rather than understand previously developed areas of maths, then I should be training to produce my own valid proofs.
+
+Reason 2: Seeing proofs is important for believing the statements. There's a sense of satisfaction that comes from knowing that you don't have to defer to the mathematical authorities that be, but can instead rely on the logical capacity of your past self.
+
+Reason 3: (relevant) Proofs are a useful of source of intuitions, examples and perspectives on existing theorems. Often the key idea in a proof of a theorem reflects a truth that is not obvious from the statement of a theorem, but that would be a useful component of an intuition cluster.
+
+Of course, if like me you've made the short-sighted move of enrolling in a formal higher education, there's a fourth, critical exam-related imperative to learn proofs.

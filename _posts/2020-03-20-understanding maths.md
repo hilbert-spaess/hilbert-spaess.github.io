@@ -16,8 +16,14 @@ This seems strong enough. But if we want to use this definition, we would have t
 
 A physical analogy is helpful here. The trajectory of a thrown ball is an involved consequence of the laws of motion. Most people don't see why an object will fall in a certain place, they see *that* an object will fall in a certain place. And they are correct. They have what CFAR would call an 'inner simulator', or reliable and correct intuitions about the way physical objects behave. Likewise, I'm guessing that for most mathematicians, when reaching for a well-used theorem, they can instantly feel its truth, without necessarily 
 
-**Attempt 3: You understand mathematical concepts to the extent that the things that seem true about them are precisely the things that are true about them.**
+**Attempt 3: You understand mathematical concepts to the extent that the things that seem true about your gut-level models correspond precisely to true statements about the concepts**
 
 This is the first attempted definition that doesn't use the word 'proof'. It looks like truth > proof.
 
-## How do you attain mathematical understanding?
+## How does one attain mathematical understanding?
+
+The practical question of how best to rapidly attain mathematical understanding is much more pressing for me at the moment. Taking the above definition as gospel, I want to do something like train an inner simulator with the available corpus of examples and statements, tying them to useful (probably spatial/sensory) intuitions.
+
+It looks like there are two steps here: building the corpus, and then training my intuition. As far as building the corpus goes, I'll  want to make sure my set of examples is broad enough. For example, it would be easy to train my intuition into believing that every field has characteristic 0, or that every number field is a UFD. With this in mind, I should gather
+
+## What's the role of proof?

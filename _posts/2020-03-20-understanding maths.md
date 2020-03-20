@@ -1,6 +1,6 @@
 I'm currently going over three years of undergrad maths topics (studied with a range of levels of diligence). There are a few key questions I want to consider. What does it mean to understand a mathematical concept? Why do we care about understanding? How do you go about attaining understanding?
 
-**What is (mathematical) understanding?**
+# What is (mathematical) understanding?
 
 The usual route to learning an area of maths looks something like this: first you see some definitions, and some examples of these definitions (both defined in terms of concepts you've already seen). Then you see some consequences of these definitions, phrased as theorems. Then you (often) see the proofs of these theorems. At what point should we be able to declare, "I understand these concepts"?
 

@@ -20,4 +20,4 @@ A physical analogy is helpful here. The trajectory of a thrown ball is an involv
 
 This is the first attempted definition that doesn't use the word 'proof'. It looks like truth > proof.
 
-**How do you attain mathematical understanding?**
+## How do you attain mathematical understanding?

@@ -63,10 +63,22 @@ As outlined here, I'm trying to develop understanding by doing spaced repetition
 * **Theorem:** Any two isomorphisms between irreps are scalar multiples of one another. 
 * **Intutition:** Isomorphic irreps are uniquely/canonically isomorphic.
 * **Intuition:** Any isomorphism $V \to V$ is a scalar multiple of the identity.
-* **Theorem:** Suppose we decompose $V$ as $\oplus{i=1}^r V_i$. Then for each irrep $W$, $\vert \{i : V_i \cong W\}\vert = \dim{G(V,W)}$. 
+* **Theorem:** Suppose we decompose $V$ as $\oplus{i=1}^r V_i$. Then for each irrep $W$, $\vert \{i : V_i \cong W\} \vert = \dim{G(V,W)}$. 
 * **Intuition:** This is a generalisation of Schur's lemma. If $\phi$ is G-linear $V \to W$, then every irreducible component of $V$ that isn't isomorphic to $W$ gets sent to zero, and those that are isomorphic have a canonical iso. So $\phi$ is a linear combination of these canonical isos.
 * **Intuition:** We can write $V \cong \oplus n_i V_i$, where the $n_i$ are determined above.
 * **Intution:** Irreducible decomposition satisfies uniqueness of isotypical decomposition.
 
 ## Character Theory
+
+#### Characters
+
+#### Space of class functions
+
+#### Character orthogonality
+
+#### Character tables
+
+#### Permutation reps
+
+#### Character table computations
 

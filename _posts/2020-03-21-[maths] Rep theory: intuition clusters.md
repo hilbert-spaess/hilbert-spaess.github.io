@@ -4,6 +4,8 @@ layout: post
 
 <script type="text/x-mathjax-config"> MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']], processEscapes: true } }); </script> <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
+As outlined here, I'm trying to develop understanding by doing spaced repetition learning on 'intuition clusters'. There's an accompanying Anki deck for this summary.
+
 ## Basic rep theory
 
 #### Reps of a finite group over a complex vector space.
@@ -40,7 +42,10 @@ layout: post
 * **Intuition**: there's always a way of looking at our space so that the group under consideration acts in a distance-preserving manner.
 * **Intuition**: we find the G-invariant inner product by 'g-averaging' w.r.t. a different inner product. Precisely, if $(x,y)$ is the standard inner product, we define $\langle x, y \rangle = \frac{1}{\vert G \vert}\sum_{g \in G}\langle gx, gy \rangle$. 
 * **Intuition**: the existence of the G-invariant inner product easily implies Maschke and complete reducibility: for a subrep, its orthogonal complement is also a subrep.
-* 
+
+#### G-linear maps as a rep.
+
+* **Def:** let $G(V,W)$ denote the vector space of G-linear maps $V \to W$.
 
 ## Character Theory
 

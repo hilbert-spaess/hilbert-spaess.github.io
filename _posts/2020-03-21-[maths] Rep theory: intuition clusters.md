@@ -100,10 +100,11 @@ Subrep
 * A column is real iff the conjugacy class is self-inverse.
 * **Theorem:** Column orthogonality: the (standard) inner product of different columns is 0 if the columns are distinct, and $|C_G(g)|$ otherwise. In particular, $\sum_{i=1}^r\dim{V_i}^2 = \vert G \vert$.
 
-#### Permutation reps
+#### Character table compoutations
 
 * **Theorem:** Suppose $\chi$ is the character of $\mathbb{C}X$. Then $\chi(g)$ is the number of fixed points of the G-action on X. This is clear by summing the 1s on the main diagonal of g.
-* Consider the regular representation $\mathbb{C}G$. Then $n_i = \langle \chi_{\mathbb{C}G}, \chi_i \rangle = \chi_i(e)$.
+* Consider the regular representation $\mathbb{C}G$. The character is 0 for all $g \neq e$, because the action of $G$ on itself is faithful. Then $n_i = \langle \chi_{\mathbb{C}G}, \chi_i \rangle = \chi_i(e) = \dim{V_i}$. 
+* For permutation reps, the data "# of fixed points" determines the rep up to isomorphism.
 
 #### Character table computations
 

@@ -91,9 +91,17 @@ Subrep
 
 #### Character orthogonality
 
-* **Theorem:** If $V, W$ are irreps of $G$, then $\dim{G(V,W)} = \langle \chi_V, \chi_W \rangle$.
+* **Theorem:** If $V, W$ are irreps of $G$, then $\dim{G(V,W)} = \langle \chi_V, \chi_W \rangle$. So by Schur, irreps are orthonormal class functions.
+* The orthonormality of irreducible representations is captured by the orthonormality of characters.
+* In fact, if $V = \oplus_{i=1}^r n_iV_i$, then $n_i = \langle \chi_V, \chi_{V_i}$. So $\chi_V$ determines the irreducible decomposition of $V$, and we have that the character of a rep determines the rep up to equivalence.
+* $\langle \chi_V, \chi_V \rangle = 1$ iff V is irreducible.
 
 #### Character tables
+
+* **Theorem:** The irreducible characters span $C(G)$, so they form a basis for $C(G)$. Therefore the number of irreps is the number of conjugacy classes of $G$.
+* The **character table** is a matrix with rows the irreducible characters of $G$, and columns the conjugacy classes of $G$. The character table is a square. By orthogonality of irreducible characters, the rows are orthonormal.
+* A column is real iff the conjugacy class is self-inverse.
+* **Theorem:** Column orthogonality: the (standard) inner product of different columns is 0 if the columns are distinct, and $|C_G(g)|$ otherwise. In particular, $\sum_{i=1}^r\dim{V_i}^2 = \vert G \vert$.
 
 #### Permutation reps
 

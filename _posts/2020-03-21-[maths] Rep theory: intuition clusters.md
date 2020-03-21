@@ -4,7 +4,7 @@ layout: post
 
 <script type="text/x-mathjax-config"> MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']], processEscapes: true } }); </script> <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
-### Basic rep theory
+## Basic rep theory
 
 #### Reps of a finite group over a complex vector space.
 
@@ -39,6 +39,8 @@ layout: post
 * **Theorem:** you can always find a G-invariant inner product. So you can always pick a basis w.r.t. which $\rho(g)$ is unitary.
 * **Intuition**: there's always a way of looking at our space so that the group under consideration acts in a distance-preserving manner.
 * **Intuition**: we find the G-invariant inner product by 'g-averaging' w.r.t. a different inner product. Precisely, if $(x,y)$ is the standard inner product, we define $\langle x, y \rangle = \frac{1}{\vert G \vert}\sum_{g \in G}\langle gx, gy \rangle$. 
+* **Intuition**: the existence of the G-invariant inner product easily implies Maschke and complete reducibility: for a subrep, its orthogonal complement is also a subrep.
+* 
 
-### Character Theory
+## Character Theory
 

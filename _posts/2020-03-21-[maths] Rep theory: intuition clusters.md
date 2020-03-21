@@ -77,8 +77,9 @@ Subrep
 #### Characters
 
 * **Def:** The character $\chi$ of $\rho$ is the trace of $\rho$. 
-* Single one-dimensional property of a representation that will in fact be enough to determine a rep up to isomorphism.
-* $\chi$ is constant on conjugacy classes of $G$. Character of inverses: $\chi(g^{-1}) = \bar{\chi(g)}$. Character of identity: $\chi(e) = \dim{V}$.
+* Single one-dimensional property of a representation that will in fact be enough to determine a rep up to isomorphism. Want it to be an invariant of equivalent representations, which the trace clearly is. Trace behaves nicely with respect to addition and tensor product.
+* $\chi$ is constant on conjugacy classes of $G$ (follows from trace being an invariant of equivalent reps, which we wanted above). 
+* $\chi$ can be found as the sum of the eigenvalues. All eigenvalues are roots of unity, so $\chi$ is sum of roots of unity (hence algebraic integer etc). This formula gets us character of inverses: $\chi(g^{-1}) = \bar{\chi(g)}$. Character of identity: $\chi(e) = \dim{V}$.
 * **Examples**
 
 #### Space of class functions
@@ -86,13 +87,23 @@ Subrep
 * **Def:** The vector space $C(G)$ of **class functions** is the space of functions $G \to \mathbb{C}$ that are constant on conjugacy classes of $G$.
 * Characters are class functions.
 * There is a natural inner product on $C(G)$, namely $\langle f, f' \rangle = \frac{1}{\vert G \vert}\sum_{g \in G}f(g) \bar{f'(g)}$.
-* The **class delta functions** are $\delta_{O_i} \in C(G)$ for conjugacy classes $O_i$. They are 1 on $O_i$ and zero on all other conjugacy classes.
+* The **class delta functions** are $\delta_{O_i} \in C(G)$ for conjugacy classes $O_i$. They are 1 on $O_i$ and zero on all other conjugacy classes. They form a basis for $C(G)$, but not an orthonormal basis.
 
 #### Character orthogonality
+
+* **Theorem:** If $V, W$ are reps of 
 
 #### Character tables
 
 #### Permutation reps
 
 #### Character table computations
+
+## Building new representations
+
+#### Duality
+
+#### Tensor products
+
+####
 

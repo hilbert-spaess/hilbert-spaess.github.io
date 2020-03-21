@@ -89,21 +89,21 @@ Subrep
 * There is a natural inner product on $C(G)$, namely $\langle f, f' \rangle = \frac{1}{\vert G \vert}\sum_{g \in G}f(g) \bar{f'(g)}$.
 * The **class delta functions** are $\delta_{O_i} \in C(G)$ for conjugacy classes $O_i$. They are 1 on $O_i$ and zero on all other conjugacy classes. They form a basis for $C(G)$, but not an orthonormal basis. Weighting by the size 
 
-#### Character orthogonality
+#### Character orthogonality + character tables
 
 * **Theorem:** If $V, W$ are irreps of $G$, then $\dim{G(V,W)} = \langle \chi_V, \chi_W \rangle$. So by Schur, irreps are orthonormal class functions.
 * The orthonormality of irreducible representations is captured by the orthonormality of characters.
 * In fact, if $V = \oplus_{i=1}^r n_iV_i$, then $n_i = \langle \chi_V, \chi_{V_i}$. So $\chi_V$ determines the irreducible decomposition of $V$, and we have that the character of a rep determines the rep up to equivalence.
 * $\langle \chi_V, \chi_V \rangle = 1$ iff V is irreducible.
-
-#### Character tables
-
 * **Theorem:** The irreducible characters span $C(G)$, so they form a basis for $C(G)$. Therefore the number of irreps is the number of conjugacy classes of $G$.
 * The **character table** is a matrix with rows the irreducible characters of $G$, and columns the conjugacy classes of $G$. The character table is a square. By orthogonality of irreducible characters, the rows are orthonormal.
 * A column is real iff the conjugacy class is self-inverse.
 * **Theorem:** Column orthogonality: the (standard) inner product of different columns is 0 if the columns are distinct, and $|C_G(g)|$ otherwise. In particular, $\sum_{i=1}^r\dim{V_i}^2 = \vert G \vert$.
 
 #### Permutation reps
+
+* **Theorem:** Suppose $\chi$ is the character of $\mathbb{C}X$. Then $\chi(g)$ is the number of fixed points of the G-action on X. This is clear by summing the 1s on the main diagonal of g.
+* Consider the regular representation $\mathbb{C}G$. Then $n_i = \langle \chi_{\mathbb{C}G}, \chi_i \rangle = \chi_i(e)$.
 
 #### Character table computations
 

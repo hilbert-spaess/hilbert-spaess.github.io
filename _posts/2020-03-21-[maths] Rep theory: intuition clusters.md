@@ -1,3 +1,7 @@
+---
+layout: post
+---
+
 ##### Reps of a finite group over a complex vector space.
 
 * Precise def: group hom $\rho : G \to GL(V)$. The **degree** is $\dim{V}$.

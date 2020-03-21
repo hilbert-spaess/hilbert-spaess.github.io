@@ -11,7 +11,7 @@ As outlined here, I'm trying to develop understanding by doing spaced repetition
 #### Reps of a finite group over a complex vector space.
 
 * **Def:** group hom $\rho : G \to GL(V)$. The **degree** is $\dim{V}$.
-* **Intuition:** a collection of linear maps on a f.d. complex vector space with a group structure.
+* a collection of linear maps on a f.d. complex vector space with a group structure.
     * Requires intuition for linear maps on f.d. vector space; finite groups.
 * **Intuition**: a functor from $G$ considered as a category (with a single object) to the category **Vect** of complex vector spaces.
 * **Examples**
@@ -40,12 +40,12 @@ Subrep
 #### G-linear maps
 
 * **Def**: given $$(\rho, V), (\rho', W)$$ are reps of $$G$$, a G-linear map is a linear map $$\phi : V \to W$$ such that $$\phi \circ \rho(g) = \rho'(g) \circ \phi$$ for all $$g \in G$$.
-* **Intuition:** A linear map between representations that co-operates with the group structure.
-* **Intuition:** A natural transformation between the representations considered as functors.
+* A linear map between representations that co-operates with the group structure.
+* A natural transformation between the representations considered as functors.
 * **Def:** If there is a G-linear isomorphism between $$V$$ and $$W$$, we say that they are isomorphic as representations.
-* **Intuition:** Isomorphic representations are representations of $$G$$ that are related by a change of basis.
+* Isomorphic representations are representations of $$G$$ that are related by a change of basis.
 * **Theorem:** Suppose $\phi$ is a G-linear map $V \to W$. Then $G/\ker{\phi}$ and $\im{\phi}$ are iso as reps. (First isomorphism theorem for reps).
-* **Intuition:** Same intuition as other first isomorphism theorems. 
+* Same intuition as other first isomorphism theorems. 
 * **Def:** let $G(V,W)$ denote the vector space of G-linear maps $V \to W$. Then we can turn it into a rep of $G$ via $(g. \phi)(v) = \phi(g^{-1}.v)$, for all $\phi \in G(V,W)$.
 * **Inutuition:** Just like translating a function $\mathbb{R} \to \mathbb{R}$ by 1: $(+1)(f)(x) f(x-1)$. We can act on G-linear maps by $G$ by 'transforming' $V$ according to $g$.
 * **Examples**
@@ -63,13 +63,13 @@ Subrep
 #### Schur's lemma; counting irreducible components
 
 * **Theorem:** If $V$ and $W$ are irreps, then any G-linear map between $V$ and $W$ is the zero map or an isomorphism.
-* **Intuition:** Irreps are 'rigid' - there are no non-trivial G-linear maps between irreps.
+* Irreps are 'rigid' - there are no non-trivial G-linear maps between irreps.
 * **Theorem:** Any two isomorphisms between irreps are scalar multiples of one another. 
 * **Intutition:** Isomorphic irreps are uniquely/canonically isomorphic.
-* **Intuition:** Any isomorphism $V \to V$ is a scalar multiple of the identity.
+* Any isomorphism $V \to V$ is a scalar multiple of the identity.
 * **Theorem:** Suppose we decompose $V$ as $\oplus{i=1}^r V_i$. Then for each irrep $W$, $\vert \{i : V_i \cong W\} \vert = \dim{G(V,W)}$. 
-* **Intuition:** This is a generalisation of Schur's lemma. If $\phi$ is G-linear $V \to W$, then every irreducible component of $V$ that isn't isomorphic to $W$ gets sent to zero, and those that are isomorphic have a canonical iso. So $\phi$ is a linear combination of these canonical isos.
-* **Intuition:** We can write $V \cong \oplus n_i V_i$, where the $n_i$ are determined above.
+* This is a generalisation of Schur's lemma. If $\phi$ is G-linear $V \to W$, then every irreducible component of $V$ that isn't isomorphic to $W$ gets sent to zero, and those that are isomorphic have a canonical iso. So $\phi$ is a linear combination of these canonical isos.
+* We can write $V \cong \oplus n_i V_i$, where the $n_i$ are determined above.
 * **Intution:** Irreducible decomposition satisfies uniqueness of isotypical decomposition.
 
 ## Character Theory
@@ -77,7 +77,9 @@ Subrep
 #### Characters
 
 * **Def:** The character $\chi$ of $\rho$ is the trace of $\rho$. 
-* **Intuition:** Single one-dimensional 
+* Single one-dimensional property of a representation that will in fact be enough to determine a rep up to isomorphism.
+* $\chi$ is constant on conjugacy classes of 
+* **Examples**
 
 #### Space of class functions
 

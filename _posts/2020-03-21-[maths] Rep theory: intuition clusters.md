@@ -40,7 +40,7 @@ As outlined here, I'm trying to develop understanding by doing spaced repetition
 * **Intuition**: with respect to an orthonormal basis for this inner product, $\rho(g)$ is always in $U(n)$. 
 * **Theorem:** you can always find a G-invariant inner product. So you can always pick a basis w.r.t. which $\rho(g)$ is unitary.
 * **Intuition**: there's always a way of looking at our space so that the group under consideration acts in a distance-preserving manner.
-* **Intuition**: we find the G-invariant inner product by 'g-averaging' w.r.t. a different inner product. Precisely, if $(x,y)$ is the standard inner product, we define $\langle x, y \rangle = \frac{1}{\vert G \vert}\sum_{g \in G}\langle gx, gy \rangle$. 
+* **Intuition**: we find the G-invariant inner product by 'g-averaging' w.r.t. a different inner product. Precisely, if $(x,y)$ is the standard inner product, we define $\langle x, y \rangle = \frac{1}{\vert G \vert}\sum_{g \in G}\(gx, gy)$. 
 * **Intuition**: the existence of the G-invariant inner product easily implies Maschke and complete reducibility: for a subrep, its orthogonal complement is also a subrep.
 
 #### G-linear maps as a rep.

@@ -78,13 +78,15 @@ Subrep
 
 * **Def:** The character $\chi$ of $\rho$ is the trace of $\rho$. 
 * Single one-dimensional property of a representation that will in fact be enough to determine a rep up to isomorphism.
-* $\chi$ is constant on conjugacy classes of $G$. $\chi(g^{-1} = \bar{\chi(g)}$. $\chi(e) = \dim{V}$.
+* $\chi$ is constant on conjugacy classes of $G$. Character of inverses: $\chi(g^{-1}) = \bar{\chi(g)}$. Character of identity: $\chi(e) = \dim{V}$.
 * **Examples**
 
 #### Space of class functions
 
 * **Def:** The vector space $C(G)$ of **class functions** is the space of functions $G \to \mathbb{C}$ that are constant on conjugacy classes of $G$.
-* Characters are 
+* Characters are class functions.
+* There is a natural inner product on $C(G)$, namely $\langle f, f' \rangle = \frac{1}{\vert G \vert}\sum_{g \in G}f(g) \bar{f'(g)}$.
+* The **class delta functions** are $\delta_{O_i} \in C(G)$ for conjugacy classes $O_i$. They are 1 on $O_i$ and zero on all other conjugacy classes.
 
 #### Character orthogonality
 

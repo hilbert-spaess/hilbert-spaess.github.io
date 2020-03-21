@@ -2,7 +2,11 @@ Here is a collection of statistical problems that I hope are amenable to a model
 
 ### Fitting a simple distribution
 
-Determining the distribution that describe observed data. (This could refer to a lot of different problems).
+Determining the distribution that describes observed data. (This could refer to a lot of different problems). In particular, what sort of processes give rise to what sort of distribution? Expect this problem to be an important sub-problem when building models for bigger stuff.
+
+* Human height, weight etc (common wisdom is Gaussian, but is this true?)
+* Reported orgasm intensity, reported mood, reported dream duration etc
+* Word length etc
 
 ### Relevance inference
 
@@ -21,7 +25,14 @@ Separating a variable into independently varying factors. Unearthing the factors
 
 ### Survival inference
 
-Understanding 
+Understanding distribution of times before the occurrence of some event.
+
+* Lifetime of cancer patients.
+* Time before addiction relapse, criminal recidivism
+
+### Percolation
+
+Spread of variables
 
 ### Causal inference
 

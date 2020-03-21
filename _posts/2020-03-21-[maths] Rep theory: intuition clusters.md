@@ -13,7 +13,7 @@ layout: post
     * Requires intuition for linear maps on f.d. vector space; finite groups.
 * **Intuition**: a functor from $G$ considered as a category (with a single object) to the category **Vect** of complex vector spaces.
 * **Examples**
-    * $C_n$: a matrix of order $n$, and its powers.
+    * A rep of $C_n$: a matrix of order $n$, and its powers.
     * $D_6$: matrices corresponding to rotations and reflections in $\mathbb{R}^2$.
     * $\mathbb{C}X$: permutation matrices corresponding to a G-action on $X$, for any group $G$.
    

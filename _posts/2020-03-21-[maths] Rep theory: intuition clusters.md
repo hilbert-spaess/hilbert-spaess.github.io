@@ -41,6 +41,8 @@ As outlined here, I'm trying to develop understanding by doing spaced repetition
 * **Intuition:** A natural transformation between the representations considered as functors.
 * **Def:** If there is a G-linear isomorphism between $$V$$ and $$W$$, we say that they are isomorphic as representations.
 * **Intuition:** Isomorphic representations are representations of $$G$$ that are related by a change of basis.
+* **Theorem:** Suppose $\phi$ is a G-linear map $V \to W$. Then $G/\ker{\phi}$ and $\im{\phi}$ are iso as reps. (First isomorphism theorem for reps).
+* **Intuition:** Same intuition as other first isomorphism theorems. 
 * **Examples**
 
 #### G-invariant inner products, Weyl's trick
@@ -55,6 +57,9 @@ As outlined here, I'm trying to develop understanding by doing spaced repetition
 #### Schur's lemma
 
 * **Theorem:** If $V$ and $W$ are irreps, then any G-linear map between $V$ and $W$ is the zero map or an isomorphism.
+* **Intuition:** Irreps are 'rigid' - there are no non-trivial G-linear maps between irreps.
+* **Theorem:** Any two isomorphisms between irreps are scalar multiples of one another. 
+* **Intutition:** Isomorphic irreps are uniquely/canonically isomorphic.
 
 #### G-linear maps as a rep.
 

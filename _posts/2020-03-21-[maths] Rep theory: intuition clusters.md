@@ -4,6 +4,8 @@ layout: post
 
 <script type="text/x-mathjax-config"> MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']], processEscapes: true } }); </script> <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
+### Basic rep theory
+
 #### Reps of a finite group over a complex vector space.
 
 * **Def:** group hom $\rho : G \to GL(V)$. The **degree** is $\dim{V}$.
@@ -15,7 +17,7 @@ layout: post
     * $D_6$: matrices corresponding to rotations and reflections in $\mathbb{R}^2$.
     * $\mathbb{C}X$: permutation matrices corresponding to a G-action on $X$, for any group $G$.
    
-### Subreps, irreducibility, direct sum
+#### Subreps, irreducibility, direct sum
 
 * Def: a subrepresentation is a G-invariant subspace $$W$$ of $$V$$.
 * The linear maps restricted to this subspace also form a rep of $$G$$.
@@ -28,4 +30,6 @@ layout: post
 * Maschke: if $$W$$ is a subrep, there is a complementary subrep $$U$$ such that $$V = U \oplus W$$.
     * This will follow from existence of G-invariant inner product (see below).
 * So Maschke means that we have complete reducibility: we can always decompose a representation as a direct sum of irreducible reps.
+
+#### G-invariant inner products, Weyl's trick
 

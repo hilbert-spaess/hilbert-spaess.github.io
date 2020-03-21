@@ -34,6 +34,15 @@ As outlined here, I'm trying to develop understanding by doing spaced repetition
     * This will follow from existence of G-invariant inner product (see below).
 * So Maschke means that we have complete reducibility: we can always decompose a representation as a direct sum of irreducible reps.
 
+#### G-linear maps
+
+* **Def**: given $$(\rho, V), (\rho', W)$$ are reps of $$G$$, a G-linear map is a linear map $$\phi : V \to W$$ such that $$\phi \circ \rho(g) = \rho'(g) \circ \phi$$ for all $$g \in G$$.
+* **Intuition:** A linear map between representations that co-operates with the group structure.
+* **Intuition:** A natural transformation between the representations considered as functors.
+* **Def:** If there is a G-linear isomorphism between $$V$$ and $$W$$, we say that they are isomorphic as representations.
+* **Intuition:** Isomorphic representations are representations of $$G$$ that are related by a change of basis.
+* **Examples**
+
 #### G-invariant inner products, Weyl's trick
 
 * **Def:** a G-invariant inner product is a Hermitian inner product $$\langle -,- \rangle$$ on $V$ such that $\langle x, y \rangle = \langle gx, gy \rangle$, $\forall g \in G$. 
@@ -43,10 +52,15 @@ As outlined here, I'm trying to develop understanding by doing spaced repetition
 * **Intuition**: we find the G-invariant inner product by 'g-averaging' w.r.t. a different inner product. Precisely, if $(x,y)$ is the standard inner product, we define $\langle x, y \rangle = \frac{1}{\vert G \vert}\sum_{g \in G}\(gx, gy)$. 
 * **Intuition**: the existence of the G-invariant inner product easily implies Maschke and complete reducibility: for a subrep, its orthogonal complement is also a subrep.
 
+#### Schur's lemma
+
+* **Theorem:** If $V$ and $W$ are irreps, then any G-linear map between $V$ and $W$ is the zero map or an isomorphism.
+
 #### G-linear maps as a rep.
 
 * **Def:** let $G(V,W)$ denote the vector space of G-linear maps $V \to W$. Then we can turn it into a rep of $G$ via $(g. \phi)(v) = \phi(g^{-1}.v)$, for all $\phi \in G(V,W)$.
 * **Inutuition:** Just like translating a function $\mathbb{R} \to \mathbb{R}$ by 1: $(+1)(f)(x) f(x-1)$. We can act on G-linear maps by $G$ by 'transforming' $V$ according to $g$.
+
 
 ## Character Theory
 

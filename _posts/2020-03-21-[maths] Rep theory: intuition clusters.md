@@ -35,7 +35,8 @@ Subrep
 * **Theorem**: if $$W$$ is a subrep, there is a complementary subrep $$U$$ such that $$V = U \oplus W$$.
     * This will follow from existence of G-invariant inner product (see below).
 * So Maschke means that we have complete reducibility: we can always decompose a representation as a direct sum of irreducible reps.
-
+* <font color = 'red'> Subrep is subspace that's also rep; irreps are primitive, indivisible; every subrep part of a direct sum decomposition into irreps
+   
 #### G-linear maps
 
 * **Def**: given $$(\rho, V), (\rho', W)$$ are reps of $$G$$, a G-linear map is a linear map $$\phi : V \to W$$ such that $$\phi \circ \rho(g) = \rho'(g) \circ \phi$$ for all $$g \in G$$.
@@ -48,6 +49,7 @@ Subrep
 * **Def:** let $G(V,W)$ denote the vector space of G-linear maps $V \to W$. Then we can turn it into a rep of $G$ via $(g. \phi)(v) = \phi(g^{-1}.v)$, for all $\phi \in G(V,W)$.
 * **Inutuition:** Just like translating a function $\mathbb{R} \to \mathbb{R}$ by 1: $(+1)(f)(x) f(x-1)$. We can act on G-linear maps by $G$ by 'transforming' $V$ according to $g$.
 * **Examples**
+* <font color = 'red'> Natural transormations of reps as functors; clear choice of arrow in the category of reps; linear maps that co-operate with g-structure. </font>
 
 #### G-invariant inner products, Weyl's trick
 

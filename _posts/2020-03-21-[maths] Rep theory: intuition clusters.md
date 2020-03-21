@@ -78,7 +78,7 @@ Subrep
 
 * **Def:** The character $\chi$ of $\rho$ is the trace of $\rho$. 
 * Single one-dimensional property of a representation that will in fact be enough to determine a rep up to isomorphism.
-* $\chi$ is constant on conjugacy classes of 
+* $\chi$ is constant on conjugacy classes of $G$. $\chi(g^{-1} = \bar{\chi(g)}$. $\chi(e) = \dim{V}$.
 * **Examples**
 
 #### Space of class functions

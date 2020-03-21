@@ -91,7 +91,7 @@ Subrep
 
 #### Character orthogonality
 
-* **Theorem:** If $V, W$ are reps of 
+* **Theorem:** If $V, W$ are irreps of $G$, then $\dim{G(V,W)} = \langle \chi_V, \chi_W \rangle$.
 
 #### Character tables
 

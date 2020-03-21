@@ -18,7 +18,7 @@ As outlined here, I'm trying to develop understanding by doing spaced repetition
     * A rep of $C_n$: a matrix of order $n$, and its powers.
     * $D_6$: matrices corresponding to rotations and reflections in $\mathbb{R}^2$.
     * $\mathbb{C}X$: permutation matrices corresponding to a G-action on $X$, for any group $G$.
- * <font color = 'red'> henlo </font>
+ * <font color = 'red'> Reps are basically finite matrix groups; functor from G to Vect </font>
    
 #### Subreps, irreducibility, direct sum
 
@@ -73,6 +73,9 @@ Subrep
 ## Character Theory
 
 #### Characters
+
+* **Def:** The character $\chi$ of $\rho$ is the trace of $\rho$. 
+* **Intuition:** Single one-dimensional 
 
 #### Space of class functions
 

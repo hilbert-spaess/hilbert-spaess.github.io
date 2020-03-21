@@ -85,9 +85,9 @@ Subrep
 #### Space of class functions
 
 * **Def:** The vector space $C(G)$ of **class functions** is the space of functions $G \to \mathbb{C}$ that are constant on conjugacy classes of $G$.
-* Characters are class functions.
+* Characters are class functions. We care about the space of class functions because we see that characters of irreps form a basis for the space.
 * There is a natural inner product on $C(G)$, namely $\langle f, f' \rangle = \frac{1}{\vert G \vert}\sum_{g \in G}f(g) \bar{f'(g)}$.
-* The **class delta functions** are $\delta_{O_i} \in C(G)$ for conjugacy classes $O_i$. They are 1 on $O_i$ and zero on all other conjugacy classes. They form a basis for $C(G)$, but not an orthonormal basis.
+* The **class delta functions** are $\delta_{O_i} \in C(G)$ for conjugacy classes $O_i$. They are 1 on $O_i$ and zero on all other conjugacy classes. They form a basis for $C(G)$, but not an orthonormal basis. Weighting by the size 
 
 #### Character orthogonality
 

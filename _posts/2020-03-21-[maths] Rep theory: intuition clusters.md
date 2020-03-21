@@ -45,7 +45,8 @@ As outlined here, I'm trying to develop understanding by doing spaced repetition
 
 #### G-linear maps as a rep.
 
-* **Def:** let $G(V,W)$ denote the vector space of G-linear maps $V \to W$.
+* **Def:** let $G(V,W)$ denote the vector space of G-linear maps $V \to W$. Then we can turn it into a rep of $G$ via $(g. \phi)(v) = \phi(g^{-1}.v)$, for all $\phi \in G(V,W)$.
+* **Inutuition:** Just like translating a function $\mathbb{R} \to \mathbb{R}$ by 1: $(+1)(f)(x) f(x-1)$. We can act on G-linear maps by $G$ by 'transforming' $V$ according to $g$.
 
 ## Character Theory
 

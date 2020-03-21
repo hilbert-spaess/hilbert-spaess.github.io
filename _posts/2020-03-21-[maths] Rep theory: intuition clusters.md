@@ -98,7 +98,7 @@ Subrep
 * **Theorem:** The irreducible characters span $C(G)$, so they form a basis for $C(G)$. Therefore the number of irreps is the number of conjugacy classes of $G$.
 * The **character table** is a matrix with rows the irreducible characters of $G$, and columns the conjugacy classes of $G$. The character table is a square. By orthogonality of irreducible characters, the rows are orthonormal.
 * A column is real iff the conjugacy class is self-inverse.
-* **Theorem:** Column orthogonality: the (standard) inner product of different columns is 0 if the columns are distinct, and $|C_G(g)|$ otherwise. In particular, $\sum_{i=1}^r\dim{V_i}^2 = \vert G \vert$.
+* **Theorem:** Column orthogonality: the (standard) inner product of different columns is 0 if the columns are distinct, and $\vert C_G(g) \vert$ otherwise. In particular, $\sum_{i=1}^r\dim{V_i}^2 = \vert G \vert$.
 
 #### Character table compoutations
 

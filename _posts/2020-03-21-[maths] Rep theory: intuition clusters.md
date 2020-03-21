@@ -43,6 +43,8 @@ As outlined here, I'm trying to develop understanding by doing spaced repetition
 * **Intuition:** Isomorphic representations are representations of $$G$$ that are related by a change of basis.
 * **Theorem:** Suppose $\phi$ is a G-linear map $V \to W$. Then $G/\ker{\phi}$ and $\im{\phi}$ are iso as reps. (First isomorphism theorem for reps).
 * **Intuition:** Same intuition as other first isomorphism theorems. 
+* **Def:** let $G(V,W)$ denote the vector space of G-linear maps $V \to W$. Then we can turn it into a rep of $G$ via $(g. \phi)(v) = \phi(g^{-1}.v)$, for all $\phi \in G(V,W)$.
+* **Inutuition:** Just like translating a function $\mathbb{R} \to \mathbb{R}$ by 1: $(+1)(f)(x) f(x-1)$. We can act on G-linear maps by $G$ by 'transforming' $V$ according to $g$.
 * **Examples**
 
 #### G-invariant inner products, Weyl's trick
@@ -54,18 +56,17 @@ As outlined here, I'm trying to develop understanding by doing spaced repetition
 * **Intuition**: we find the G-invariant inner product by 'g-averaging' w.r.t. a different inner product. Precisely, if $(x,y)$ is the standard inner product, we define $\langle x, y \rangle = \frac{1}{\vert G \vert}\sum_{g \in G}\(gx, gy)$. 
 * **Intuition**: the existence of the G-invariant inner product easily implies Maschke and complete reducibility: for a subrep, its orthogonal complement is also a subrep.
 
-#### Schur's lemma
+#### Schur's lemma; counting irreducible components
 
 * **Theorem:** If $V$ and $W$ are irreps, then any G-linear map between $V$ and $W$ is the zero map or an isomorphism.
 * **Intuition:** Irreps are 'rigid' - there are no non-trivial G-linear maps between irreps.
 * **Theorem:** Any two isomorphisms between irreps are scalar multiples of one another. 
 * **Intutition:** Isomorphic irreps are uniquely/canonically isomorphic.
-
-#### G-linear maps as a rep.
-
-* **Def:** let $G(V,W)$ denote the vector space of G-linear maps $V \to W$. Then we can turn it into a rep of $G$ via $(g. \phi)(v) = \phi(g^{-1}.v)$, for all $\phi \in G(V,W)$.
-* **Inutuition:** Just like translating a function $\mathbb{R} \to \mathbb{R}$ by 1: $(+1)(f)(x) f(x-1)$. We can act on G-linear maps by $G$ by 'transforming' $V$ according to $g$.
-
+* **Intuition:** Any isomorphism $V \to V$ is a scalar multiple of the identity.
+* **Theorem:** Suppose we decompose $V$ as $\oplus{i=1}^r V_i$. Then for each irrep $W$, $\vert \{i : V_i \cong W\}\vert = \dim{G(V,W)}$. 
+* **Intuition:** This is a generalisation of Schur's lemma. If $\phi$ is G-linear $V \to W$, then every irreducible component of $V$ that isn't isomorphic to $W$ gets sent to zero, and those that are isomorphic have a canonical iso. So $\phi$ is a linear combination of these canonical isos.
+* **Intuition:** We can write $V \cong \oplus n_i V_i$, where the $n_i$ are determined above.
+* **Intution:** Irreducible decomposition satisfies uniqueness of isotypical decomposition.
 
 ## Character Theory
 

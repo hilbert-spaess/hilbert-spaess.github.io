@@ -34,7 +34,13 @@ The causal structure specifies the underlying functional relationships. Given su
 
 The causal model now specifies a functional relationship between variables. The relevance of this definition of a causal model is predicated on three assumptions:
 1. "Y is a (maybe non-deterministic) function of variables including X" is an adequate formalisation of "X exerts a causal influence on Y".
-2. It suffices to consider 'Markovian' causal models (models such that the random disturbances 'u_i' are independent). This condition guarantees that there are no spurious dependencies between variables. This is a granularity assumption: we suppose that our model is detailed enough to capture all relevant variables, so that there are no unexplained correlations in observed data.
+2. It suffices to consider 'Markovian' causal models (models such that the random disturbances 'u_i' are independent). This condition guarantees that there are no spurious dependencies between variables. This is a granularity assumption: we suppose that our model is detailed enough to capture all relevant variables, so that there are no unexplained correlations in observed data. It is obviously difficult to guarantee this a priori, so this is the assumption that we will violate later, when we consider semi-Markovian or 'latent' models.
 3. It suffices to consider acyclic causal structures. This is another granularity assumption: our variables are sufficiently specific that there is no room for a cycle of causal dependencies.
 
+**Definition:** Given a causal structure $(V, G)$ and a distribution $P$ on $V$, we say that $P$ is **consistent** with $G$ if there exists a choice of causal model on $(V,G)$ such that the entailed distribution is $P$. 
 
+Let's work with an example (one of Pearl's favourites). Suppose there are three observable variables: the outcomes of two fair coin tosses, and the potential sounding of a gong. As observers, all we have is the joint distribution
+ 
+(observation table)
+
+## Latent Causal Models

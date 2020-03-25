@@ -24,9 +24,13 @@ Key idea: we get probabilistic data. Humans expect observed indepencies to *have
 
 ## Causal models
 
-At this stage, we've noted that conditional independencies between variables allow us to construct compatible graphical models. Most examples of graphical models for probability distributions
+At this stage, we've noted that conditional independencies between variables under a distribution allow us to classify the Bayesian networks compatible with the distribution, and given a simple algorithmic criterion (d-separation) for looking up independencies of a distribution given a representative Bayesian network. Now we can start to talk about causality with a straight face, by introducing graphical causal models. We work in the context of a set of **observed variables**, with each variable a function of a subset of the other variables (with random peturbation).
 
-**Definition:** 
+**Definition:** A **causal structure** is a pair $(V, G)$, where $V = \{x_1, ..., x_n\}$ is a set of variables, and $G$ is a DAG with vertex-set $V$. Each edge of $G$ represents a functional relationship between vertices.
+
+The causal structure specifies the underlying functional relationships. Given such a structure, a specific choice of functions will be termed a causal model:
+
+**Definition:** A **causal model** on a causal structure $(V,G)$
 
 Key idea: we get probabilistic data. Humans expect observed indepencies to *have an explanation*: ie to be engendered by a causal graphical model.
 

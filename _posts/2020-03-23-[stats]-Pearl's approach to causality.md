@@ -51,9 +51,9 @@ Suppose we were trying to infer the correct model, given our above assumptions. 
 
 Notice that one of the models shown above consists of the true two-edge structure with an additional causal link between $C_1$ and $C_2$. Pearl notes that by an Occam-like consideration, this structure is less preferable to the two-edge structure. In his typical combinatorial style, rather than introducing an Occam prior over causal networks, he instead puts a partial ordering on causal structures:
 
-**Definition:** We say that causal structure $(V, G_1)$ **dominates** $(V, G_2)$ (written $G_1 > G_2$ ) if any causal model on $G_2$ can be simulated by a causal model on $G_1$. This domination is strict $G_2$ does not dominate $G_1$. For example, $G$ dominates any subgraph. For a given distribution $P$, a causal structure $G$ is **minimal** with respect to $P$ if it does not strictly dominate any structure that is consistent with $P$. 
+**Definition:** We say that causal structure $(V, G_1)$ **dominates** $(V, G_2)$ (written $G_1 > G_2$ ) if any causal model on $G_2$ can be simulated by a causal model on $G_1$. This domination is strict $G_2$ does not dominate $G_1$. For example, $G$ dominates any subgraph. For a given distribution $P$, a causal structure $G$ is **minimal** with respect to $P$ if it is consistent with $P$, and does not strictly dominate any structure that is consistent with $P$. 
 
-Now Pearl suggests that we should restrict our search to minimal structures with respect to $P$. This eliminates the example considered above. However, there are still minimal three-link structures we would like to exclude. 
+Now Pearl suggests that we should restrict our search to minimal structures with respect to $P$. This eliminates the example considered above. However, there are still minimal three-link structures we would like to exclude. These all feature a causal relation between $C_1$ and $C_2$. What we would like to do is reject these models on the grounds that $C_1$ and $C_2$ are observed to be marginally independent. Previously we rejected candidate causal structures on the grounds that independences in the structure should be reflected in the data. We would like to reverse this: any conditional independence observed in $P$ should be *explicable* by the structure $G$. 
 
 
 ## Latent Causal Models

@@ -57,19 +57,11 @@ Now Pearl suggests that (in the spirit of selecting the most specific model) we 
 
 **Definition:** A distribution $P$ is **stable** with respect to a causal structure $G$ if $I(P) = I(G)$. In other words, all conditional independencies in the observable data are explained by the independencies that we can read from $G$ using d-separation.
 
-For any sensible measure over causal models on a given structure, almost all of the resulting distributions are stable with respect to the structure: you have to 'fine-tune' the parameters to generate conditional independencies that are not explicable by the structure. This is justification for the *assumption of stability*: the distribution under consideration is stable with respect to its causal structure. If $P$ satisfies this assumption, any minimal causal structure $G$ satisfies $I(G) = I(P)$, so all are d-separation equivalent. In our running example, there is a unique such structure.
+For any sensible measure over causal models on a given structure, almost all of the resulting distributions are stable with respect to the structure: you have to 'fine-tune' the parameters to generate conditional independencies that are not explicable by the structure. This is justification for the *assumption of stability*: the distribution under consideration is stable with respect to its causal structure. If $P$ satisfies this assumption, any minimal causal structure $G$ satisfies $I(G) = I(P)$, so all are d-separation equivalent. In our running example, there is a unique such structure. Although in this case we've identified the causal structure uniquely, this doesn't always happen. The best we can hope for is identification up to d-separation equivalence.
 
-Although in this case we've identified the causal structure uniquely, this doesn't always happen. The best we can hope for is identification up to d-separation equivalence, as the next few examples will illustrate. Every step of what's preceded feels obvious, but
-
-## More examples
-
-I'll introduce a few more examples to illustrate the uses and limitations of the method outlined in the previous section.
-
-Yudkowsky uses a controversial example with the same uniquely identifiable three-variable causal structure as the coins-and-bell example above. He wants to investigate the causal relation between exercise and weight. He supposes that weight has a causal influence on exercise, but not vice-versa (you read that correctly), and that no other variable has an influence on both. We can't show this directly from the data, as this causal structure is d-separation equivalent to the same structure with the arrow reversed. However, we saw in the previous section that a 'V-shape' is identifiable from the data (assuming stability, minimality etc). So if we can find a third variable with an influence on exercise, and independent of weight, we are done. Yudkowsky uses "Internet usage" as a candidate third variable. By looking at the distribution over weight, internet and exercise, we can infer the causal relation between weight and exercise! 
+Yudkowsky uses a controversial example with the same uniquely identifiable three-variable causal structure as the coins-and-bell example above. He wants to investigate the causal relation between exercise and weight. He supposes that weight has a causal influence on exercise, but not vice-versa (you read that correctly), and that no other variable has an influence on both. We can't show this directly from the data, as this causal structure is d-separation equivalent to the same structure with the arrow reversed. However, we saw in the previous section that a 'V-shape' is identifiable from the data (assuming stability, minimality etc). So if we can find a third variable with an influence on exercise, and independent of weight, out pops the causal structure. Yudkowsky uses "Internet usage" as a candidate third variable. By looking at the distribution over weight, internet and exercise, we can infer the causal relation between weight and exercise! 
 
 An interesting point raised in the comment section of Yudkowsky's piece highlights the relevance of the assumption of stability. The commenter writes that it *clearly can't be the case* that you could infer the causal influence of weight and internet usage on exercise. For suppose you had observed the same numbers, but with the weight variable replaced with hair colour. Then the same analysis would lead you to the absurd conclusion that hair colour has an influence on weight. But this is precisely the situation that the assumption of stability precludes- it's vanishingly unlikely that you'd see nubers that vindicate the V-structure unless there really is an underlying causal mechanism. You simply *wouldn't get* these numbers with a hair-colour variable.
-
-Even if you
 
 ## Latent Causal Models
 
@@ -80,3 +72,5 @@ Definitions of types of causes given latent causal models.
 ## Identifying causal effect
 
 ## Summary and further questions
+
+1. How do you extend a d-separation-duplicitous structure to a uniquely identifiable structure? What's the theory of d-separation equivalent 

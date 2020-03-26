@@ -45,23 +45,25 @@ The assumptions above are still not enough to identify the causal structure unde
  
 (observation table) (correct structure)
 
-Suppose we were trying to infer the correct model, given our above assumptions. By assumptions 2 and 3, the correct structure is a DAG on three variables. Since no variable is independent of the other two, the graph must be connected. No two variables are conditionally independent given the other, so the structure can't be one variable causing the other two, or a chain of two causations. So if the causal structure $G$ has two edges, they must be from $C_1$ and $C_2$ into $B$. But there are models with three edges that are consistent with $P$ as well, as illustrated below. This is as far as we can get with the assumptions we've made so far.
+Suppose we were trying to infer the correct model, given our above assumptions. By assumptions 2 and 3, the correct structure is a DAG on three variables. Since no variable is independent of the other two, the graph must be connected. No two variables are conditionally independent given the other, so the structure can't be one variable causing the other two, or a chain of two causations. So if the causal structure $G$ has two edges, they must be from $C_1$ and $C_2$ into $B$ (this is the correct structure). But there are models with three edges that are consistent with $P$ as well, as illustrated below. This is as far as we can get with the assumptions we've made so far.
 
 (models with three edges)
 
 Notice that one of the models shown above consists of the true two-edge structure with an additional causal link between $C_1$ and $C_2$. Pearl notes that by an Occam-like consideration, this structure is less preferable to the two-edge structure. In his typical combinatorial style, rather than introducing an Occam prior over causal networks, he instead puts a partial ordering on causal structures:
 
-**Definition:** We say that causal structure $(V, G_1)$ **dominates** $(V, G_2)$ (written $G_1 > G_2$ ) if any causal model on $G_2$ can be simulated by a causal model on $G_1$. This domination is strict $G_2$ does not dominate $G_1$. For example, $G$ dominates any subgraph. For a given distribution $P$, a causal structure $G$ is **minimal** with respect to $P$ if it is consistent with $P$, and does not strictly dominate any structure that is consistent with $P$. 
+**Definition:** We say that causal structure $(V, G_1)$ **dominates** $(V, G_2)$ (written $G_1 > G_2$ ) if any causal model on $G_2$ can be simulated by a causal model on $G_1$. This domination is **strict** if $G_2$ does not dominate $G_1$. For example, $G$ dominates any subgraph. For a given distribution $P$, a causal structure $G$ is **minimal** with respect to $P$ if it is consistent with $P$, and does not strictly dominate any structure that is consistent with $P$. 
 
-Now Pearl suggests that we should restrict our search to minimal structures with respect to $P$. This eliminates the example considered above. However, there are still minimal three-link structures we would like to exclude. These all feature a causal relation between $C_1$ and $C_2$. What we would like to do is reject these models on the grounds that $C_1$ and $C_2$ are observed to be marginally independent. Previously we rejected candidate causal structures on the grounds that independences in the structure should be reflected in the data. We would like to reverse this: any conditional independence observed in $P$ should be *explicable* by the structure $G$. This is the assumption of stability, or faithfulness:
+Now Pearl suggests that (in the spirit of selecting the most specific model) we should restrict our search to minimal structures with respect to $P$. This eliminates the example considered above. However, there are still minimal three-link structures we would like to exclude. These all feature a causal relation between $C_1$ and $C_2$. What we would like to do is reject these models on the grounds that $C_1$ and $C_2$ are observed to be marginally independent. Previously we rejected candidate causal structures on the grounds that independences in the structure should be reflected in the data. We would like to reverse this: any conditional independence observed in $P$ should be *explicable* by the structure $G$. This is the assumption of stability, or faithfulness:
 
 **Definition:** A distribution $P$ is **stable** with respect to a causal structure $G$ if $I(P) = I(G)$. In other words, all conditional independencies in the observable data are explained by the independencies that we can read from $G$ using d-separation.
 
-For any sensible measure over causal models on a given structure, almost all of the resulting distributions are stable with respect to the structure: you have to 'fine-tune' the parameters to generate conditional independencies that are not explicable by the structure. This is justification for the *assumption of stability*: any observed distribution is stable with respect to its causal structure. 
+For any sensible measure over causal models on a given structure, almost all of the resulting distributions are stable with respect to the structure: you have to 'fine-tune' the parameters to generate conditional independencies that are not explicable by the structure. This is justification for the *assumption of stability*: the distribution under consideration is stable with respect to its causal structure. If $P$ satisfies this assumption, any minimal causal structure $G$ satisfies $I(G) = I(P)$, so all are d-separation equivalent. In our running example, there is a unique such structure.
 
-Another example will serve to illustrate the importance of the assumption of stability.
+Although in this case we've identified the causal structure uniquely, this doesn't always happen. The best we can hope for is identification up to d-separation equivalence, as the next few examples will illustrate.
 
 ## More examples
+
+I'll introduce a few more examples to illustrate
 
 Yudkowsky's examples.
 

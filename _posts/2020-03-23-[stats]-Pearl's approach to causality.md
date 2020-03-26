@@ -65,9 +65,9 @@ An interesting point raised in the comment section of Yudkowsky's piece highligh
 
 ## Latent Causal Models
 
-The strongest assumption made above was the Markovian assumption that all causally relevant variables had been identified. We now consider relaxing this assumption.
+The Markovian assumption is the least convincing of the assumptions we've made so far. It requires that the observer accept that there are no unobserved variables of causal import. For most questions of interest, this is an unhelpful assumption- questioning the existence of such variables is a task we'd like to be able to solve using causal inference!
 
-Definitions of types of causes given latent causal models.
+
 
 ## Identifying causal effect
 

@@ -39,13 +39,23 @@ The causal model now specifies a functional relationship between variables. The 
 
 **Definition:** Given a causal structure $(V, G)$ and a distribution $P$ on $V$, we say that $P$ is **consistent** with $G$ if there exists a choice of causal model on $(V,G)$ such that the entailed distribution is $P$. Clearly if $P$ is consistent with $G$, $I(G) \subset I(P)$.  
 
+## Minimality and Stability
+
 Let's work with an example. Suppose there are three observable variables: the outcomes of two coin tosses $C_1$ and $C_2$, and the potential sounding of a bell $B$. As observers, all we have is the joint distribution. The process underlying the variables is that the coins were tossed independently and fairly, and in the case that both landed heads-up, the gong was sounded.
  
 (observation table) (correct structure)
 
-Suppose we were trying to infer the correct model, given our above assumptions. By assumptions 2 and 3, the correct structure is a DAG on three variables. Since no variable is independent of the other two, the graph must be connected. No two variables are conditionally independent given the other, so the structure can't be one variable causing the other two, or a chain of two causations. So if the causal structure $G$ has two edges, they must be from $C_1$ and $C_2$ into $B$. But there are models with three edges that are consistent with $P$ as well, as illustrated below. This is as far as we can get using only $I(G) \subset I(P)$.
+Suppose we were trying to infer the correct model, given our above assumptions. By assumptions 2 and 3, the correct structure is a DAG on three variables. Since no variable is independent of the other two, the graph must be connected. No two variables are conditionally independent given the other, so the structure can't be one variable causing the other two, or a chain of two causations. So if the causal structure $G$ has two edges, they must be from $C_1$ and $C_2$ into $B$. But there are models with three edges that are consistent with $P$ as well, as illustrated below. This is as far as we can get with the assumptions we've made so far.
 
 (models with three edges)
 
+Notice that one of the models shown above consists of the true two-edge structure with an additional causal link between $C_1$ and $C_2$. Pearl notes that by an Occam-like consideration, this structure is less preferable to the two-edge structure. In his typical combinatorial style, rather than introducing an Occam prior over causal networks, he instead puts a partial ordering on causal structures:
+
+**Definition:** We say that causal structure $(V, G_1)$ **dominates** $(V, G_2)$ (written $G_1 > G_2$ ) if any causal model on $G_2$ can be simulated by a causal model on $G_1$. This domination is strict $G_2$ does not dominate $G_1$. For example, $G$ dominates any subgraph. For a given distribution $P$, a causal structure $G$ is **minimal** with respect to $P$ if it does not strictly dominate any graph that is consistent with $P$. 
+
 
 ## Latent Causal Models
+
+## Identifying causal effect
+
+## Summary and further questions

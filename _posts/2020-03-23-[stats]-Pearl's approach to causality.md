@@ -41,7 +41,7 @@ The causal model now specifies a functional relationship between variables. The 
 
 ## Minimality and Stability
 
-Let's work with an example. Suppose there are three observable variables: the outcomes of two coin tosses $C_1$ and $C_2$, and the potential sounding of a bell $B$. As observers, all we have is the joint distribution. The process underlying the variables is that the coins were tossed independently and fairly, and in the case that both landed heads-up, the gong was sounded.
+The assumptions above are still not enough to identify the causal structure underlying an observed distribution. Let's work with an example. Suppose there are three observable variables: the outcomes of two coin tosses $C_1$ and $C_2$, and the potential sounding of a bell $B$. As observers, all we have is the joint distribution. The process underlying the variables is that the coins were tossed independently and fairly, and in the case that both landed heads-up, the gong was sounded.
  
 (observation table) (correct structure)
 

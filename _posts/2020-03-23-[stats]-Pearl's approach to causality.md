@@ -53,10 +53,25 @@ Notice that one of the models shown above consists of the true two-edge structur
 
 **Definition:** We say that causal structure $(V, G_1)$ **dominates** $(V, G_2)$ (written $G_1 > G_2$ ) if any causal model on $G_2$ can be simulated by a causal model on $G_1$. This domination is strict $G_2$ does not dominate $G_1$. For example, $G$ dominates any subgraph. For a given distribution $P$, a causal structure $G$ is **minimal** with respect to $P$ if it is consistent with $P$, and does not strictly dominate any structure that is consistent with $P$. 
 
-Now Pearl suggests that we should restrict our search to minimal structures with respect to $P$. This eliminates the example considered above. However, there are still minimal three-link structures we would like to exclude. These all feature a causal relation between $C_1$ and $C_2$. What we would like to do is reject these models on the grounds that $C_1$ and $C_2$ are observed to be marginally independent. Previously we rejected candidate causal structures on the grounds that independences in the structure should be reflected in the data. We would like to reverse this: any conditional independence observed in $P$ should be *explicable* by the structure $G$. 
+Now Pearl suggests that we should restrict our search to minimal structures with respect to $P$. This eliminates the example considered above. However, there are still minimal three-link structures we would like to exclude. These all feature a causal relation between $C_1$ and $C_2$. What we would like to do is reject these models on the grounds that $C_1$ and $C_2$ are observed to be marginally independent. Previously we rejected candidate causal structures on the grounds that independences in the structure should be reflected in the data. We would like to reverse this: any conditional independence observed in $P$ should be *explicable* by the structure $G$. This is the assumption of stability, or faithfulness:
 
+**Definition:** A distribution $P$ is **stable** with respect to a causal structure $G$ if $I(P) = I(G)$. In other words, all conditional independencies in the observable data are explained by the independencies that we can read from $G$ using d-separation.
+
+For any sensible measure over causal models on a given structure, almost all of the resulting distributions are stable with respect to the structure: you have to 'fine-tune' the parameters to generate conditional independencies that are not explicable by the structure. This is justification for the *assumption of stability*: any observed distribution is stable with respect to its causal structure. 
+
+Another example will serve to illustrate the importance of the assumption of stability.
+
+## More examples
+
+Yudkowsky's examples.
+
+Pearl's sneezing example.
 
 ## Latent Causal Models
+
+The strongest assumption made above was the Markovian assumption that all causally relevant variables had been identified. We now consider relaxing this assumption.
+
+Definitions of types of causes given latent causal models.
 
 ## Identifying causal effect
 

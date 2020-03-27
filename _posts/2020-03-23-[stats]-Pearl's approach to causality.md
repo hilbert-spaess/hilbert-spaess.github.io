@@ -73,7 +73,11 @@ The Markovian assumption is the least convincing of the assumptions we've made s
 
 projections.
 
-Broadening the class of candidate models to all minimal latent models consistent with a given distribution, the previous definition of inferred causation applies. Excitingly, even expanding our search space in this fashion, there are still circumstances under which causal links can be inferred (ie, an arrow is present in every minimal latent model consistent with the  data). Suppose
+Broadening the class of candidate models to all minimal latent models consistent with a given distribution, the previous definition of inferred causation applies. Excitingly, even expanding our search space in this fashion, there are still circumstances under which causal links can be inferred (ie, an arrow is present in every minimal latent model consistent with the  data). Let $R, D, M, C$ be four binary random variables: $R$ denotes whether a child's room is messy on a given day, $D$ denotes whether they ate their dinner, $M$ denotes whether their mother shouted, and $C$ denotes whether their mother cried. We have accumulated data for the joint distribution by observing these four variables over the past year. Suppose we observe that $R$ and $D$ are independent, that $C$ is independent of both $R$ and $D$ given $M$, and that there are no other independencies.
+
+(pictures of some models of this)
+
+The DAG must be connectec, as no variable is independent of the rest. The obvious model a) is consistent with the distribution, as is the less obvious model b). In both, note that there is a causal relation between $M$ and $C$. Reversing the arrow between $M$ and $C$ will break stability, as $R$ and $D$ will no longer be d-separated by the empty set. Similarly, postulating additional latent structure that explains $C$ and $M$ will break stability. So we can infer that the mother shouting causes the child to cry, purely from observational data.
 
 Potential cause, genuine cause, spurious association.
 
@@ -92,3 +96,4 @@ Identifiability of causal effect. Examples.
 3. Minimality vs priors etc. 
 4. What if you don't have the full joint distribuion? Sampling bias stuff.
 5. What does Pearl cite as good applications of his framework?
+6. Where does conditional independence come in as the sole arbiter of consistency?

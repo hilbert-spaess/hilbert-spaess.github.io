@@ -85,19 +85,22 @@ The DAG must be connectec, as no variable is independent of the rest. The obviou
 
 A common thread in previous examples is that inferring causal relation between $X$ and $Y$ required the introduction of auxiliary variables, and observation of particular patterns of dependency among these variables. Pearl notes that this shouldn't be that surprising, as the core of causal claims concerns the behaviour of $X$ and $Y$ in relation to a variable $Z$ that corresponds to external manipulation of $X$ or $Y$. The methodology of observational causal inference is to choose a variable $Z$ among the observed data to act as a 'virtual manipulator', as if 'nature had performed the experiment itself'.
 
-Suppose we have an observed distribution $P$ (stable w.r.t its causal structure) on observed variables $O$, and are attempting to infer the causal relation between $X$ and $Y$. We say that $X$ has a **genuine causal influence** on $Y$ if there is a directed path between $X$ and $Y$ in all minimal structures compatible with the distribution. We say that $X$ has a **potential causal influence** on $Y$ if, in every compatible structure, there is either a directed path $X$ to $Y$ or there is a latent common cause. We say there is a **spurious association** between the variables if for every minimal structure there is a latent common cause. Otherwise there is an **undetermined relationship** between $X$ and $Y$. It turns out that there are simple local criteria for ascertaining these relationships.
+Suppose we have an observed distribution $P$ (stable w.r.t its causal structure) on observed variables $O$, and are attempting to infer the causal relation between $X$ and $Y$. We say that $X$ has a **genuine causal influence** on $Y$ if there is a directed edge between $X$ and $Y$ in all minimal structures compatible with the distribution. We say that $X$ has a **potential causal influence** on $Y$ if, in every compatible structure, there is either a directed path $X$ to $Y$ or there is a latent common cause. We say there is a **spurious association** between the variables if for every minimal structure there is a latent common cause. Otherwise there is an **undetermined relationship** between $X$ and $Y$. It turns out that there are simple local criteria for ascertaining these relationships.
 
 **Claim:** $X$ has a potential causal influence on $Y$ iff:
 1. $X$ and $Y$ are dependent in every context (ie given that a set of variables is tied to specific values).
 2. There exists a variable $Z$ and a context $S$ such that $X \perp Z \vert S$ and $Z \not \perp Y \vert S$.
 
+**Proof:** The if component is fairly straightforward. The fact that $X$ and $Y$ are dependent in every context implies that there exists a path between the two that is not d-separated by the rest of the variables. This is either a direct edge or a latent cause. The second condition precludes an arrow from $Y$ to $X$. The only-if part is a combinatorics problem about edge-flipping.
 
-
-**Definition:** A variable $X$ has **inferable genuine causal influence** on another variable $Y$ if there exists a variable $Z$ such that either:
+**Claim:** A variable $X$ has a genuine causal influence on $Y$ iff there exists a variable $Z$ such that:
 1. $X$ and $Y$ are dependent in any context and there exists a context $S$ such that: $Z$ is a potential cause of $X$, $Z$ and $Y$ are dependent given $S$, and $Z$ and $Y$ are independent given $S \cup X$.
-2. $X$ and $Y$ are in the transitive closure of the above relation.
 
-**Definition:** Variables $X$ and $Y$ are **spuriously associated** if they are dependent in some context and there exist two variables $Z_1, Z_2$ and two contexts $S_1, S_2$ such that disqualify $X$ as a cause of $Y$ and $Y$ as a cause of $X$.
+**Proof:** If component is easy again. Only-if component another combinatorics problem.
+
+**Claim:** Variables $X$ and $Y$ are spuriously associated iff they are dependent in every context and there exist two variables $Z_1, Z_2$ and two contexts $S_1, S_2$ that disqualify $X$ as a cause of $Y$ and $Y$ as a cause of $X$, as in the first claim.
+
+So checking for an inferrable genuine causal relation is as simple as looking for a third variable $Z$ with the desired independence properties. In the example of the mother and child above, $C$ shows that $R$ is a potential cause of $M$. Then $R$ shows that $M$ is a genuine cause of $C$. It is not possible to find a third variable to demonstrate that $R$ is a genuine cause of $M$, showing that there exist structures in which $R$ and $M$ have a common latent cause.
 
 ## Identifying causal effect
 

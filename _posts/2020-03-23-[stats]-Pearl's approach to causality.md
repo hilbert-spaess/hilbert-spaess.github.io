@@ -110,7 +110,7 @@ To understand the consequences of intervention, Pearl introduces the 'do' operat
 
 **Definition:** The **causal effect** of $Y$ on $X$, or the **distribution after intervention Y = y**, is written $P(X \vert \hat{y})$. For each realisation $y$ of $Y$, it gives the distribution induced by deleting all equations in the causal model corresponding to variables of $Y$, and substituting $Y = y$ in the remaining equations. This corresponds to restricting the causal model to the substructure formed by deleting all edges into $Y$.
 
-
+Suppose we want to compute the causal effect of smoking on lung cancer. As usual, we can't infer anything about causation from just a distribution over smoking and cancer (some tobacco companies maintain that the relationship is due to a latent common cause, rather than a direct link from smoking to cancer). The problem is resolved if we introduce a new variable "Tar deposit levels" such that Smoking and Cancer are conditionally independent given Tar. Assuming that there is a causal link between smoking and tar deposit levels, and not vice versa, the causal structure is unambiguously determined as Smoking -> Tar -> Cancer. We can now compute the causal effect of smoking on cancer :).
 
 (alternative formulation postulating new variables y)
 

@@ -92,3 +92,4 @@ Identifiability of causal effect. Examples.
 2. Efficiently finding conditional independencies, and computing d-separation equivalence classes. Complexity classes of these problems.
 3. Minimality vs priors etc. 
 4. What if you don't have the full joint distribuion? Sampling bias stuff.
+5. What does Pearl cite as good applications of his framework?

@@ -104,11 +104,15 @@ So checking for an inferrable genuine causal relation is as simple as looking fo
 
 ## Identifying causal effect
 
-The 'do' operation on causal networks. Relation to Rubin's action and potential outcome framework.
+Distributions and causal structures are useful for answering different questions. With the observable distribution, we can answer questions like, "Given that the child's room is messy, what is the probability that the child cries today?" With a causal structure, we can answer questions like "What happens if I mess up the child's room?". To see the difference, note that if messiness of room and angriness of mother were explicable by a latent common cause, we wouldn't expect messing up the room to affect the chances of shouting and crying later on. If messiness of room was indeed a cause of angriness of mother, we would expect to see such a difference. Structureless distributions give us information about *association*, and structures allow us to consider the outcomes of *intervention*.
 
-Definitions of causal effect using the 'do' operation.
+To understand the consequences of intervention, Pearl introduces the 'do' operation. Let $P$ a distribution induced by a causal model with structure $G$, and let $X$ and $Y$ be two sets of observed variables. The probability conditioned on setting $Y$ to $y$ is denoted $P(X \vert Y = y)$.
 
-Identifiability of causal effect. Examples.
+**Definition:** The **causal effect** of $Y$ on $X$, or the **distribution after intervention Y = y**, is written $P(X \vert \hat{y})$. For each realisation $y$ of $Y$, it gives the distribution induced by deleting all equations in the causal model corresponding to variables of $Y$, and substituting $Y = y$ in the remaining equations. This corresponds to restricting the causal model to the substructure formed by deleting all edges into $Y$.
+
+The causal effect is the change in observed distribution after intervention
+
+(alternative formulation postulating new variables y)
 
 ## Summary and further questions
 

@@ -71,7 +71,7 @@ The Markovian assumption is the least convincing of the assumptions we've made s
 
 **Definition:** A **latent structure** is a pair $L = (G, O)$, where $D$ is a causal structure over $V$, and $O \subset V$ is a set of observed variables. That is, a latent structure is a substructure of a larger causal structure. The definitions of minimality and consistency extend to a latent structure. A distribution $P$ is stable with respect to the latent structure if all independencies among observed variables are consequences of the causal structure $G$.
 
-projections.
+(projections).
 
 Broadening the class of candidate models to all minimal latent models consistent with a given distribution, the previous definition of inferred causation applies. Excitingly, even expanding our search space in this fashion, there are still circumstances under which causal links can be inferred (ie, an arrow is present in every minimal latent model consistent with the  data). Let $R, D, M, C$ be four binary random variables: $R$ denotes whether a child's room is messy on a given day, $D$ denotes whether they ate their dinner, $M$ denotes whether their mother shouted, and $C$ denotes whether their mother cried. We have accumulated data for the joint distribution by observing these four variables over the past year. Suppose we observe that $R$ and $D$ are independent, that $C$ is independent of both $R$ and $D$ given $M$, and that there are no other independencies.
 
@@ -79,7 +79,21 @@ Broadening the class of candidate models to all minimal latent models consistent
 
 The DAG must be connectec, as no variable is independent of the rest. The obvious model a) is consistent with the distribution, as is the less obvious model b). In both, note that there is a causal relation between $M$ and $C$. Reversing the arrow between $M$ and $C$ will break stability, as $R$ and $D$ will no longer be d-separated by the empty set. Similarly, postulating additional latent structure that explains $C$ and $M$ will break stability. So we can infer that the mother shouting causes the child to cry, purely from observational data.
 
-Potential cause, genuine cause, spurious association.
+(equivalence classes of compatible DAGs). (maybe alg to compute them).
+
+## Criteria for inferrability of causal relations
+
+A common thread in previous examples is that inferring causal relation between $X$ and $Y$ required the introduction of auxiliary variables, and observation of particular patterns of dependency among these variables. Pearl notes that this shouldn't be that surprising, as the core of causal claims concerns the behaviour of $X$ and $Y$ in relation to a variable $Z$ that corresponds to external manipulation of $X$ or $Y$. The methodology of observational causal inference is to choose a variable $Z$ among the observed data to act as a 'virtual manipulator', as if 'nature had performed the experiment itself'.
+
+**Definition:** A variable $X$ has **inferable potential causal influence** on another variable $Y$ if the following conditions hold:
+1. $X$ and $Y$ are dependent in every context (ie given that a set of variables is tied to specific values).
+2. There exists a variable $Z$ and a context $S$ such that $X perp Z \vert S$ and $Z \not \perp Y \vert S$.
+
+**Definition:** A variable $X$ has **inferable genuine causal influence** on another variable $Y$ if there exists a variable $Z$ such that either:
+1. $X$ and $Y$ are dependent in any context and there exists a context $S$ such that: $Z$ is a potential cause of $X$, $Z$ and $Y$ are dependent given $S$, and $Z$ and $Y$ are independent given $S \cup X$.
+2. $X$ and $Y$ are in the transitive closure of the above relation.
+
+**Definition:** Variables $X$ and $Y$ are **spuriously associated** if they are dependent in some context and there exist two variables $Z_1, Z_2$ and two contexts $S_1, S_2$ such that disqualify $X$ as a cause of $Y$ and $Y$ as a cause of $X$.
 
 ## Identifying causal effect
 

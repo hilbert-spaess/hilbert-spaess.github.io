@@ -110,7 +110,7 @@ To understand the consequences of intervention, Pearl introduces the 'do' operat
 
 **Definition:** The **causal effect** of $Y$ on $X$, or the **distribution after intervention Y = y**, is written $P(X \vert \hat{y})$. For each realisation $y$ of $Y$, it gives the distribution induced by deleting all equations in the causal model corresponding to variables of $Y$, and substituting $Y = y$ in the remaining equations. This corresponds to restricting the causal model to the substructure formed by deleting all edges into $Y$.
 
-The causal effect is the change in observed distribution after intervention
+
 
 (alternative formulation postulating new variables y)
 

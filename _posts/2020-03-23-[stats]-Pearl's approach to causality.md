@@ -67,14 +67,13 @@ An interesting point raised in the comment section of Yudkowsky's piece highligh
 
 ## Latent Causal Models
 
-The Markovian assumption is the least convincing of the assumptions we've made so far. It requires that the observer accept that there are no unobserved variables of causal import. For most questions of interest, this is an unhelpful assumption- questioning the existence of such variables is a task we'd like to be able to solve using causal inference!
-There is a natural extension of the previous work to this setting. 
+The Markovian assumption is the least convincing of the assumptions we've made so far. It requires that the observer accept that there are no unobserved variables of causal import. For most questions of interest, this is an unhelpful assumption. There is a natural extension of the previous work to a setting that doesn't preclude models including latent variables. 
 
-**Definition:** A **latent structure** is a pair $L = (G, O)$, where $D$ is a causal structure over $V$, and $O \subset V$ is a set of observed variables. That is, a latent structure is a substructure of a larger causal structure. The definitions of minimality and consistency extend to a latent structure.
+**Definition:** A **latent structure** is a pair $L = (G, O)$, where $D$ is a causal structure over $V$, and $O \subset V$ is a set of observed variables. That is, a latent structure is a substructure of a larger causal structure. The definitions of minimality and consistency extend to a latent structure. A distribution $P$ is stable with respect to the latent structure if all independencies among observed variables are consequences of the causal structure $G$.
 
-Stability and projections.
+projections.
 
-Cold example.
+Broadening the class of candidate models to all minimal latent models consistent with a given distribution, the previous definition of inferred causation applies. Excitingly, even expanding our search space in this fashion, there are still circumstances under which causal links can be inferred (ie, an arrow is present in every minimal latent model consistent with the  data). Suppose
 
 Potential cause, genuine cause, spurious association.
 

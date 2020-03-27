@@ -85,6 +85,8 @@ The DAG must be connectec, as no variable is independent of the rest. The obviou
 
 A common thread in previous examples is that inferring causal relation between $X$ and $Y$ required the introduction of auxiliary variables, and observation of particular patterns of dependency among these variables. Pearl notes that this shouldn't be that surprising, as the core of causal claims concerns the behaviour of $X$ and $Y$ in relation to a variable $Z$ that corresponds to external manipulation of $X$ or $Y$. The methodology of observational causal inference is to choose a variable $Z$ among the observed data to act as a 'virtual manipulator', as if 'nature had performed the experiment itself'.
 
+(understand the following in terms of the presence of the edges in minimal latent models: hopefully provide proof?)
+
 **Definition:** A variable $X$ has **inferable potential causal influence** on another variable $Y$ if the following conditions hold:
 1. $X$ and $Y$ are dependent in every context (ie given that a set of variables is tied to specific values).
 2. There exists a variable $Z$ and a context $S$ such that $X perp Z \vert S$ and $Z \not \perp Y \vert S$.

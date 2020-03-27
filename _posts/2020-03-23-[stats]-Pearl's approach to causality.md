@@ -85,11 +85,13 @@ The DAG must be connectec, as no variable is independent of the rest. The obviou
 
 A common thread in previous examples is that inferring causal relation between $X$ and $Y$ required the introduction of auxiliary variables, and observation of particular patterns of dependency among these variables. Pearl notes that this shouldn't be that surprising, as the core of causal claims concerns the behaviour of $X$ and $Y$ in relation to a variable $Z$ that corresponds to external manipulation of $X$ or $Y$. The methodology of observational causal inference is to choose a variable $Z$ among the observed data to act as a 'virtual manipulator', as if 'nature had performed the experiment itself'.
 
-(understand the following in terms of the presence of the edges in minimal latent models: hopefully provide proof?)
+Suppose we have an observed distribution $P$ (stable w.r.t its causal structure) on observed variables $O$, and are attempting to infer the causal relation between $X$ and $Y$. We say that $X$ has a **genuine causal influence** on $Y$ if there is a directed path between $X$ and $Y$ in all minimal structures compatible with the distribution. We say that $X$ has a **potential causal influence** on $Y$ if, in every compatible structure, there is either a directed path $X$ to $Y$ or there is a latent common cause. We say there is a **spurious association** between the variables if for every minimal structure there is a latent common cause. Otherwise there is an **undetermined relationship** between $X$ and $Y$. It turns out that there are simple local criteria for ascertaining these relationships.
 
-**Definition:** A variable $X$ has **inferable potential causal influence** on another variable $Y$ if the following conditions hold:
+**Claim:** $X$ has a potential causal influence on $Y$ iff:
 1. $X$ and $Y$ are dependent in every context (ie given that a set of variables is tied to specific values).
-2. There exists a variable $Z$ and a context $S$ such that $X perp Z \vert S$ and $Z \not \perp Y \vert S$.
+2. There exists a variable $Z$ and a context $S$ such that $X \perp Z \vert S$ and $Z \not \perp Y \vert S$.
+
+
 
 **Definition:** A variable $X$ has **inferable genuine causal influence** on another variable $Y$ if there exists a variable $Z$ such that either:
 1. $X$ and $Y$ are dependent in any context and there exists a context $S$ such that: $Z$ is a potential cause of $X$, $Z$ and $Y$ are dependent given $S$, and $Z$ and $Y$ are independent given $S \cup X$.

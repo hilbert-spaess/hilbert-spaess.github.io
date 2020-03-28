@@ -14,7 +14,7 @@ Two variables $x$ and $y$ are independent if $P(x \vert y) = P(x)$, so that the 
 
 A Bayesian network is a suggestive shorthand for a joint probability density. If there is a hierarchy of dependencies among the variables involved, then the joint density can be written as a product of conditional densities. For example, in the survival curve model I've previously discussed, there's a factorisation $P(J, k, m, x) = P(J)P(k\vert J)P(m\vert J)P(x\vert k,m)$. This has a clear representation as a directed acyclic graph (DAG), with an arrow from $x$ to $y$ if $x$ features in the conditional density of $y$. 
 
-![DAG example](/_posts/dagitty-model.jpg){:class="img-responsive"}
+![DAG example](/images/dagitty-model.jpg){:class="img-responsive"}
 
 In general, given a joint density $P$ over an ordered set of variables $X_1, ..., X_n$, we can decompose it as $\prod_{i=1}^n P(x_i \vert x_1, ..., x_{i-1})$. We term a minimal set $pa_i$ of predecessors of $x_i$ a set of **Markovian parents** of $x_i$. We say that the distribution $P$ is **represented** by a DAG $G$ if there is an ordering of the vertices of $G$ such that directed edges correspond precisely to Markovian parenthood. In the survival curve example above, we have represented the joint density by a three-tiered DAG. $J$ is the sole Markovian parent of $m,k$, and the set of Markovian parents of $x$ is $\{m,k\}$. Note that the model admits functional interpretations of these arrows. To a human eye, the diagram both simplifies the task of computing the density, and suggests an explanation for dependencies among the variables.
 

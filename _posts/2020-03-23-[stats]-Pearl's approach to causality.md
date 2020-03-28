@@ -20,6 +20,8 @@ In general, given a joint density $P$ over an ordered set of variables $X_1, ...
 
 **Definition:** A set of **Markovian parents** of $x_i$ is a minimal set $pa_i$ of predecessors of $x_i$ such that $P(x_i \vert x_1, ..., x_{i-1}) = P(x_i \vert pa_i)$.
 
+**Definition:** The distribution $P$ is **represented** by a DAG $G$ if there is a bijection between the vertices of $G$ and $X_1, ..., X_n$ such that the predecessors of each vertex are a set of Markovian parents.
+
 We term a minimal set $pa_i$ of predecessors of $x_i$ a set of **Markovian parents** of $x_i$. We say that the distribution $P$ is **represented** by a DAG $G$ if there is an ordering of the vertices of $G$ such that directed edges correspond precisely to Markovian parenthood. In the survival curve example above, we have represented the joint density by a three-tiered DAG. $J$ is the sole Markovian parent of $m,k$, and the set of Markovian parents of $x$ is $\{m,k\}$. Note that the model admits functional interpretations of these arrows. To a human eye, the diagram both simplifies the task of computing the density, and suggests an explanation for dependencies among the variables.
 
 Key idea: we get probabilistic data. Humans expect observed indepencies to *have an explanation*: ie to be engendered by a causal graphical model.

@@ -44,6 +44,8 @@ So the independences that are 'forced to hold' by the structure can be read off 
 
 Note that a graph such that $I(G) = I(P)$ is definitely not unique up to graph isomorphism. So there is not a unique graph structure compatible with a given distribution. This will be important as we move on to causality.
 
+**Theorem:** Given a labelling of the vertices of $G$, if $I(G) \subset I(P)$, then $P$ is represented by $G$. (This follows immediately from the fact that vertices are d-separated from non-descendants by their predecessors, so the predecessors are indeed Markov parents).
+
 ## Causal models
 
 At this stage, we've noted that conditional independencies between variables under a distribution allow us to classify the Bayesian networks compatible with the distribution, and given a simple algorithmic criterion (d-separation) for looking up independencies of a distribution given a representative Bayesian network. Now we can start to talk about causality with a straight face, by introducing graphical causal models. We work in the context of a set of **observed variables**, with each variable a function of a subset of the other variables (with random peturbation).

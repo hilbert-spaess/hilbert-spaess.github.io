@@ -40,6 +40,10 @@ These three dependence structures will actually be enough to give a criterion fo
 
 So the independences that are 'forced to hold' by the structure can be read off using the criterion of d-separation. Furthermore, for almost all compatible distributions, these are precisely the independences that occur.
 
+**Definition:** For a distribution $P$, we write $I(P)$ for the set of conditional independencies observed in $P$. For a DAG $G$ we write $I(G)$ for the set of d-separation statements entailed by $G$. The theorem above states that if $P$ is represented by $G$, then $I(G) \subset I(P)$, and for almost all such $P$, $I(G) = I(P)$. 
+
+Note that a graph such that $I(G) = I(P)$ is definitely not unique up to graph isomorphism. So there is not a unique graph structure compatible with a given distribution. This will be important as we move on to causality.
+
 ## Causal models
 
 At this stage, we've noted that conditional independencies between variables under a distribution allow us to classify the Bayesian networks compatible with the distribution, and given a simple algorithmic criterion (d-separation) for looking up independencies of a distribution given a representative Bayesian network. Now we can start to talk about causality with a straight face, by introducing graphical causal models. We work in the context of a set of **observed variables**, with each variable a function of a subset of the other variables (with random peturbation).

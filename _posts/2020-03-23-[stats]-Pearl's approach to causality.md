@@ -48,20 +48,22 @@ Note that a graph such that $I(G) = I(P)$ is definitely not unique up to graph i
 
 ## Causal models
 
-At this stage, we've noted that conditional independencies between variables under a distribution allow us to classify the Bayesian networks compatible with the distribution, and given a simple algorithmic criterion (d-separation) for looking up independencies of a distribution given a representative Bayesian network. Now we can start to talk about causality with a straight face, by introducing graphical causal models. We work in the context of a set of **observed variables**, with each variable a function of a subset of the other variables (with random peturbation).
+At this stage, we've noted that conditional independencies between variables under a distribution allow us to classify the Bayesian networks compatible with the distribution, and given a simple algorithmic criterion (d-separation) for looking up independencies of a distribution given a representative Bayesian network. 
+
+Now we note that DAGs have a natural causal interpretation, translating a directed edge with the phrase "has an influence on". A causal structure will be a DAG with randoma variables as vertices, and arrows indicating a direction functional link.
 
 **Definition:** A **causal structure** is a pair $(V, G)$, where $V = \{X_1, ..., X_n\}$ is a set of variables, and $G$ is a DAG with vertex-set $V$. Each edge of $G$ represents a functional relationship between vertices.
 
-The causal structure specifies the underlying functional relationships. Given such a structure, a specific choice of functions will be termed a causal model:
+The causal structure specifies the underlying functional relationships. Given such a structure, a specific choice of (non-deterministic) functions will be termed a causal model:
 
 **Definition:** A **causal model** on a causal structure $(V,G)$ is a specification of a function $x_i = f_i(pa_i, u_i)$ for each $X_i \in V$, where $PA_i$ is the parent-set of $X_i$, and the $u_i$ are independent vectors of uniform random variables.
 
 The causal model now specifies a functional relationship between variables. The relevance of this definition of a causal model is predicated on three assumptions:
 1. "Y is a (maybe non-deterministic) function of variables including X" is an adequate formalisation of "X exerts a causal influence on Y".
-2. It suffices to consider 'Markovian' causal models (models such that the random disturbances 'u_i' are independent). This condition guarantees that there are no spurious dependencies between variables. This is a granularity assumption: we suppose that our model is detailed enough to capture all relevant variables, so that there are no unexplained correlations in observed data. It is obviously difficult to guarantee this a priori, so this is the assumption that we will violate later, when we consider semi-Markovian or 'latent' models.
+2. It suffices to consider 'Markovian' causal models (models such that the random disturbances $u_i$ are independent). For such models, the induced distribution is represented by its causal structure as a Bayesian network. This condition guarantees that there are no spurious dependencies between variables. This is a granularity assumption: we suppose that our model is detailed enough to capture all relevant variables, so that there are no unexplained correlations in observed data. It is obviously difficult to guarantee this a priori, so this is the assumption that we will violate later, when we consider semi-Markovian or 'latent' models.
 3. It suffices to consider acyclic causal structures. This is another granularity assumption: our variables are sufficiently specific that there is no room for a cycle of causal dependencies.
 
-**Definition:** Given a causal structure $(V, G)$ and a distribution $P$ on $V$, we say that $P$ is **consistent** with $G$ if there exists a choice of causal model on $(V,G)$ such that the entailed distribution is $P$. Clearly if $P$ is consistent with $G$, $I(G) \subset I(P)$.  
+**Definition:** Given a causal structure $(V, G)$ and a distribution $P$ on $V$, we say that $P$ is **consistent** with $G$ if there exists a choice of causal model on $(V,G)$ such that the entailed distribution is $P$. Clearly if $P$ is consistent with $G$, $I(G) \subset I(P)$. The converse holds, as above.
 
 ## Minimality and Stability
 

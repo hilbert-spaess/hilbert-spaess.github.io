@@ -30,7 +30,11 @@ Here are DAG representations for three simple three-variable distributions:
 
 ![Three DAGs](/images/three_dags.jpg)
 
+Lets call these a "chain", a "wedge", and a "vee". For a long path of edges, any pair of consecutive edges come together to form one of these three structures. For the first two, any two of the three variables are marginally dependent. In the chain, we have $C \perp A \vert B$. In other words, finding out about $B$ means that $A$ no longer tells you anything about $C$. This follows precisely from the Markovian observation (to get better intuition, you can think causally, even though we haven't mentioned causation yet!) Similarly, in the wedge, no two variables are independent, but $E \perp F \vert D$. The vee is slightly different: $G$ and $H$ are marginally independent, but conditioning on $I$ might render them dependent. 
 
+These three dependence structures will actually be enough to give a criterion for ascertaining all conditional independencies that follow from the structure of a graph!
+
+**Definition:** 
 
 ## Causal models
 

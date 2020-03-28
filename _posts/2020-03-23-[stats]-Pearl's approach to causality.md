@@ -32,9 +32,13 @@ Here are DAG representations for three simple three-variable distributions:
 
 Lets call these a "chain", a "wedge", and a "vee". For a long path of edges, any pair of consecutive edges come together to form one of these three structures. For the first two, any two of the three variables are marginally dependent. In the chain, we have $C \perp A \vert B$. In other words, finding out about $B$ means that $A$ no longer tells you anything about $C$. This follows precisely from the Markovian observation (to get better intuition, you can think causally, even though we haven't mentioned causation yet!) Similarly, in the wedge, no two variables are independent, but $E \perp F \vert D$. The vee is slightly different: $G$ and $H$ are marginally independent, but conditioning on $I$ might render them dependent. 
 
-These three dependence structures will actually be enough to give a criterion for ascertaining all conditional independencies that follow from the structure of a graph!
+These three dependence structures will actually be enough to give a criterion for ascertaining all conditional independencies that follow from the structure of a graph! We'll look for one of the 'three reasons' above that conditioning on one variable might make another two independent.
 
-**Definition:** 
+**Definition:** Let $x$ and $y$ be vertices of a DAG $G$, and let $Z$ be a subset of the vertex-set. A path between $x$ and $y$ is any chain of edges (ignoring direction) that starts at $x$ and ends at $y$. A path is **d-separated** by $Z$ if it contains a chain or a wedge with central vertex in $Z$, or it contains a vee with central vertex and all descendants thereof not in $Z$. We say that $x$ and $y$ are **d-separated in G** if any path between them is d-separated by $Z$. We say sets of vertices $X$ and $Y$ are d-separated if any $x \in X, y \in Y$ are d-separated.
+
+**Theorem:** If $X$ and $Y$ are d-separated by $Z$ in $G$, for any distribution $P$ represented by $G$, $(X \perp_P Y) \vert Z$. Conversely, if $X$ and $Y$ are not d-separated, then for almost all distributions represented by $G$, $X$ and $Y$ are conditionally dependent given $Z$.
+
+So the independences that are 'forced to hold' by the structure can be read off using the criterion of d-separation. Furthermore, for almost all compatible distributions, these are precisely the independences that occur.
 
 ## Causal models
 

@@ -15,5 +15,7 @@ When aggregated, Treatment 2 is more likely to save lives than treatment 1. Howe
 
 Let's be precise about what conclusions there are to be drawn from the dataset. The last row gives us estimates for $P(O \vert T)$: the probability of good outcome, given the treatment chosen. This is a conditional probability, *not an interventional probability*. It's very different from the probability of a good outcome given that we step into the causal structure and artificially fix the choice of treatment. Indeed, one reason for this is given by the table: it looks like many more low-risk patients are prescribed with treatment 2. To actually talk about $P(O \vert \hat{T})$, we need to explicitly consider the causal structure. Here are some candidates:
 
-![t-o](/images/t-o.jpg)
+![t-o](/images/t-o.jpg) | ![t-o-s-vee](/images/t-o-s-vee.jpg)
+Structure 1 | Structure 2 
 
+Risk 

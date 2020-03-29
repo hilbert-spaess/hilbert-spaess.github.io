@@ -2,13 +2,13 @@ This is a follow-up to my [previous summary](https://hilbert-spaess.github.io/st
 
 ## Medical Trials
 
-Suppose we are comparing two treatments for a disease. Suppose the disease has two severity levels, and everyone who catches it either dies or is cured. In other words, suppose we have an observed distribution over three binary variables. The following are some imaginary data: 
+Suppose we are comparing two treatments for a disease. Suppose the disease has two severity levels, and everyone who catches it either dies or is cured. In other words, suppose we have an observed distribution over three binary variables. The following are some imaginary data (showing the fraction of observed patients with a positive outcome $O$: 
 
-| | **Treatment 1** | **Treatment 2**
-|**Low risk**| a | b
-|**High Risk**| c | d
+| | **Treatment T = 1** | **Treatment T = 2**
+|**Risk R = Low**| a | b
+|**Risk H = High**| c | d
 |**Total** | e | f
 
-When aggregated, Treatment 2 is more likely to save lives than treatment 1. However, in both low risk and high risk circumstances, Treatment 1 is preferable. The surprising conclusion is that taking into account an extra variable reverses the conclusion that might be drawn by looking at only the total figures.
+When aggregated, Treatment 2 is more likely to save lives than treatment 1. However, in both low risk and high risk circumstances, Treatment 1 is preferable. The surprising conclusion is that taking into account an extra variable reverses the trend that might be extrapolated from the total figures.
 
-Let's be precise about what conclusions there are to be drawn from the dataset. The last row gives us estimates for $P(\textnormal{Outcome} \vert \textnormal{Treatment})$. 
+Let's be precise about what conclusions there are to be drawn from the dataset. The last row gives us estimates for $P(O \vert T)$: the probability of good outcome, given the treatment chosen. This is a conditional probability, *not an interventional probability*. It's very different from the probability of a good outcome given that we step into the causal structure and artificially fix the choice of treatment. Indeed, one reason for this is given by the table: it looks like many more low-risk patients are prescribed with treatment 2. To actually talk about $P(O \vert

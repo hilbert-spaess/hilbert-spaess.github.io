@@ -146,5 +146,7 @@ Suppose we want to compute the causal effect of smoking on lung cancer. As usual
 2. Efficiently finding conditional independencies, and computing d-separation equivalence classes. Complexity classes of these problems.
 3. Minimality vs priors etc. 
 4. What if you don't have the full joint distribuion? Sampling bias stuff.
-5. What does Pearl cite as good applications of his framework?
+5. What does Pearl cite as **good applications** of his framework? (maybe check the Book of Why)
 6. Where does conditional independence come in as the sole arbiter of consistency?
+7. How does time fit into this?
+8. Continuous variables?

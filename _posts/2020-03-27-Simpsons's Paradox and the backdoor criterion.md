@@ -9,4 +9,6 @@ Suppose we are comparing two treatments for a disease. Suppose the disease has t
 |**High Risk**| c | d
 |**Total** | e | f
 
-When aggregated, Treatment 2 is more likely to save lives than treatment 1. However, in both low risk and high risk circumstances, Treatment 1 is preferable. Simpson's paradox is the observation that taking into account an extra variable reverses the conclusion that might be drawn by looking at only the total figures.
+When aggregated, Treatment 2 is more likely to save lives than treatment 1. However, in both low risk and high risk circumstances, Treatment 1 is preferable. The surprising conclusion is that taking into account an extra variable reverses the conclusion that might be drawn by looking at only the total figures.
+
+Let's be precise about what conclusions there are to be drawn from the dataset. The last row gives us estimates for $P(\textnormal{Outcome} \vert \textnormal{Treatment})$. 

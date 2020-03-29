@@ -25,14 +25,18 @@ Averaging over the severity levels corresponds to looking at $\sum_{S}P(S)P(O \v
 
 As a patient looking to maximise our chances of recovery, the interventional probability is what is interesting, so the trend observed by adjusting for severity level is what is relevant to our choice. Hence we should choose the first treatment.
 
+## What assumptions to we need to compute causal effect?
+
+The general problem suggested by Simpson's paradox is working out when we have enough information about the causal structure $G$ to compute the causal effect of one variable on another. In the above example we needed the relatively strong assumption that there were no latent variables affecting outcome (ie that the model was Markovian).
+
 ## Smoking
 
-Let's go through another example, with a different underlying causal structure.
+Let's go through another example, with a different underlying causal structure. The numbers in each cell are the fractions of people in each category who develop lung cancer, given their 
 
 | | **Smoker S = 0**| **Smoker S = 1**
-|**Tar T = 0**| | 
-|**Tar T = 1**| |
-| **Total**| | 
+|**Tar T = 0**| 83/200 | 13/30
+|**Tar T = 1**| 2/11 | 19/98
+| **Total**| 85/211 | 32/128
 
 
 ## Backdoor criterion: when can we compute causal effect?

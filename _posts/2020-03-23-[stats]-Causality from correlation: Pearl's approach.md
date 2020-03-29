@@ -150,3 +150,4 @@ Suppose we want to compute the causal effect of smoking on lung cancer. As usual
 6. Where does conditional independence come in as the sole arbiter of consistency?
 7. How does time fit into this?
 8. Continuous variables?
+9. Good intuitions for the various conditions, criteria and theorems?

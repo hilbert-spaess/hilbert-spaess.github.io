@@ -18,4 +18,6 @@ Let's be precise about what conclusions there are to be drawn from the dataset. 
 ![t-o](/images/t-o.jpg) | ![t-o-s-vee](/images/t-o-s-vee.jpg) | ![triangle-tso.jpg](/images/triangle-tso.jpg)
 Structure 1 | Structure 2 | Structure 3
 
-Severity and outcome are not independent, so the first causal structure doesn't work. As noted above, treatment and severity are not independent, so the second structure won't work. The third structure is compatible with the distribution. For this to be the correct causal structure we need to assume that no variables other than severity and treatment will have a causal influence on outcome.
+Severity and outcome are not independent, so the first causal structure doesn't work. As noted above, treatment and severity are not independent, so the second structure won't work. The third structure is compatible with the distribution. For this to be the correct causal structure we need to assume that no variables other than severity and treatment will have a causal influence on outcome. Now 
+
+The total figures correspond to looking at the conditional probabilities $P(O \vert T)$.

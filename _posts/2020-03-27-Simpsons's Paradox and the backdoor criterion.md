@@ -24,3 +24,13 @@ The total figures correspond to looking at the conditional probabilities $P(O \v
 Averaging over the severity levels corresponds to looking at $\sum_{S}P(S)P(O \vert T, S) = P(O \vert \hat{T})$.
 
 As a patient looking to maximise our chances of recovery, the interventional probability is what is interesting, so the trend observed by adjusting for severity level is what is relevant to our choice. Hence we should choose the first treatment.
+
+## Smoking
+
+Let's go through another example, with a different underlying causal structure.
+
+| | Tar T = 0 | Tar T = 1
+|Smoker S = 0 | | 
+| Smoker S = 1 | |
+
+## Backdoor criterion: when can we compute causal effect?

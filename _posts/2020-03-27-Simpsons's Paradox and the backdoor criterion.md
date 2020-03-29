@@ -29,8 +29,10 @@ As a patient looking to maximise our chances of recovery, the interventional pro
 
 Let's go through another example, with a different underlying causal structure.
 
-| | Tar T = 0 | Tar T = 1
-|Smoker S = 0 | | 
-| Smoker S = 1 | |
+| | **Smoker S = 0**| **Smoker S = 1**
+|**Tar T = 0 **| | 
+|**Tar T = 1 **| |
+| **Total**| | 
+
 
 ## Backdoor criterion: when can we compute causal effect?

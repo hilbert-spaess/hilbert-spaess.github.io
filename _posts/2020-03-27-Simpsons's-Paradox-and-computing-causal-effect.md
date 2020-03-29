@@ -1,6 +1,6 @@
 <script type="text/x-mathjax-config"> MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']], processEscapes: true } }); </script> <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
-This is a follow-up to my [previous summary](https://hilbert-spaess.github.io/stats-Causality-from-correlation-Pearl's-approach/) of causal inference with graphical causal models. Simpson's paradox is a phenomenon in which a correlation reverses once a new confounding variable is taken into account. Any 'paradoxical' conclusions can explained using causal inference. 
+This is a follow-up to my [previous summary](https://hilbert-spaess.github.io/stats-Causality-from-correlation-Pearl's-approach/) of causal inference with graphical causal models. Simpson's paradox is a phenomenon in which a correlation reverses once a new confounding variable is taken into account. Any 'paradoxical' conclusions can explained using causal inference. This problem leads naturally to the consideration of general strategies for computing causal effect.
 
 ## Medical Trials
 
@@ -33,14 +33,3 @@ To start with, let's try and repeat the example above. We found a variable such 
 
 **Definition:** Given a DAG $G$. A set of variables $Z$ satisfies the **back-door criterion** with respect to variables $X_1$ and $X_2$ if no node in $Z$ is a descendant of $X_1$, and $Z$ blocks every path between $X_1$ and $X_2$ that contains an arrow into $X_1$. 
 
-## Smoking
-
-Let's go through another example, with a different underlying causal structure. The numbers in each cell are the fractions of people in each category who develop lung cancer, given their 
-
-| | **Smoker S = 0**| **Smoker S = 1**
-|**Tar T = 0**| 83/200 | 13/30
-|**Tar T = 1**| 2/11 | 19/98
-| **Total**| 85/211 | 32/128
-
-
-## Backdoor criterion: when can we compute causal effect?

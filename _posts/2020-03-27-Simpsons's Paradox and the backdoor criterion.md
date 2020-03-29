@@ -4,7 +4,7 @@ This is a follow-up to my [previous summary](https://hilbert-spaess.github.io/st
 
 ## Medical Trials
 
-Suppose we are comparing two treatments for a disease. Suppose the disease has two severity levels, and everyone who catches it either dies or is cured. In other words, suppose we have an observed distribution over three binary variables. The following are some imaginary data (showing the fraction of observed patients with a positive outcome $O$: 
+Suppose we are comparing two treatments for a disease. Suppose the disease has two severity levels, and everyone who catches it either dies or is cured. In other words, suppose we have an observed distribution over three binary variables. The following are some imaginary data (showing the fraction of observed patients with a positive outcome $O$): 
 
 | | **Treatment T = 1** | **Treatment T = 2** | 
 |**Severity S = Low**| 18/20 | 71/103
@@ -28,6 +28,8 @@ As a patient looking to maximise our chances of recovery, the interventional pro
 ## What assumptions to we need to compute causal effect?
 
 The general problem suggested by Simpson's paradox is working out when we have enough information about the causal structure $G$ to compute the causal effect of one variable on another. In the above example we needed the relatively strong assumption that there were no latent variables affecting outcome (ie that the model was Markovian). Then we knew the whole structure $G$, so its easy to compute the effects of interventions. But what are the minimal assumptions needed to compute a particular causal effect?
+
+To start with, let's try and repeat the example above. We found a variable such that adjusting with respect to this variable allowed us to compute the desired causal effect.
 
 **Definition:** Given a DAG $G$. A set of variables $Z$ satisfies the **back-door criterion** with respect to variables $X_1$ and $X_2$ if no node in $Z$ is a descendant of $X_1$, and $Z$ blocks every path between $X_1$ and $X_2$ that contains an arrow into $X_1$. 
 

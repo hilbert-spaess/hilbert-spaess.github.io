@@ -23,4 +23,4 @@ Severity and outcome are not independent, so the first causal structure doesn't 
 The total figures correspond to looking at the conditional probabilities $P(O \vert T)$.
 Averaging over the severity levels corresponds to looking at $\sum_{S}P(S)P(O \vert T, S) = P(O \vert \hat{T})$.
 
-As a patient looking to maximise our chances of recovery, the interventional probability is what is interesting, so the trend observed by adjusting for severity level is what is relevant to our choice. Hence we should choose the second treatment.
+As a patient looking to maximise our chances of recovery, the interventional probability is what is interesting, so the trend observed by adjusting for severity level is what is relevant to our choice. Hence we should choose the first treatment.

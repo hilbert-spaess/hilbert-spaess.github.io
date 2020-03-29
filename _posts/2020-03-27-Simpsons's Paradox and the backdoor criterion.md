@@ -21,13 +21,15 @@ Structure 1 | Structure 2 | Structure 3
 Severity and outcome are not independent, so the first causal structure doesn't work. As noted above, treatment and severity are not independent, so the second structure won't work. The third structure is compatible with the distribution. For this to be the correct causal structure we need to assume that no variables other than severity and treatment will have a causal influence on outcome. Now an intervention on the value of the treatment variable changds the structure to that in diagram 2. So $P(O \vert \hat{T}) = \sum_{S}P(S)P(O \vert T, S)$
 
 The total figures correspond to looking at the conditional probabilities $P(O \vert T)$.
-Averaging over the severity levels corresponds to looking at $\sum_{S}P(S)P(O \vert T, S) = P(O \vert \hat{T})$.
+Averaging over the severity levels corresponds to looking at $\sum_{S}P(S)P(O \vert T, S) = P(O \vert \hat{T})$. Summing over marginal probability of severity levels and conditioning in this fashion is termed "adjusting for severity". In this case, adjusting for severity is equivalent to computing causal effect.
 
 As a patient looking to maximise our chances of recovery, the interventional probability is what is interesting, so the trend observed by adjusting for severity level is what is relevant to our choice. Hence we should choose the first treatment.
 
 ## What assumptions to we need to compute causal effect?
 
-The general problem suggested by Simpson's paradox is working out when we have enough information about the causal structure $G$ to compute the causal effect of one variable on another. In the above example we needed the relatively strong assumption that there were no latent variables affecting outcome (ie that the model was Markovian). Then we knew the whole structure $G$, so
+The general problem suggested by Simpson's paradox is working out when we have enough information about the causal structure $G$ to compute the causal effect of one variable on another. In the above example we needed the relatively strong assumption that there were no latent variables affecting outcome (ie that the model was Markovian). Then we knew the whole structure $G$, so its easy to compute the effects of interventions. But what are the minimal assumptions needed to compute a particular causal effect?
+
+**Definition:** Given a DAG $G$. A set of variables $Z$ satisfies the **back-door criterion** with respect to variables $X_1$ and $X_2$ if no node in $Z$ is a descendant of $X_1$, and $Z$ blocks every path between $X_1$ and $X_2$ that contains an arrow into $X_1$. 
 
 ## Smoking
 

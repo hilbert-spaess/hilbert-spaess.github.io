@@ -29,4 +29,12 @@ As a patient looking to maximise our chances of recovery, the interventional pro
 
 The general problem suggested by Simpson's paradox is working out when we have enough information about the causal structure $G$ to compute the causal effect of one variable on another. In the above example we needed the relatively strong assumption that there were no latent variables affecting outcome (ie that the model was Markovian). Then we knew the whole structure $G$, so it was easy to compute the effects of interventions. But what can we do with weaker assumptions? To start with, let's consider what happens in the case that we know the causal structure among the observed variables, but there could be unconsidered latent variables. This was essentially the case with the medical example above, but without the unrealistic assumption that we knew all relevant variables.
 
+(theory of projections might be useful here)
+
+Once latent variables are a possibility, we can't always compute causal effect. Here are some examples of causal structures over observed variables in which the causal effect of the red variable on the blue can't necessarily be found: 
+
+(x -> y) (x -> y z triangle)
+
+
+
 

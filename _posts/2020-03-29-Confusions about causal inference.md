@@ -37,6 +37,17 @@ In general, it's hard to test for conditional independence of continuous random 
 
 ## What are some real applications of graphical causal models?
 
+**Confusion:** Yet to be convinced that there are concrete applications of these methods. Need lots of observational data, and inability to carry out controlled experiments.
+
+Main applications appear to be in distilling knowledge for human understanding. We want explanations from data: explanations are causal. Important example here is, say, getting a chess engine to explain its moves.
+
+Pearl suggests:
+
+-Medical diagnosis? (would make sense for the controlled experiments)
+-Gene expressions (Friedman 2000)
+-Error-correcting codes (McEliece 1998) - not sure how this works
+-Understanding the policy of an RL agent: 'why' decisions were made.
+
 ## Where does carrying out experiments fit into Pearl's model of observational causal inference?
 
 ## Good/True intuitions (link) for the various conditions + criteria.

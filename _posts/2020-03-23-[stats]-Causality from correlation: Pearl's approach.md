@@ -69,7 +69,16 @@ The causal model now specifies a functional relationship between variables. The 
 
 The assumptions above are still not enough to identify the causal structure underlying an observed distribution. Let's work with an example. Suppose there are three observable variables: the outcomes of two coin tosses $C_1$ and $C_2$, and the potential sounding of a bell $B$. As observers, all we have is the joint distribution. The process underlying the variables is that the coins were tossed independently and fairly, and in the case that both landed heads-up, the gong was sounded.
  
-(observation table) (correct structure)
+| C_1| C_2| B | Probability
+| H | H | 0 | 0
+| H | H | 1 | 1/4
+| H | T | 0 | 1/4
+| H | T | 1 | 0
+| T | H | 0 | 1/4
+| T | H | 1 | 0
+| T | T | 0 | 1/4
+| T | T | 1 | 0
+
 
 Suppose we were trying to infer the correct model, given our above assumptions. By assumptions 2 and 3, the correct structure is a DAG on three variables. Since no variable is independent of the other two, the graph must be connected. No two variables are conditionally independent given the other, so the structure can't be one variable causing the other two, or a chain of two causations. So if the causal structure $G$ has two edges, they must be from $C_1$ and $C_2$ into $B$ (this is the correct structure). But there are models with three edges that are consistent with $P$ as well, as illustrated below. This is as far as we can get with the assumptions we've made so far.
 

@@ -51,6 +51,14 @@ This provides a condition under which we can replace an intervention probability
 
 Condition under which we can remove an action. Require that the action have no effect on $Y$ via its ancestors. The reason for deleting only non-W-ancestors is not obvious to me yet.
 
+Using these three rules, we can sometimes express causal effects in terms of the observed distributions, even when workng in a model with confounding arcs. There exists a sufficient condition for being able to compute the causal effect:
+
+**Theorem:** (Pearl, Tian, 2002) A sufficient condition for being able to compute the causal effect $P(Y \vert \hat{X})$ is that there exists no path composed of confounding arcs between $X$ and any of its children in the graph obtained by deleting non-ancestors of $Y$ from $G$.
+
+Applying this criterion, we see why the causal effect of red on blue can be computed on the left-hand-side, but not on the right.
+
+
+
 ## Lung Cancer example
 
 Something of this structure that works, with a controversial conclusion.

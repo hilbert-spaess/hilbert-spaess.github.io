@@ -35,15 +35,21 @@ Once latent variables are a possibility, we can't always compute causal effect. 
 
 (x -> y) (x -> y z triangle)
 
-Pearl derives a set of manipulation rules for expressions involving actions and observations, referring to semi-Markovian models. If we can reduce an expression involving actions to an expression purely referring to distributions over the observed variables, we've computed the causal effect.
+Pearl derives a set of manipulation rules for expressions involving actions and observations, referring to semi-Markovian models. If we can reduce an expression involving actions to an expression purely referring to distributions over the observed variables, we've computed the causal effect. Before we had essentially one manipulation rule, the reduction of conditional independence to d-separation. This can be summarised as a condition under which we can remove conditioning on an observation. Now that we can condition on observations and actions, there are three manipulation rules, governing the removal of an observation, the removal of an action, and the swapping of an action and observation.
 
 **Notation:** Let $G$ be a DAG associated with a Markovian causal model, and let $P$ be the induced probability distribution. Let $X, Y, Z$ be arbitrary disjoint subsets of vertices in $G$. Then we denote by $G_{\bar{X}}$ the graph obtained by deleting all arrows into vertices in $X$. This is the causal structure after intervening on the value of $X$. Likewise, we denote by $G_{\underset{\bar{}}{X}}$ the graph obtained by deleting all arrows out of vertices in $X$. 
 
-**Rule 1: (independence rule)** $P(Y \vert \hat{X}, Z, W) = P(Y \vert \hat{X}, W)$ if $(Y \perp_{G_{\bar{X}}} Z \vert X, W)$. 
+**Rule 1: (deletion of observation)** $P(Y \vert \hat{X}, Z, W) = P(Y \vert \hat{X}, W)$ if $(Y \perp_{G_{\bar{X}}} Z \vert X, W)$. 
 
-This rule states that d-separation in the mutilated graph is still sufficient for conditional independence after taking an action.
+This rule states that d-separation in the mutilated graph is still sufficient for conditional independence after taking an action. This follows from the fact that removing edges cannot induce dependencies.
 
-**Rule 2: (action -> observation)** $P(Y \vert \hat{X}, \hat{Z}, W) = P(Y \vert \hat{X}, Z, W)$ if $(Y \perp_{G_{\bar{X} \underset{\bar{}}{Z}}} Z \vert X, W)$.
+**Rule 2: (action <-> observation)** $P(Y \vert \hat{X}, \hat{Z}, W) = P(Y \vert \hat{X}, Z, W)$ if $(Y \perp_{G_{\bar{X} \underset{\bar{}}{Z}}} Z \vert X, W)$.
+
+This provides a condition under which we can replace an intervention probability with an observation probability. The effect of an intervention on $Z$ is the same thing as conditioning on $Z$ only if the only way $Z$ affects $Y$ is through its descendants. This happens iff $X \cup W$ d-separates $Y$ and $Z$ in $G_{\underset{\bar{}}{Z}}.
+
+**Rule 3: (deletion of actions)** $P(Y \vert \hat{X}, \hat{Z}, W) = P(Y \vert \hat{X}, W)$ if $(Y \perp_{G_{\bar{X} \bar{Z(W)}}} Z \vert X, W)$, where $Z(W)$ is the set of Z-nodes that are not ancestors of any W-node in $G_{\bar{X}}$.
+
+Condition under which we can remove an action. Require that the action have no effect on $Y$ via its ancestors. The reason for deleting only non-W-ancestors is not obvious to me yet.
 
 ## Lung Cancer example
 

@@ -31,13 +31,15 @@ The general problem suggested by Simpson's paradox is working out when we have e
 
 (theory of projections might be useful here)
 
-Once latent variables are a possibility, we can't always compute causal effect. Here are some examples of causal structures over observed variables in which the causal effect of the red variable on the blue can't necessarily be found: 
+Once latent variables are a possibility, we can't always compute causal effect. As explained previously, we can assume all latent variables are common causes of precisely two observed variables, and as shorthand for the potential presence of these unobserved latent causes we use bidirectional *confounding arcs*. Here are some examples of causal structures over observed variables in which the causal effect of the red variable on the blue can't necessarily be found: 
 
 (x -> y) (x -> y z triangle)
 
-Pearl derives a set of manipulation rules for expressions involving actions and observations, referring to semi-Markovian models. If, using these rules, we can reduce an expression involving actions to an expression purely referring to distributions over the observed variables, we've comoputed the causal effect. He later showed that these rules are complete, so that any identifiable causal effect can be derived by a sequence of these operations.
+Pearl derives a set of manipulation rules for expressions involving actions and observations, referring to semi-Markovian models. If we can reduce an expression involving actions to an expression purely referring to distributions over the observed variables, we've computed the causal effect.
 
-**Rule 1: (d-separation rule)**
+**Notation:** Let $G$ be a DAG associated with a Markovian causal model, and let $P$ be the induced probability distribution. Let $X, Y, Z$ be arbitrary disjoint subsets of vertices in $G$. Then we denote by $G_{\bar{X}}$ the graph obtained by deleting all arrows into vertices in $X$. Likewise, we denote by $G_{\underbar{x}}$ the graph obtained by deleting all arrows out of vertices in $X$. 
+
+**Rule 1: (d-separation rule)** 
 
 ## Lung Cancer example
 

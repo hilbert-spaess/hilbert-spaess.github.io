@@ -35,7 +35,7 @@ It turns out that Pearl also writes about this. He notes that humans expect caus
 
 In general, it's hard to test for conditional independence of continuous random variables. (To do a model comparison like that outlined above would require a prior over continuous distributions, which isn't going to happen). This is why a fully general model with continuous variables is unlikely to be practical. If the variable in question is in reality continuous, we can use discrete bins and retain independence structure. If we constrain the models to certain form (eg variables are noisy linear functions of their parents), then we should be able to do inference with continuous observed variables. (See Gelman's stuff and Rubin's stuff).
 
-## What are some real-world examples of applications of graphical causal models?
+## What are some real applications of graphical causal models?
 
 ## Where does carrying out experiments fit into Pearl's model of observational causal inference?
 

@@ -55,7 +55,7 @@ Using these three rules, we can sometimes express causal effects in terms of the
 
 **Theorem:** (Pearl, Tian, 2002) A sufficient condition for being able to compute the causal effect $P(Y \vert \hat{X})$ is that there exists no path composed of confounding arcs between $X$ and any of its children in the graph obtained by deleting non-ancestors of $Y$ from $G$.
 
-Applying this criterion, we see why the causal effect of green on blue can be computed in the on the left-hand-side below, but not on the right. (The white nodes in the DAGs are the confounding latents).
+Applying this criterion, we see why the causal effect of green on blue can be computed in the on the left-hand-side below, but not on the right. (The white nodes in the DAGs are the unobserved confounding latents).
 
 ![criterion example](/images/criterion_g_b.jpg)
 

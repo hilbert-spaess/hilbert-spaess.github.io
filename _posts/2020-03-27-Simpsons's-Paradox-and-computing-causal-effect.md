@@ -37,9 +37,13 @@ Once latent variables are a possibility, we can't always compute causal effect. 
 
 Pearl derives a set of manipulation rules for expressions involving actions and observations, referring to semi-Markovian models. If we can reduce an expression involving actions to an expression purely referring to distributions over the observed variables, we've computed the causal effect.
 
-**Notation:** Let $G$ be a DAG associated with a Markovian causal model, and let $P$ be the induced probability distribution. Let $X, Y, Z$ be arbitrary disjoint subsets of vertices in $G$. Then we denote by $G_{\bar{X}}$ the graph obtained by deleting all arrows into vertices in $X$. Likewise, we denote by $G_{\underset{\bar{}}{X}}$ the graph obtained by deleting all arrows out of vertices in $X$. 
+**Notation:** Let $G$ be a DAG associated with a Markovian causal model, and let $P$ be the induced probability distribution. Let $X, Y, Z$ be arbitrary disjoint subsets of vertices in $G$. Then we denote by $G_{\bar{X}}$ the graph obtained by deleting all arrows into vertices in $X$. This is the causal structure after intervening on the value of $X$. Likewise, we denote by $G_{\underset{\bar{}}{X}}$ the graph obtained by deleting all arrows out of vertices in $X$. 
 
 **Rule 1: (independence rule)** $P(Y \vert \hat{X}, Z, W) = P(Y \vert \hat{X}, W)$ if $(Y \perp_{G_{\bar{X}}} Z \vert X, W)$. 
+
+This rule states that d-separation in the mutilated graph is still sufficient for conditional independence after taking an action.
+
+**Rule 2: (action -> observation)** $P(Y \vert \hat{X}, \hat{Z}, W) = P(Y \vert \hat{X}, Z, W)$ if $(Y \perp_{G_{\bar{X} \underset{\bar{}}{Z}}} Z \vert X, W)$.
 
 ## Lung Cancer example
 

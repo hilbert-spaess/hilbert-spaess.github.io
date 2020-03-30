@@ -26,13 +26,17 @@ So the first two confusions are related, and if we assume we don't have access t
 
 **Confusion:** Vague confusion. Time seems important for reasoning about causality. But Pearl's conclusions refer only to observed variables. Is it possible for $X$ have causal influence on $Y$ in the sense of Pearl, but come later in time? Otherwise, where does time come in?
 
-It turns out that Pearl also writes about this. He notes that humans expect causal relations to satisfy the statistical constraints he's presented, but also to satify the basic temporal constraint that the cause precedes the effect. So there's a *temporal bias*, where we only see certain patterns of dependencies between events in time. 
+It turns out that Pearl also writes about this. He notes that humans expect causal relations to satisfy the statistical constraints he's presented, but also to satify the basic temporal constraint that the cause precedes the effect. So there's a *temporal bias*, where we only see certain patterns of dependencies between events in time. For example, present events can render future events conditionally independent, but we rarely see a present event rendering past events independent.
 
 
 ## Continuous vs discrete variables
 
+**Confusion:** What do causal models with continuous variables look like? 
+
+In general, it's hard to test for conditional independence of continuous random variables. (To do a model comparison like that outlined above would require a prior over continuous distributions, which isn't going to happen). This is why a fully general model with continuous variables is unlikely to be practical. If the variable in question is in reality continuous, we can use discrete bins and retain independence structure. If we constrain the models to certain form (eg variables are noisy linear functions of their parents), then we should be able to do inference with continuous observed variables. (See Gelman's stuff and Rubin's stuff).
+
 ## Good/True intuitions (link) for the various conditions + criteria.
 
-## Do we expect this causal diagram stuff to have any useful application?
+## What are some real-world examples of applications of graphical causal models?
 
 ## Where does carrying out experiments fit into Pearl's model of observational causal inference?

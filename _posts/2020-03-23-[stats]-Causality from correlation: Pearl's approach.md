@@ -113,8 +113,6 @@ Broadening the class of candidate models to all minimal latent models consistent
 
 The DAG must be connectec, as no variable is independent of the rest. The obvious model a) is consistent with the distribution, as is the less obvious model b). In both, note that there is a causal relation between $M$ and $C$. Reversing the arrow between $M$ and $C$ will break stability, as $R$ and $D$ will no longer be d-separated by the empty set. Similarly, postulating additional latent structure that explains $C$ and $M$ will break stability. So we can infer that the mother shouting causes the child to cry, purely from observational data.
 
-(equivalence classes of compatible DAGs). (maybe alg to compute them).
-
 ## Criteria for inferrability of causal relations
 
 A common thread in previous examples is that inferring causal relation between $X$ and $Y$ required the introduction of auxiliary variables, and observation of particular patterns of dependency among these variables. Pearl notes that this shouldn't be that surprising, as the core of causal claims concerns the behaviour of $X$ and $Y$ in relation to a variable $Z$ that corresponds to external manipulation of $X$ or $Y$. The methodology of observational causal inference is to choose a variable $Z$ among the observed data to act as a 'virtual manipulator', as if 'nature had performed the experiment itself'.

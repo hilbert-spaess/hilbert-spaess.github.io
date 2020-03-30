@@ -44,8 +44,11 @@ Main applications appear to be in distilling knowledge for human understanding. 
 Pearl suggests:
 
 -Medical diagnosis? (would make sense for the controlled experiments)
+
 -Gene expressions (Friedman 2000)
+
 -Error-correcting codes (McEliece 1998) - not sure how this works
+
 -Understanding the policy of an RL agent: 'why' decisions were made.
 
 ## Where does carrying out experiments fit into Pearl's model of observational causal inference?

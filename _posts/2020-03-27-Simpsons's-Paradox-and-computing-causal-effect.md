@@ -35,6 +35,14 @@ Once latent variables are a possibility, we can't always compute causal effect. 
 
 (x -> y) (x -> y z triangle)
 
+Pearl derives a set of manipulation rules for expressions involving actions and observations, referring to semi-Markovian models. If, using these rules, we can reduce an expression involving actions to an expression purely referring to distributions over the observed variables, we've comoputed the causal effect. He later showed that these rules are complete, so that any identifiable causal effect can be derived by a sequence of these operations.
+
+**Rule 1: (d-separation rule)**
+
+## Lung Cancer example
+
+Something of this structure that works, with a controversial conclusion.
+
 
 
 

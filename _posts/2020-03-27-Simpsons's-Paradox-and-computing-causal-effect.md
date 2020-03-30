@@ -55,9 +55,11 @@ Using these three rules, we can sometimes express causal effects in terms of the
 
 **Theorem:** (Pearl, Tian, 2002) A sufficient condition for being able to compute the causal effect $P(Y \vert \hat{X})$ is that there exists no path composed of confounding arcs between $X$ and any of its children in the graph obtained by deleting non-ancestors of $Y$ from $G$.
 
-Applying this criterion, we see why the causal effect of red on blue can be computed on the left-hand-side, but not on the right.
+Applying this criterion, we see why the causal effect of green on blue can be computed in the on the left-hand-side below, but not on the right.
 
+![criterion example](/images/criterion_g_b.jpg)
 
+Tian and Shpitser give a summary of the latest necessary and sufficient conditions [here](http://web.cs.iastate.edu/~jtian/papers/tian-shpitser-2009.pdf) (the problem is essentially solved as far as I can tell, with polynomial time algorithms for determining whether arbitrary quantities involving actions can be computed in semi-Markovian models).
 
 ## Lung Cancer example
 

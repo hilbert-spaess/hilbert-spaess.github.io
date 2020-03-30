@@ -50,4 +50,10 @@ Pearl suggests:
 
 ## Where does carrying out experiments fit into Pearl's model of observational causal inference?
 
-## Good/True intuitions (link) for the various conditions + criteria.
+**Confusion:** What happens if you can carry out experiments?
+
+If you can directly intervene, you can directly sample from intervention distributions, and estimate causal effect. This problem is a lot less seductive than that of inferring causation from correlation.
+
+## [Good/True intuitions](https://hilbert-spaess.github.io/understanding-maths/) for the various conditions + criteria.
+
+**Confusion:** Simple intuitions for the criteria for genuine/potential causes, and criteria for identifiability of causal effect. Neither of these criteria are as yet particularly intuitive or easily remembered.

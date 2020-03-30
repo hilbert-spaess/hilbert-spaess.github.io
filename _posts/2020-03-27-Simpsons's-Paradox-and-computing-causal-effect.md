@@ -55,7 +55,7 @@ Using these three rules, we can sometimes express causal effects in terms of the
 
 **Theorem:** (Pearl, Tian, 2002) A sufficient condition for being able to compute the causal effect $P(Y \vert \hat{X})$ is that there exists no path composed of confounding arcs between $X$ and any of its children in the graph obtained by deleting non-ancestors of $Y$ from $G$.
 
-Applying this criterion, we see why the causal effect of green on blue can be computed in the on the left-hand-side below, but not on the right.
+Applying this criterion, we see why the causal effect of green on blue can be computed in the on the left-hand-side below, but not on the right. (The white nodes in the DAGs are the confounding latents).
 
 ![criterion example](/images/criterion_g_b.jpg)
 
@@ -63,7 +63,7 @@ Tian and Shpitser give a summary of the latest necessary and sufficient conditio
 
 ## Lung Cancer example
 
-Something of this structure that works, with a controversial conclusion.
+The above left-hand structure turns up a lot, and is a classic example of the power of identifying causal effects. The example here will take us right back to Simpson's paradox, resolved with a different underlying structure, and with weaker assumptions. 
 
 
 

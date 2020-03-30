@@ -29,8 +29,6 @@ As a patient looking to maximise our chances of recovery, the interventional pro
 
 The general problem suggested by Simpson's paradox is working out when we have enough information about the causal structure $G$ to compute the causal effect of one variable on another. In the above example we needed the relatively strong assumption that there were no latent variables affecting outcome (ie that the model was Markovian). Then we knew the whole structure $G$, so it was easy to compute the effects of interventions. But what can we do with weaker assumptions? To start with, let's consider what happens in the case that we know the causal structure among the observed variables, but there could be unconsidered latent variables. This was essentially the case with the medical example above, but without the unrealistic assumption that we knew all relevant variables.
 
-(theory of projections might be useful here)
-
 Once latent variables are a possibility, we can't always compute causal effect. As explained previously, we can assume all latent variables are common causes of precisely two observed variables, and as shorthand for the potential presence of these unobserved latent causes we use bidirectional *confounding arcs*. Here are some examples of causal structures over observed variables in which the causal effect of the red variable on the blue can't necessarily be found: 
 
 (x -> y) (x -> y z triangle)
@@ -45,7 +43,7 @@ This rule states that d-separation in the mutilated graph is still sufficient fo
 
 **Rule 2: (action <-> observation)** $P(Y \vert \hat{X}, \hat{Z}, W) = P(Y \vert \hat{X}, Z, W)$ if $(Y \perp_{G_{\bar{X} \underset{\bar{}}{Z}}} Z \vert X, W)$.
 
-This provides a condition under which we can replace an intervention probability with an observation probability. The effect of an intervention on $Z$ is the same thing as conditioning on $Z$ only if the only way $Z$ affects $Y$ is through its descendants. This happens iff $X \cup W$ d-separates $Y$ and $Z$ in $G_{\underset{\bar{}}{Z}}.
+This provides a condition under which we can replace an intervention probability with an observation probability. The effect of an intervention on $Z$ is the same thing as conditioning on $Z$ only if the only way $Z$ affects $Y$ is through its descendants. This happens iff $X \cup W$ d-separates $Y$ and $Z$ in $G_{\underset{\bar{}}{Z}}$.
 
 **Rule 3: (deletion of actions)** $P(Y \vert \hat{X}, \hat{Z}, W) = P(Y \vert \hat{X}, W)$ if $(Y \perp_{G_{\bar{X} \bar{Z(W)}}} Z \vert X, W)$, where $Z(W)$ is the set of Z-nodes that are not ancestors of any W-node in $G_{\bar{X}}$.
 

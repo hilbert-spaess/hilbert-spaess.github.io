@@ -1,4 +1,4 @@
-Some things I'm confused about / that need resolving. This is in the context of my previous posts on causal inference: here and here.
+Some things I'm confused about / that need resolving. This is in the context of my previous posts on causal inference: [here](https://hilbert-spaess.github.io/stats-Causality-from-correlation-Pearl's-approach/) and [here](https://hilbert-spaess.github.io/Simpsons's-Paradox-and-computing-causal-effect/).
 
 ## Extracting conditional independence sets from data.
 

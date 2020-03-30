@@ -37,7 +37,7 @@ Once latent variables are a possibility, we can't always compute causal effect. 
 
 Pearl derives a set of manipulation rules for expressions involving actions and observations, referring to semi-Markovian models. If we can reduce an expression involving actions to an expression purely referring to distributions over the observed variables, we've computed the causal effect.
 
-**Notation:** Let $G$ be a DAG associated with a Markovian causal model, and let $P$ be the induced probability distribution. Let $X, Y, Z$ be arbitrary disjoint subsets of vertices in $G$. Then we denote by $G_{\bar{X}}$ the graph obtained by deleting all arrows into vertices in $X$. Likewise, we denote by $G_{\underbar{x}}$ the graph obtained by deleting all arrows out of vertices in $X$. 
+**Notation:** Let $G$ be a DAG associated with a Markovian causal model, and let $P$ be the induced probability distribution. Let $X, Y, Z$ be arbitrary disjoint subsets of vertices in $G$. Then we denote by $G_{\bar{X}}$ the graph obtained by deleting all arrows into vertices in $X$. Likewise, we denote by $G_{\underset{\bar{}}{x}}$ the graph obtained by deleting all arrows out of vertices in $X$. 
 
 **Rule 1: (d-separation rule)** 
 

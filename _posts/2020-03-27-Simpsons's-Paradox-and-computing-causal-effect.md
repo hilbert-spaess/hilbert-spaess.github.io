@@ -25,11 +25,8 @@ Averaging over the severity levels corresponds to looking at $\sum_{S}P(S)P(O \v
 
 As a patient looking to maximise our chances of recovery, the interventional probability is what is interesting, so the trend observed by adjusting for severity level is what is relevant to our choice. Hence we should choose the first treatment.
 
-## What assumptions to we need to compute causal effect?
+## Computing causal effect with unobserved variables.
 
-The general problem suggested by Simpson's paradox is working out when we have enough information about the causal structure $G$ to compute the causal effect of one variable on another. In the above example we needed the relatively strong assumption that there were no latent variables affecting outcome (ie that the model was Markovian). Then we knew the whole structure $G$, so its easy to compute the effects of interventions. But what are the minimal assumptions needed to compute a particular causal effect?
+The general problem suggested by Simpson's paradox is working out when we have enough information about the causal structure $G$ to compute the causal effect of one variable on another. In the above example we needed the relatively strong assumption that there were no latent variables affecting outcome (ie that the model was Markovian). Then we knew the whole structure $G$, so it was easy to compute the effects of interventions. But what can we do with weaker assumptions? To start with, let's consider what happens in the case that we know the causal structure among the observed variables, but there could be unconsidered latent variables. This was essentially the case with the medical example above, but without the unrealistic assumption that we knew all relevant variables.
 
-To start with, let's try and repeat the example above. We found a variable such that adjusting with respect to this variable allowed us to compute the desired causal effect.
-
-**Definition:** Given a DAG $G$. A set of variables $Z$ satisfies the **back-door criterion** with respect to variables $X_1$ and $X_2$ if no node in $Z$ is a descendant of $X_1$, and $Z$ blocks every path between $X_1$ and $X_2$ that contains an arrow into $X_1$. 
 

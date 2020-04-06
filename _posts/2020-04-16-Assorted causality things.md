@@ -1,6 +1,6 @@
 <script type="text/x-mathjax-config"> MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']], processEscapes: true } }); </script> <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
-Previous posts on causal inference [here](https://hilbert-spaess.github.io/stats-Causality-from-correlation-Pearl's-approach/), [here](https://hilbert-spaess.github.io/Simpsons's-Paradox-and-computing-causal-effect/), and [here](https://hilbert-spaess.github.io/Confusions-about-causal-inference/).
+Previous posts on causal inference: [introduction](https://hilbert-spaess.github.io/stats-Causality-from-correlation-Pearl's-approach/), [causal effects](https://hilbert-spaess.github.io/Simpsons's-Paradox-and-computing-causal-effect/), and [more confusions](https://hilbert-spaess.github.io/Confusions-about-causal-inference/).
 
 ## Causal definitions of incentives
 
@@ -23,6 +23,8 @@ He uses the causal graphical model framework, which is reassuring. The first cha
 The second chapter covers identifying causal effects from causal structures. Without going into interventional calculus or necessary conditions, it focusses on the back-door criterion and front-door criterion. I'm pretty confused about identifying causal effect with so-called 'instrumental variables', as it looks like we have to make assumptions about the functional form of the causal structure to actually identify causal effect.
 
 The third chapter is a useful complement to Pearl- whereas Pearl assumes direct access to observable distributions, Shalizi points out that estimating the relevant conditional distributions is a regression problem. If we aren't conditioning on too many variables, and the distributions are discrete, we should be able to just do inference, like in the first point [here](https://hilbert-spaess.github.io/Confusions-about-causal-inference/). Another non-parametric approach that Shalizi suggests is nearest-neighour smoothing, or 'matching'. Otherwise we have to whip out the regression toolbox.
+
+Finally Shalizi looks at the problem of deriving the causal structure in the first place. He covers the SGS and PC algorithms for identifying a Markovian structure, and notes that you can sometimes identify causal relationships in the presence of latent variables. He also mentions the need for a conditional independence test, which I was thinking about before. He recommends the $\chi$ squared test for discrete distributions, which seems mostly inferior to the Bayesian approach as Mackay [explains](http://www.inference.org.uk/mackay/Chi2.pdf). 
 
 ## Causation without manipulation?
 

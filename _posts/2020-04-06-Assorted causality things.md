@@ -1,6 +1,6 @@
 <script type="text/x-mathjax-config"> MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']], processEscapes: true } }); </script> <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
-Previous posts on causal inference: [introduction](https://hilbert-spaess.github.io/stats-Causality-from-correlation-Pearl's-approach/), [causal effects](https://hilbert-spaess.github.io/Simpsons's-Paradox-and-computing-causal-effect/), and [more confusions](https://hilbert-spaess.github.io/Confusions-about-causal-inference/).
+Previous posts on causal inference: [introduction](https://hilbert-spaess.github.io/stats-Causality-from-correlation-Pearl's-approach/), [causal effects](https://hilbert-spaess.github.io/Simpsons's-Paradox-and-computing-causal-effect/), and [more confusions](https://hilbert-spaess.github.io/Confusions-about-causal-inference/). I've jotted four more thoughts here.
 
 ## Causal definitions of incentives
 
@@ -28,4 +28,12 @@ Finally Shalizi looks at the problem of deriving the causal structure in the fir
 
 ## Causation without manipulation?
 
+In the case that no experiment is feasible, does the do-calculus notion of causal effect have any meaning? eg intervention on gender.
+
+All variables are human abstractions. If a causal structural model is a good fit for our abstractions, then we'd like to hope that an intervention on a variable is a good model for 'changing that variable, all else equal'. 
+
+(... got more to say about this, will fill in later).
+
 ## Neural networks as a good general regression framework?
+
+We've consistently needed to come up with a robust regression: estimating conditional distributions for computing causal effects, and for verifying conditional independence. I'm wondering if there's a reliable approach for carrying out regression like this using a neural network prior? People usually use normal-linear, apparently, so it shouldn't be that much work to add some non-linearities?

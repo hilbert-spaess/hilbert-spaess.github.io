@@ -1,8 +1,8 @@
-This is summary of the ideas I've found personally useful when attempting to run MCMC algorithms to sample from a distribution. The main use-cases I'm referring to are [survival curves](https://hilbert-spaess.github.io/STATS-survival-curves/) and inference on neural network models.
+I've found a lot of good resources motivating MCMC methods, and describing the relevant algorithms, chiefly Gibbs sampling, Metropolis sampling, and Hybrid Monte-Carlo. When attempting to actually apply these tools, I've come across a few tricks and concepts that weren't clearly signposted in the literature. (The specific problems that required the use of MCMC were [survival curves](https://hilbert-spaess.github.io/STATS-survival-curves/) problems and full parameter inference of neural network models).
 
 ## Motivation and intuition
 
-Assume we have a distribution over a high-dimensional vector of parameters $\theta$. We want to get some decent samples of $\theta
+Assume we have a distribution over a high-dimensional vector of parameters $\theta$. We want to get some decent independent samples of $\theta$.
 
 ## Chains-within-chains
 

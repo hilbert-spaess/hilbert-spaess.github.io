@@ -19,6 +19,8 @@ Again, without getting too fussy about details, there's a simple condition calle
 
 The prototypical example of a transition function satisfying detailed balance is the Metropolis update rule. We start by choosing a **proposal function** $Q(\theta_i \vert \theta_j)$, a symmetric transition that admits straightforward sampling, such as a Gaussian centred at $\theta_i$. To sample from the Metropolis transition function, we first sample $\theta_j$ from this proposal function, and accept this proposal with probability $\min{\{\frac{P(\theta_j)}{P(\theta_i)}, 1\}}$. 
 
+Taking a Gaussian proposal function, the choice of radius exhibits an important trade-off. A larger radius allows the chain to potentially traverse the parameter space much more quickly. But the larger the radius, the smaller the chance that
+
 Summary of detailed balance idea.
 
 Mixing chains palindromically or 

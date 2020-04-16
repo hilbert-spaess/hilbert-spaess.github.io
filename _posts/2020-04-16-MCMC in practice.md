@@ -7,7 +7,9 @@ Assume we have a distribution $P(\theta)$ over a high-dimensional vector of para
 Since we're looking for a sample, and not the maximum a posteriori estimate, we can follow an analagous tactic, by following an 'approximate gradient ascent' that is calibrated to result in a sample. Formally, we follow a Markov chain that tends to a sample from the target distribution. Without going into detail, we assume that this is achieved if the target distribution is invariant under the Markov chain.
 
 ----
+
 **Idea:** Carry out a biased random walk around the parameter space. This will be useful for the same reason that gradient descent is useful. Formalised as a Markov chain under which the target distribution is invariant.
+
 ----
 
 Again, without getting too fussy about details, there's a simple condition for deciding if 

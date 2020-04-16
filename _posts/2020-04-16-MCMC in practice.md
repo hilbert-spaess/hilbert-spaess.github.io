@@ -40,11 +40,9 @@ If $Q_1$ and $Q_2$ satisfy detailed balance, it is **not true** that the composi
 
 ---
 
-It turns out that we can get a very long way with just Metropolis transitions and the 3 combination rules. 
+It turns out that we can get a very long way with just Metropolis transitions and the 3 combination rules. There's one more crucial type of Metropolis transition that I haven't yet mentioned. We can rapidly traverse the parameter space while maintaining a high acceptance probability if we can sample from a more complicated proposal distribution that somehow encodes information about the target distribution. Sampling from arbitrary distributions is hard (that's the problem we're solving with MCMC), but sampling from arbitrary one-dimensional distributions is tractable. This motivates the **Gibbs proposal function**.
 
-
-
-
+To take a Gibbs sample, we simply fix  all bar one of the continuous parameters in our parameter vector, and take a sample from the corresponding one-dimensional conditional distribution. This proposal rule is easily defined, and is in fact always accepted. It requires only that we be able to sample from a one-dimensional distribution. A mixture of Gibbs samples using the above transition rules is called **Gibbs sampling**.
 
 ## Chains-within-chains
 

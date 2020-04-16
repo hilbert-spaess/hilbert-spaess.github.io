@@ -15,7 +15,9 @@ Since we're looking for a sample, and not the maximum a posteriori estimate, we 
 
 ----
 
-Again, without getting too fussy about details, there's a simple condition called **detailed balance** for deciding if the target distribution is indeed invariant under the proposed Markov chain. We say that the target distribution $P$ and transition function $Q(\theta_i \vert \theta_j)$ satisfy detailed balance if for all $\theta_i, \theta_j$, we have $P(\theta_i) Q(\theta_j \vert \theta_i) = P(\theta_j) Q(\theta_i \vert \theta_j)$.
+Again, without getting too fussy about details, there's a simple condition called **detailed balance** for deciding if the target distribution is indeed invariant under the proposed Markov chain. We say that the target distribution $P$ and transition function $Q(\theta_i \vert \theta_j)$ satisfy detailed balance if for all $\theta_i, \theta_j$, we have 
+
+$$P(\theta_i) Q(\theta_j \vert \theta_i) = P(\theta_j) Q(\theta_i \vert \theta_j)$$.
 
 The prototypical example of a transition function satisfying detailed balance is the Metropolis update rule. We start by choosing a **proposal function** $Q(\theta_i \vert \theta_j)$, a symmetric transition that admits straightforward sampling, such as a Gaussian centred at $\theta_i$. To sample from the Metropolis transition function, we first sample $\theta_j$ from this proposal function, and accept this proposal with probability $\min{\{\frac{P(\theta_j)}{P(\theta_i)}, 1\}}$. 
 
@@ -25,13 +27,6 @@ Taking a Gaussian proposal function, the choice of radius exhibits an important 
 **Idea:** Detailed balance is a useful condition to guarantee theoretical convergence. Most MCMC methods have transition functions that satisfy detailed balance. The speed at which these chains actually approach the target distribution is dependent on choices such as the proposal radius.
 
 ---
-
-
-
-
-Summary of detailed balance idea.
-
-Mixing chains palindromically or 
 
 ## Chains-within-chains
 

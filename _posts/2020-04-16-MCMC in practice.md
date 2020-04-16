@@ -10,11 +10,14 @@ Since we're looking for a sample, and not the maximum a posteriori estimate, we 
 
 
 ----
+
 **Idea:** Carry out a biased random walk around the parameter space. This will be useful for the same reason that gradient descent is useful. Formalised as a Markov chain under which the target distribution is invariant.
 
 ----
 
-Again, without getting too fussy about details, there's a simple condition called **detailed balance** for deciding if the target distribution is indeed invariant under the proposed Markov chain. We say that the target distribution $P$ and transition function $Q(\theta_i \vert \theta_j)$ satisfy detailed balance if for all $\theta_i, \theta_j$, we have $P(\theta_i) Q(\theta_j \vert \theta_i) = P(\theta_j) Q(\theta_i \vert \theta_j)$. 
+Again, without getting too fussy about details, there's a simple condition called **detailed balance** for deciding if the target distribution is indeed invariant under the proposed Markov chain. We say that the target distribution $P$ and transition function $Q(\theta_i \vert \theta_j)$ satisfy detailed balance if for all $\theta_i, \theta_j$, we have $P(\theta_i) Q(\theta_j \vert \theta_i) = P(\theta_j) Q(\theta_i \vert \theta_j)$.
+
+The classic
 
 
 

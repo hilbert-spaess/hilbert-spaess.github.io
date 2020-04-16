@@ -2,7 +2,7 @@
 
 I've found a lot of good resources motivating MCMC methods, and describing the relevant algorithms, chiefly Gibbs sampling, Metropolis sampling, and Hybrid Monte-Carlo. When attempting to actually apply these tools, I've come across a few tricks and concepts that weren't clearly signposted in the literature. (The specific problems that required the use of MCMC were [survival curves](https://hilbert-spaess.github.io/STATS-survival-curves/) problems and full parameter inference of neural network models).
 
-I'll first give brief motivation for MCMC methods.
+I'm summarising here the bare minimum I needed to sample from the distributions that arose in the above projects.
 
 ## Brief summary of MCMC methods
 
@@ -33,7 +33,14 @@ Taking a Gaussian proposal function, the choice of radius exhibits an important 
 
 Cooking up a good MCMC algorithm isn't usually as simple as choosing a single transition function. Perhaps different regions of the parameter space are susceptible to different proposal distributions. Often the parameter vector has discrete components as well as continuous components, which will need to be treated separately. We may be in a situation in which we want to implement some combination of many transition functions $Q_1, ..., Q_n$. We will call a transition function that satisfies detailed balance a **valid move**.
 
-If $Q_1$ and $Q_2$ satisfy detailed balance, it is **not true** that the composition $Q_1 Q_2$ satifies detailed balance, as is easily checked. In general, an arbitrary composition of valid moves will not be 
+If $Q_1$ and $Q_2$ satisfy detailed balance, it is **not true** that the composition $Q_1 Q_2$ satifies detailed balance, as is easily checked. In general, an arbitrary composition of valid moves will not be a valid move. However, any palindromic combination of moves 
+
+---
+**Summary:** There are three main ways of combining moves: -palindromic composition, -random mixing, -random sequence selection.
+
+---
+
+It turns out that we can get a very long way with just Metropolis transitions and the 3 combination rules. 
 
 
 

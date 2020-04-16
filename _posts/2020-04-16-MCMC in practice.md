@@ -24,9 +24,8 @@ The prototypical example of a transition function satisfying detailed balance is
 Taking a Gaussian proposal function, the choice of radius exhibits an important trade-off. A larger radius allows the chain to potentially traverse the parameter space much more quickly. But the larger the radius, the smaller the chance that the proposal will be accepted, as the chain attempts to lurch out to regions of substantially lower probability. 
 
 ---
-**Idea:** Detailed balance is a useful condition to guarantee theoretical convergence. Most MCMC methods have transition functions that satisfy detailed balance. The speed at which these chains actually approach the target distribution is dependent on choices such as the proposal radius.
+**Idea:** Detailed balance is a useful condition to guarantee theoretical convergence. Most MCMC methods have transition functions that satisfy detailed balance. The speed at which these chains actually approach the target distribution is dependent on choices such as the proposal radius.---
 
----
 
 ## Chains-within-chains
 

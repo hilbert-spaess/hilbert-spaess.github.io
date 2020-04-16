@@ -17,9 +17,11 @@ Since we're looking for a sample, and not the maximum a posteriori estimate, we 
 
 Again, without getting too fussy about details, there's a simple condition called **detailed balance** for deciding if the target distribution is indeed invariant under the proposed Markov chain. We say that the target distribution $P$ and transition function $Q(\theta_i \vert \theta_j)$ satisfy detailed balance if for all $\theta_i, \theta_j$, we have $P(\theta_i) Q(\theta_j \vert \theta_i) = P(\theta_j) Q(\theta_i \vert \theta_j)$.
 
-The classic
+The classic example of a chain satisfying detailed balance is the **Metropolis rule**. Describe Metropolis. Gibbs as a special case of metropolis. 
 
+Summary of detailed balance idea.
 
+Mixing chains palindromically or 
 
 ## Chains-within-chains
 

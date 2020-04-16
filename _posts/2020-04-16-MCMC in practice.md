@@ -2,7 +2,7 @@
 
 I've found a lot of good resources motivating MCMC methods, and describing the relevant algorithms, chiefly Gibbs sampling, Metropolis sampling, and Hybrid Monte-Carlo. When attempting to actually apply these tools, I've come across a few tricks and concepts that weren't clearly signposted in the literature. (The specific problems that required the use of MCMC were [survival curves](https://hilbert-spaess.github.io/STATS-survival-curves/) problems and full parameter inference of neural network models).
 
-I'm summarising here the bare minimum I needed to sample from the distributions that arose in the above projects.
+I'm summarising here the bare minimum I needed to sample from the distributions that arose in the above projects. The motivating example throughout will be sampling from a posterior over neural network models for regression.
 
 ## Brief summary of MCMC methods
 
@@ -45,6 +45,8 @@ It turns out that we can get a very long way with just Metropolis transitions an
 To take a Gibbs sample, we simply fix  all bar one of the continuous parameters in our parameter vector, and take a sample from the corresponding one-dimensional conditional distribution. This proposal rule is easily defined, and is in fact always accepted. It requires only that we be able to sample from a one-dimensional distribution. A mixture of Gibbs samples using the above transition rules is called **Gibbs sampling**.
 
 ## Chains-within-chains
+
+Metropolis-within-Gibbs example.
 
 ## ARS
 

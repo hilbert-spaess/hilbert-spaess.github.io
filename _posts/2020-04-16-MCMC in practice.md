@@ -48,8 +48,12 @@ To take a Gibbs sample, we simply fix  all bar one of the continuous parameters 
 
 Metropolis-within-Gibbs example.
 
-## ARS
+Integrals example
 
-## Dimension-jumping
+## Dimension Jumping
+
+Survival curves and neural networks examples.
+
+## ARS and One-dimensional samples
 
 ## Checking everything's working

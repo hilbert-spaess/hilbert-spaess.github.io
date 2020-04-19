@@ -1,6 +1,7 @@
 author:
    name: Jacob Coxon
    email: jacobcoxon@hotmail.co.uk
+
 markdown: kramdown
 
 theme: minima

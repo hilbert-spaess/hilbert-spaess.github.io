@@ -1,2 +1,4 @@
 name: Jacob Coxon
 markdown: kramdown
+
+remote_theme: poole/hyde

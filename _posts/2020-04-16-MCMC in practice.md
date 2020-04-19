@@ -1,5 +1,10 @@
 <script type="text/x-mathjax-config"> MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']], processEscapes: true } }); </script> <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
+---
+layout: post
+title: MCMC in practice
+---
+
 I've found a lot of good resources motivating MCMC methods, and describing the relevant algorithms, chiefly Gibbs sampling, Metropolis sampling, and Hybrid Monte-Carlo. When attempting to actually apply these tools, I've come across a few tricks and concepts that weren't clearly signposted in the literature. (The specific problems that required the use of MCMC were [survival curves](https://hilbert-spaess.github.io/STATS-survival-curves/) problems and full parameter inference of neural network models).
 
 I'm summarising here the bare minimum I needed to sample from the distributions that arose in the above projects. The motivating example throughout will be sampling from a posterior over neural network models for regression.

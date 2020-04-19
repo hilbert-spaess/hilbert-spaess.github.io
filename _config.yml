@@ -1,4 +1,10 @@
-name: Jacob Coxon
+author:
+	name: Jacob Coxon
+	email: jacobcoxon@hotmail.co.uk
+
+description: >
+My personal site.
+
 markdown: kramdown
 
 theme: minima

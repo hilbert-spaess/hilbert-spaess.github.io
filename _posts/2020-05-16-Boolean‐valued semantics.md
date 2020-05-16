@@ -46,7 +46,17 @@ Let $B$ be a complete Boolean algebra. A Boolean-valued model of $L$ is a non-em
 
 When defining $\|\|\phi\|\|$ inductively, instances of conjuction, negation and so on are straightforwardly specified by ensuring that $\|\|.\|\|$ is a homomorphism of Boolean algebras. For example, $\|\|\phi_1 \lor \phi_2\|\| = \|\|\phi_1\|\| \lor \|\|\phi_2\|\|$. Instances of quantification are more interesting. We define $\|\|(\exists x) \phi(x)\|\| = \lor_{a \in A}\|\|\phi(a)\|\|$, and (for all equivalent). For the right-hand sides to be well-defined, we require the condition that $B$ is complete. 
 
-We say that a sentence $\phi$ is *valid* if $\|\|\phi\|\| = 1$. We'd like the axioms of first-order logic to be valid for our model. Note that $\|\|\phi \Rightarrow \psi\|\| = 1 \Leftrightarrow \|\|\phi\|\| \leq \|\|\psi\|\|$. 
+We say that a sentence $\phi$ is *valid* if $\|\|\phi\|\| = 1$. We'd like the axioms of first-order logic to be valid for our model. Note that $\|\|\phi \Rightarrow \psi\|\| = 1 \Leftrightarrow \|\|\phi\|\| \leq \|\|\psi\|\|$. As with pure propositional logic, the propositional axioms are satisfied by virtue of the Boolean algebra homomorphism. The axioms referring to quantification and implication are also satisfied. The only axioms that aren't immediately satisfied are those referring to the equality predicate. To ensure that these are satisfied, we require that for all $x, y \in A$, and formulae $p$ with $y$ not occurring in $p$:
+
+$$ \|\| x = x \|\| = 1 $$
+
+$$ \|\| x = y \|\| = \|\| y = x \|\| $$
+
+$$ \|\| x = y \|\| \land \|\| y = z \|\| \leq \|\|x = z \|\| $$
+
+$$ \|\| x = y \|\| \leq \|\| p \Rightarrow p[y/x] \|\| $$
+
+In the case of 
 
 
 ## The standard Boolean-valued model of set theory

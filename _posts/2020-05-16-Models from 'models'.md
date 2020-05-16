@@ -22,9 +22,9 @@ We start with the simpler language of propositional logic. This consists of a fa
 
 The usual axiomatisation of propositional logic consists of the following three axiom schema, formed by substituting $p,q,r$ in what follows with all possible combinations of elements of $S$. (These axiom schema suffice for completeness of propositional logic).
 
-$$p \Rightarrow (q \Rightarrow p)$$  
-$$[ p \Rightarrow (q \Rightarrow r)] \Rightarrow [(p \Rightarrow q) \Rightarrow (p \Rightarrow r)]$$  
-$$ (\lnot \lnot p) \Rightarrow p$$
+$$ p \Rightarrow (q \Rightarrow p) $$  
+$$ [ p \Rightarrow (q \Rightarrow r)] \Rightarrow [(p \Rightarrow q) \Rightarrow (p \Rightarrow r)] $$  
+$$ (\lnot \lnot p) \Rightarrow p $$
 
 We ask the following question: does there exist a theorem of propositional logic, consisting only of primitive propositions and the connective $\Rightarrow$, such that it cannot be proved using only the first two axiom schema?
 
@@ -36,7 +36,7 @@ Let's now guess a theorem of propositional logic that might require the third ax
 
 $$ p \Rightarrow ((p \Rightarrow p) \Rightarrow p)$$
 
-Indeed, this holds for 'different reasons' for different (standard) valuations of $p$. It is thus a theorem of propositional logic, and by completeness is provable
+Indeed, this holds for 'different reasons' for different (standard) valuations of $p$. It is thus a theorem of propositional logic, and by completeness is provable with the first three axiom schema. 
 
 ## BVMs in first-order logic
 

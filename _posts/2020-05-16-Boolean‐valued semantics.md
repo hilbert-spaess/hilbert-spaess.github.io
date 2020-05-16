@@ -40,7 +40,11 @@ Indeed, this holds for 'different reasons' for different (standard) valuations o
 
 ## BVMs in first-order logic
 
+We will now formally define a Boolean-valued model of a first-order language $L$. Recall that a first-order language consists of a set of function symbols $\Omega$, a set of relation symbols $\Pi$, and the 'arity' function $\alpha: \Omega \cup \Pi \to \mathbb{N}$. A Boolean-valued model of $L$ will be a non-empty set $A$ with a function $f_A : A^n \to A$ for each $f \in \Omega, \alpha(f) = n$. So far, this is the same as the vanilla definition of a model. 
+
 ## The standard Boolean-valued model of set theory
+
+To constructConsider the universe of sets $V$. 
 
 ## Quotienting by a filter
 

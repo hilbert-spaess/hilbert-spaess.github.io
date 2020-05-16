@@ -26,7 +26,9 @@ $$p \Rightarrow (q \Rightarrow p)$$
 $$[ p \Rightarrow (q \Rightarrow r)] \Rightarrow [(p \Rightarrow q) \Rightarrow (p \Rightarrow r)]$$  
 $$ p \Rightarrow (\lnot \lnot p)$$
 
-We ask the following question: does there exist a sentence, consisting only of primitive propositions and the connective $\Rightarrow$, such that 
+We ask the following question: does there exist a theorem of propositional logic, consisting only of primitive propositions and the connective $\Rightarrow$, such that it cannot be proved using only the first two axiom schema?
+
+If there does exist such a sentence $\phi$, we are being asked to prove an *independence statement*: we are being asked to show that $\phi$ is independent of the first two axiom schema. The usual model-based approach to proving independence is to use the soundness theorem. For any (standard) valuation of propositional logic, if the valuation assigns truth value 1 to a set of axioms, it assigns 1 to all provable consequences. Thus, if we can find a valuation in which all axioms of the first two schema take value 1, but $\phi$
 
 
 ## The standard Boolean-valued model of set theory

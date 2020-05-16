@@ -46,7 +46,7 @@ Let $B$ be a complete Boolean algebra. A Boolean-valued model of $L$ is a non-em
 
 When defining $\|\|phi\|\|$ inductively, instances of conjuction, negation and so on are straightforwardly specified by ensuring that $\|\|.\|\|$ is a homomorphism of Boolean algebras. For example, $\|\|phi_1 \lor \phi_2\|\| = \|\|phi_1\|\| \lor \|\|phi_2\|\|$. Instances of quantification are more interesting. We define $\|\|(\exists x) \phi(x)\|\| = \lor_{a \in A}\|\|\phi(a)\|\|$, and (for all equivalent). For the right-hand sides to be well-defined, we require the condition that $B$ is complete. 
 
-We say that a sentence $\phi$ is valid
+We say that a sentence $\phi$ is *valid* if $\|\|\phi\|\| = 1$. We'd like the axioms of first-order logic to be valid for our model. Note that $\|\|\phi \Rightarrow \psi\|\| = 1 \Leftrightarrow \|\|\phi\|\| \leq \|\|\psi\|\|$. 
 
 
 ## The standard Boolean-valued model of set theory

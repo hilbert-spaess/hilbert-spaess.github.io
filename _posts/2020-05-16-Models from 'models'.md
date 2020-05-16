@@ -22,8 +22,9 @@ We start with the simpler language of propositional logic. This consists of a fa
 
 The usual axiomatisation of propositional logic consists of the following three axiom schema, formed by substituting $p,q,r$ in what follows with all possible combinations of elements of $S$:
 
-$$ p \Rightarrow (q \Rightarrow p)$$
-$$ [ p \Rightarrow (q \Rightarrow r)$$
+$$p \Rightarrow (q \Rightarrow p)$$  
+$$[ p \Rightarrow (q \Rightarrow r)$$
+
 
 ## The standard Boolean-valued model of set theory
 

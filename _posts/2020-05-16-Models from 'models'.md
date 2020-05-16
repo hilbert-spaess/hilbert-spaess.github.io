@@ -1,6 +1,6 @@
 <script type="text/x-mathjax-config"> MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']], processEscapes: true } }); </script> <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
-This is the first post in a projected multi-post sequence on **forcing** and its use in independence proofs in set theory. I'm hoping to take the sequence in a philosophical direction, but this is an area of philosophy for which quite a lot of (thankfully attractive) maths is needed. The intended pre-requisites are an understanding of first-order logic up to the completeness theorem. [Written by a beginner etc].
+This is the first post in a projected multi-post sequence on **forcing** and its use in independence proofs in set theory. I'm hoping to take the sequence in a philosophical direction, but this is an area of philosophy for which quite a lot of (thankfully attractive) maths is needed. The intended pre-requisites are an understanding of first-order logic up to the completeness theorem, and an understanding of the axioms of ZFC. [Written by a beginner etc].
 
 ## What is a model?
 
@@ -29,6 +29,9 @@ $$ p \Rightarrow (\lnot \lnot p)$$
 We ask the following question: does there exist a theorem of propositional logic, consisting only of primitive propositions and the connective $\Rightarrow$, such that it cannot be proved using only the first two axiom schema?
 
 If there does exist such a sentence $\phi$, we are being asked to prove an *independence statement*: we are being asked to show that $\phi$ is independent of the first two axiom schema. The usual model-based approach to proving independence is to use the soundness theorem. For any (standard) valuation of propositional logic, if the valuation assigns truth value 1 to a set of axioms, it assigns 1 to all provable consequences. Thus, if we can find a valuation in which all axioms of the first two schema take value 1, but $\phi$ takes value 0, we have shown that $\phi$ cannot be deduced from these axioms alone. The problem is that if $\phi$ is a theorem of propositional logic, it will take value 1 in *any* valuation, so this argument is doomed to fail.
+
+However, general BVMs will come to our rescue. A version of soundness also holds for valuations taking values in an arbitrary Boolean algebra. If a sentence is a logical consequence of a set of axioms assigned truth value 1, then the sentence will be assigned truth value 1. So if we can exhibit a Boolean-valued model of the first two axiom schema, for which the value assigned to $\phi$ is not 1, we will have shown the desired independence.
+
 
 
 ## The standard Boolean-valued model of set theory

@@ -42,7 +42,7 @@ Indeed, this holds for 'different reasons' for different (standard) valuations o
 
 We will now formally define a Boolean-valued model of a first-order language $L$. Recall that a first-order language consists of a set of function symbols $\Omega$, a set of relation symbols $\Pi$, and the 'arity' function $\alpha: \Omega \cup \Pi \to \mathbb{N}$. Let $B$ be a complete Boolean algebra. We want to define a model of $L$ so that sentences can be interpreted as taking truth values in $B$.
 
-Let $B$ be a complete Boolean algebra. A Boolean-valued model of $L$ is a non-empty set $A$ with a function $f_A : A^n \to A$ for each $f \in \Omega, \alpha(f) = n$. So far, this is the same as the vanilla definition of a model. However, for a relation $\phi \in \Pi, \alpha(\phi) = n$, the claim $\phi(a_1, ..., a_n)$ is no longer either true or false. Instead, we write $\phi_A(a_1, ..., a_n) \in B$ as the truth value of the relation. So the interpretation of $\phi$ is $\phi_A : A^n \to B$
+Let $B$ be a complete Boolean algebra. A Boolean-valued model of $L$ is a non-empty set $A$ with a function $f_A : A^n \to A$ for each $f \in \Omega, \alpha(f) = n$. So far, this is the same as the vanilla definition of a model. However, for a relation $\phi \in \Pi, \alpha(\phi) = n$, the claim $\phi(a_1, ..., a_n)$ is no longer either true or false. Instead, we write $||\phi(a_1, ..., a_n)||in B$ as the truth value of the relation. Here, for convenience, where interpretation takes values in $B$, we replace the subscript notation with 'norm' notation. So the interpretation of $\phi$ is $|| \circ \phi : A^n \to B$. For example, if $L$ is the language of set theory, then for $a_1, a_2 \in A$, we write $||a_1 \in a_2|| \in B$. 
 
 
 ## The standard Boolean-valued model of set theory

@@ -4,8 +4,12 @@ This is the first post in a projected multi-post sequence on *forcing* and its u
 
 ## What is a model?
 
-A model is a structure with which we can interpret sentences in a formal language. In the first-order language of sets, an example of a sentence is $(\exists y)(\forall x)(x \not \in y)$. 
+A model is a structure with which we can interpret sentences in a formal language. In the first-order language of sets, an example of a *sentence* is $(\exists y)(\forall x)(x \not \in y)$. An example of a model of the language of sets might be $\{ \{1\}, \{1, 2\}}$. 
 
 ## Boolean-valued models of propositional logic
 
-## 
+## The standard Boolean-valued model of set theory
+
+## Quotienting by a filter
+
+## Building V[G]

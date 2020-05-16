@@ -24,7 +24,7 @@ The usual axiomatisation of propositional logic consists of the following three 
 
 $$p \Rightarrow (q \Rightarrow p)$$  
 $$[ p \Rightarrow (q \Rightarrow r)] \Rightarrow [(p \Rightarrow q) \Rightarrow (p \Rightarrow r)]$$
-$$ p \Rightarrow (\not \not p)$$
+$$ p \Rightarrow (\lnot \lnot p)$$
 
 We ask the following question: does there exist a sentence, consisting only of primitive propositions and the connective $\Rightarrow$, such that 
 

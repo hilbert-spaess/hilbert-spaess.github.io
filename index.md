@@ -11,4 +11,4 @@ Some thoughts on [statistics](https://hilbert-spaess.github.io/2020/03/19/STATS-
 
 A post on [what it means to understand maths properly](https://hilbert-spaess.github.io/2020/03/20/understanding-maths.html).
 
-My [about] page.
+My [about](https://hilbert-spaess.github.io/about.html) page.

@@ -10,13 +10,15 @@ Let's recall the inductive definition of M-interpretation $\phi_M$ of a sentence
 
 [Assigning truth values to atomic formulae, then extrapolating].
 
+[Soundness and completeness]
+
 [Multi-valued notion of truth. Need corresponding and, or, and not. The correct structure here is a Boolean algebra.
 
 ## Boolean-valued models of propositional logic
 
-We start with the simpler language of propositional logic. This consists of a family of **primitive propositions** $P$, represented by symbols like $p,q,r$, which are the atomic formulae. Sentences consist of these atomic formulae assembled with the usual logical connectives of $\land, \lor, \lnot$, and $\Rightarrow$.  [Models of propositional logic, aka valuations].
+We start with the simpler language of propositional logic. This consists of a family of **primitive propositions** $P$, represented by symbols like $p,q,r$, which are the atomic formulae. Sentences consist of these atomic formulae assembled with the usual logical connectives of $\land, \lor, \lnot$, and $\Rightarrow$. A standard model (or **valuation**) of propositional logic is a map from sentences to the simplest Boolean algebra \{True, False\}, which is a homomorphism of Boolean algebras. Put simply, it assigns binary truth values to sentences while respecting the basic logical operations.
 
-[Boolean-valued models of proposition logic, and an application].
+A Boolean-valued valuation of propositional logic is a simple generalisation of the previous definition: it is a map from sentences of propositional logic to a Boolean algebra $B$, constructed
 
 ## The standard Boolean-valued model of set theory
 

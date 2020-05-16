@@ -48,15 +48,19 @@ When defining $\|\|\phi\|\|$ inductively, instances of conjuction, negation and 
 
 We say that a sentence $\phi$ is *valid* if $\|\|\phi\|\| = 1$. We'd like the axioms of first-order logic to be valid for our model. Note that $\|\|\phi \Rightarrow \psi\|\| = 1 \Leftrightarrow \|\|\phi\|\| \leq \|\|\psi\|\|$. As with pure propositional logic, the propositional axioms are satisfied by virtue of the Boolean algebra homomorphism. The axioms referring to quantification and implication are also satisfied. The only axioms that aren't immediately satisfied are those referring to the equality predicate. To ensure that these are satisfied, we require that for all $x, y \in A$, and formulae $p$ with $y$ not occurring in $p$:
 
-$$ \|\| x = x \|\| = 1 $$
+$$ \| x = x \| = 1 $$
 
-$$ \|\| x = y \|\| = \|\| y = x \|\| $$
+$$ \| x = y \| = \| y = x \| $$
 
-$$ \|\| x = y \|\| \land \|\| y = z \|\| \leq \|\|x = z \|\| $$
+$$ \| x = y \| \land \| y = z \| \leq \|x = z \| $$
 
-$$ \|\| x = y \|\| \leq \|\| p \Rightarrow p[y/x] \|\| $$
+$$ \| x = y \| \leq \| p \Rightarrow p[y/x] \| $$
 
-These guarantee that the axioms concerning the equality relation are valid. In the case that $L$ is the language of set theory, the final axiom can be replaced with the more specific $\|\| x = v \|\| \land \|\|y = z\|\| \land \|\|x \in y \|\| \leq \|\|v \in z \|\|$. So all axioms of first-order logic are valid in a Boolean-valued model. It is now easily verified that the rules of inference (generalisation and modus ponens) applied to valid sentences yield valid sentences. We thus have a form of soundness: provable sentences are valid in a Boolean-valued model. This means we can use Boolean-valued models for consistency proofs: if the axioms of a first-order theory are valid in a Boolean-valued model, and a sentence $\phi$ has $\|\| \phi \|\| \neq 0, 1$, then $\phi$ is independent of the axioms.
+These guarantee that the axioms concerning the equality relation are valid. In the case that $L$ is the language of set theory, the final axiom can be replaced with the more specific
+
+$$\| x = v \| \land \|y = z\| \land \|x \in y \| \leq \|v \in z \|$$
+
+So all axioms of first-order logic are valid in a Boolean-valued model. It is now easily verified that the rules of inference (generalisation and modus ponens) applied to valid sentences yield valid sentences. We thus have a form of soundness: provable sentences are valid in a Boolean-valued model. This means we can use Boolean-valued models for consistency proofs: if the axioms of a first-order theory are valid in a Boolean-valued model, and a sentence $\phi$ has $\|\| \phi \|\| \neq 0, 1$, then $\phi$ is independent of the axioms.
 
 ## The standard Boolean-valued model of set theory
 

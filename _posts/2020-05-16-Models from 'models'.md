@@ -4,7 +4,9 @@ This is the first post in a projected multi-post sequence on *forcing* and its u
 
 ## What is a model?
 
-A model is a structure with which we can interpret sentences in a formal language. Loosely, by interpretation we mean assigning a truth value to the sentence according to whether it holds in the model. In the familiar first-order language of sets, an example of a *sentence* $\phi$ is $(\exists y)(\forall x)(x \not \in y)$. An example of a model of the language of sets might be $M = \{\, \{1\}, \{1, 2\}}$, interpreting the formal $\in$ relation as standard set inclusion. With the usual first-order interpretation of $\phi$ in $M$, we assign a truth value of $1$. 
+A model is a structure with which we can interpret sentences in a formal language. Loosely, by interpretation we mean assigning a truth value to the sentence according to whether it holds in the model. In the familiar first-order language of sets, an example of a *sentence* $\phi$ is $(\exists y)(\forall x)(x \not \in y)$. An example of a model of the language of sets might be $M = \{\, \{1\}, \{1, 2\}}$, interpreting the formal $\in$ relation as standard set inclusion. By inspection, $\phi$ is true according to its obvious M-interpretation.
+
+Let's take a closer look at the inductive definition of M-interpretation. 
 
 ## Boolean-valued models of propositional logic
 

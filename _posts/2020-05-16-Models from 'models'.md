@@ -20,7 +20,7 @@ Let's show that Boolean-valued models can be used to solve an interesting proble
 
 We start with the simpler language of propositional logic. This consists of a family of **primitive propositions** $P$, represented by symbols like $p,q,r$, which are the atomic formulae. The Boolean algebra $S$ of sentences consists arbitrary combinations of atomic formulae assembled with the usual logical connectives of $\land, \lor, \lnot$, and $\Rightarrow$. For the sake of simplicity, we note that limiting our connectives to $\Rightarrow$ and a 'False' symbol $\bot$ will be just as expressive. A standard model (or **valuation**) of propositional logic is a homomorphism of Boolean algebras between $S$ and the binary truth Boolean algebra \{True, False\}. Put simply, it assigns binary truth values to sentences while respecting the basic logical operations. It is easy to show that a valuation is uniquely determined by the values it assigns to primitive propositions. For example, if $v$ is a valuation such that $v(p) = 1$, $v(q) = 0$, then $v(p \Rightarrow q) = 0$. A general Boolean-valued model is a straightforward extension: a homomorphism between $S$ and an arbitrary Boolean algebra $B$.
 
-The usual axiomatisation of propositional logic consists of the following three axiom schema, formed by substituting $p,q,r$ in what follows with all possible combinations of elements of $S$:
+The usual axiomatisation of propositional logic consists of the following three axiom schema, formed by substituting $p,q,r$ in what follows with all possible combinations of elements of $S$. (These axiom schema suffice for completeness of propositional logic).
 
 $$p \Rightarrow (q \Rightarrow p)$$  
 $$[ p \Rightarrow (q \Rightarrow r)] \Rightarrow [(p \Rightarrow q) \Rightarrow (p \Rightarrow r)]$$  
@@ -30,9 +30,15 @@ We ask the following question: does there exist a theorem of propositional logic
 
 If there does exist such a sentence $\phi$, we are being asked to prove an *independence statement*: we are being asked to show that $\phi$ is independent of the first two axiom schema. The usual model-based approach to proving independence is to use the soundness theorem. For any (standard) valuation of propositional logic, if the valuation assigns truth value 1 to a set of axioms, it assigns 1 to all provable consequences. Thus, if we can find a valuation in which all axioms of the first two schema take value 1, but $\phi$ takes value 0, we have shown that $\phi$ cannot be deduced from these axioms alone. The problem is that if $\phi$ is a theorem of propositional logic, it will take value 1 in *any* valuation, so this argument is doomed to fail.
 
-However, general BVMs will come to our rescue. A version of soundness also holds for valuations taking values in an arbitrary Boolean algebra. If a sentence is a logical consequence of a set of axioms assigned truth value 1, then the sentence will be assigned truth value 1. So if we can exhibit a Boolean-valued model of the first two axiom schema, for which the value assigned to $\phi$ is not 1, we will have shown the desired independence.
+However, general BVMs will come to our rescue. A version of soundness also holds for valuations taking values in an arbitrary Boolean algebra. If a sentence is a logical consequence of a set of axioms assigned truth value 1, then the sentence will be assigned truth value 1. So if we can exhibit a Boolean-valued model of the first two axiom schema, for which the value assigned to $\phi$ is not 1, we will have shown the desired independence. Let's consider the next simplest Boolean algebra after binary truth. This has four elements, with two new 'midway' truth values $a$ and $b$ satisfying $a = \lnot b$ (this Boolean algebra has the structure of the powerset of a two-element set). We will call a valuation taking values in this structure a 4-valuation. Note first that any 4-valuation models the first two axiom schema.
 
+Let's now guess a theorem of propositional logic that might require the third axiom for a proof. We expect such a sentence to indirectly appeal to the law of the excluded middle- an informal proof will split into cases according to whether a given proposition is true or false. A candidate is:  
 
+$$ p \Rightarrow ((p \Rightarrow p) \Rightarrow p)$$
+
+Indeed, this holds for 'different reasons' for different (standard) valuations of $p$. It is thus a theorem of propositional logic, and by completeness is provable
+
+## BVMs in first-order logic
 
 ## The standard Boolean-valued model of set theory
 

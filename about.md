@@ -9,7 +9,7 @@ I live in Oxford and Cambridge. I'm currently most interested in:
 
 - Set theory and what it can tell us about the universe.
 
-- Speeding up language acquisition.
+- How to speed up language acquisition. Especially 日本語 :)
 
 If you want to get in touch, you can contact me at jacobcoxon [at] hotmail [dot] co [dot] uk, or just add me on Facebook.
 

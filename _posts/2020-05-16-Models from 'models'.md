@@ -16,9 +16,9 @@ Let's recall the inductive definition of M-interpretation $\phi_M$ of a sentence
 
 ## Boolean-valued models of propositional logic
 
-We start with the simpler language of propositional logic. This consists of a family of **primitive propositions** $P$, represented by symbols like $p,q,r$, which are the atomic formulae. Sentences consist of these atomic formulae assembled with the usual logical connectives of $\land, \lor, \lnot$, and $\Rightarrow$. A standard model (or **valuation**) of propositional logic is a map from sentences to the simplest Boolean algebra \{True, False\}, which is a homomorphism of Boolean algebras. Put simply, it assigns binary truth values to sentences while respecting the basic logical operations.
+We start with the simpler language of propositional logic. This consists of a family of **primitive propositions** $P$, represented by symbols like $p,q,r$, which are the atomic formulae. Sentences consist of these atomic formulae assembled with the usual logical connectives of $\land, \lor, \lnot$, and $\Rightarrow$. A standard model (or **valuation**) of propositional logic is a map from sentences to the simplest Boolean algebra \{True, False\}, which is a homomorphism of Boolean algebras. Put simply, it assigns binary truth values to sentences while respecting the basic logical operations. It is easy to show that a valuation is uniquely determined by the values it assigns to primitive propositions. For example, if $v$ is a valuation such that $v(p) = 1$, $v(q) = 0$, then $v(p \Rightarrow q) = 0$. 
 
-A Boolean-valued valuation of propositional logic is a simple generalisation of the previous definition: it is a map from sentences of propositional logic to a Boolean algebra $B$, constructed
+A general Boolean-valued model
 
 ## The standard Boolean-valued model of set theory
 

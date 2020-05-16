@@ -13,4 +13,4 @@ If you want to get in touch, you can contact me at jacobcoxon [at] hotmail [dot]
 
 My CV.
 
-<img align="right" src="/images/me.jpg">
+<img align="right" width="120" height="90" src="/images/me.jpg">

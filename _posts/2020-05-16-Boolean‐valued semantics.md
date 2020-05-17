@@ -54,7 +54,11 @@ $$\| x = v \| \land \|y = z\| \land \|x \in y \| \leq \|v \in z \|$$
 
 So all axioms of first-order logic are valid in a Boolean-valued model. It is now easily verified that the rules of inference (generalisation and modus ponens) applied to valid sentences yield valid sentences. We thus have a form of soundness: provable sentences are valid in a Boolean-valued model. This means we can use Boolean-valued models for consistency proofs: if the axioms of a first-order theory are valid in a Boolean-valued model, and a sentence $\phi$ has $\|\| \phi \|\| \neq 0, 1$, then $\phi$ is independent of the axioms.
 
-## The standard Boolean-valued model of set theory
+## The standard Boolean-valued model of ZFC
+
+We've now seen the full definition of a Boolean-valued model of the first-order language of set theory. The question we now turn to is: given a Boolean algebra $B$, can we construct a Boolean-valued model of ZFC taking values in $B$? (Precisely, we want a model of the language of set theory in which the axioms of ZFC are valid).
+
+The idea is to start with the universe $V$, a transitive model of ZFC
 
 To constructConsider the universe of sets $V$. 
 

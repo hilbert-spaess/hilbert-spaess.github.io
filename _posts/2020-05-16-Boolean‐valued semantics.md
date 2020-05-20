@@ -80,7 +80,7 @@ If we want to get **objects** from **names**, we might want to try quotienting $
 $$ [x] (=) [y] \Leftrightarrow \| x = y \| = 1 $$  
 $$ [x] (\in) [y] \Leftrightarrow \| x \in y \| = 1 $$
 
-We define $$V^B/\{1\} = \{[x] : x \in V_B \}$$. It's easily checked that the containment predicate on equivalence classes co-operates with the equality predicate, so $$(V^B/\{1}, (=), (\in) )$$ is a fully-fledged model of the language of set theory. It remains to check that this is not only a model of ZFC, but is in fact a new model of ZFC. 
+We define $$V^B/\{1\} = \{[x] : x \in V_B \}$$. It's easily checked that the containment predicate on equivalence classes co-operates with the equality predicate, so $$(V^B/\{1\}, (=), (\in) )$$ is a fully-fledged model of the language of set theory. It remains to check that this is not only a model of ZFC, but is in fact a new model of ZFC. 
 
 ## Quotienting by a general ultrafilter
 

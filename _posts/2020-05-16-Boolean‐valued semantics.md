@@ -64,6 +64,12 @@ $$ V_0^B = \emptyset $$
 
 $$ V_{\alpha^{+}}^B = \{ f : x \to B | x \in V_{\alpha} \} $$
 
+$$ V_{\lambda}^B = \cup_{\gamma < \lambda} V_{\gamma}^B $$
+
+The class $V^B = \cup_{\alpha} V_{\alpha}$ is our candidate Boolean-valued model. The definitions of $$\| x \in y \|, \| x = y \|$ are now natural.
+
+
+
 ## Quotienting by a filter
 
 ## Building V[G]

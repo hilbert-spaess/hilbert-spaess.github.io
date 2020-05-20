@@ -77,7 +77,7 @@ When studying the model theory of set theory, ordinary models are the primary ob
 
 If we want to get **objects** from **names**, we might want to try quotienting $V^B$ according to the Boolean-valued equality and containment predicates. One idea is to define equivalence classes by:
 
-$$ [x] (=) [y] \Leftrightarrow \| x = y \| = 1 $$
+$$ [x] (=) [y] \Leftrightarrow \| x = y \| = 1 $$  
 $$ [x] (\in) [y] \Leftrightarrow \| x \in y \| = 1 $$
 
 We define $$V^B/\{1\} = \{[x] : x \in V_B \}$$. It's easily checked that the containment predicate on equivalence classes co-operates with the equality predicate, so $$(V^B/\{1}, (=), (\in) )$$ is a fully-fledged model of the language of set theory. It remains to check that this is not only a model of ZFC, but is in fact a new model of ZFC. 

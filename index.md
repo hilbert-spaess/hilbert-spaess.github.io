@@ -5,7 +5,7 @@ layout: page
 
 Currently in construction on this website:
 
-A [sequence of posts](https://hilbert-spaess.github.io/2020/05/16/Boolean-valued-semantics.html) about the technique of forcing in set theory, and its relation to mathematical philosophy.
+A [sequence of posts](https://hilbert-spaess.github.io/forcing.html) about the technique of forcing in set theory, and its relation to mathematical philosophy.
 
 Some thoughts on [statistics](https://hilbert-spaess.github.io/2020/03/19/STATS-survival-curves.html) and [causal analysis](https://hilbert-spaess.github.io/2020/03/23/stats-Causality-from-correlation-Pearl's-approach.html).
 

@@ -56,11 +56,12 @@ So all axioms of first-order logic are valid in a Boolean-valued model. It is no
 
 ## The standard Boolean-valued model of ZFC
 
-We've now seen the full definition of a Boolean-valued model of the first-order language of set theory. The question we now turn to is: given a Boolean algebra $B$, can we construct a Boolean-valued model of ZFC taking values in $B$? (Precisely, we want a model of the language of set theory in which the axioms of ZFC are valid).
+We've now seen the full definition of a Boolean-valued model of the first-order language of set theory. The question we now turn to is: given a Boolean algebra $B$, can we construct a Boolean-valued model of ZFC taking values in $B$? Of course, we need to assume access to a transitive model $V$ of ZFC. It turns out a fairly intuitive construction yields a proper class that is interpretable as a Boolean model.
 
-The idea is to start with the universe $V$, a transitive model of ZFC
+Our model $V^B$ will consist of 'Boolean-valued sets'. A Boolean-valued set $x$ has a domain $\dom{x}$ of possible elements (where $\dom{x}$ is a set in $V$), and consists of a function $\dom{x} \to B$. Formally, by analogy with the construction of the Von Neumann hierarchy, we build up $V^B$ by transfinite recursion:
 
-To constructConsider the universe of sets $V$. 
+$$ V_0^B = \emptyset $$
+
 
 ## Quotienting by a filter
 

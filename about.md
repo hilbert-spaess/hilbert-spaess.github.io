@@ -1,6 +1,5 @@
 ---
 title: About
-layout: page
 ---
 
 <img align="right" width="240" height="180" src="/images/me.jpg">

@@ -1,6 +1,5 @@
 ---
 title: Elvis
-layout: page
 ---
 
 Currently in construction on this website:

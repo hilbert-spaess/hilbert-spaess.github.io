@@ -73,7 +73,9 @@ It is easily checked that $V^B$ satisfies the axioms of a Boolean-valued model o
 
 ## Quotienting out $V^B$
 
-When studying the model theory of set theory, ordinary models are the primary objects of study. The goal of the technique of forcing is the construction of new legitimate models of ZFC with interesting properties. 
+When studying the model theory of set theory, ordinary models are the primary objects of study. The goal of the technique of forcing is the construction of new legitimate models of ZFC with interesting properties. How can we use $V^B$ to build a new ordinary model of ZFC?
+
+If we want to get **objects** from **names**, we might want to try quotienting $V^B$ according to the r
 
 ## Quotienting by a general ultrafilter
 

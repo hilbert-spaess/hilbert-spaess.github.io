@@ -65,9 +65,9 @@ $$ V_{\lambda}^B = \bigcup_{\gamma < \lambda} V_{\gamma}^B $$
 
 The class $V^B = \cup_{\alpha} V_{\alpha}$ is our candidate Boolean-valued model. The definitions of $$\| x \in y \|, \| x = y \|$$ are now natural. For example, when checking membership $$\|x \in y \|$$, we have to consider both the degree to which $x$ is equal to an element of $y$, and the degree to which this element is indeed a member of $y$. We 
 
-$$ \| x \in y \| = \bigsum_{z \in \mathcal{D}(y)} \| x = z \| \land y(z) $$
-$$ \| x \subset y \| = \bigprod_{z \in \mathcal{D}(x)} \| z \in x \| \Rightarrow y(z) $$
-
+$$ \| x \in y \| = \sum_{z \in \mathcal{D}(y)} \| x = z \| \land y(z) $$
+$$ \| x \subset y \| = \prod_{z \in \mathcal{D}(x)} \| z \in x \| \Rightarrow y(z) $$
+$$ \| x = y \| = \| x \subset y \| . \| y \subset x \| $$
 
 
 ## Quotienting by a filter

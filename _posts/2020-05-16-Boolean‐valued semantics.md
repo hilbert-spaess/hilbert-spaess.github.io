@@ -55,17 +55,18 @@ So all axioms of first-order logic are valid in a Boolean-valued model. It is no
 
 We've now seen the full definition of a Boolean-valued model of the first-order language of set theory. The question we now turn to is: given a Boolean algebra $B$, can we construct a Boolean-valued model of ZFC taking values in $B$? Of course, we need to assume access to a transitive model $V$ of ZFC. It turns out a fairly intuitive construction yields a proper class that is interpretable as a Boolean model.
 
-Our model $V^B$ will consist of 'Boolean-valued sets'. A Boolean-valued set $x$ is a function from a domain of possible elements to $B$, expressing the 'degree of membership'. Formally, by analogy with the construction of the Von Neumann hierarchy, we build up $V^B$ by transfinite recursion:
+Our model $V^B$ will consist of 'Boolean-valued sets'. A Boolean-valued set $x$ is a function from a domain of possible elements $\mathcal{D}(x)$ to $B$, expressing the 'degree of membership'. Of course, the domain is a set in $V$ and the function is a function in $V$. Formally, by analogy with the construction of the Von Neumann hierarchy, we build up $V^B$ by transfinite recursion:
 
 $$ V_0^B = \emptyset $$
 
-$$ V_{\alpha^{+}}^B = \{ f : x \to B | x \in V_{\alpha} \} $$
+$$ V_{\alpha^{+}}^B = \{ f : x \to B | x \subset V_{\alpha} \} $$
 
 $$ V_{\lambda}^B = \bigcup_{\gamma < \lambda} V_{\gamma}^B $$
 
 The class $V^B = \cup_{\alpha} V_{\alpha}$ is our candidate Boolean-valued model. The definitions of $$\| x \in y \|, \| x = y \|$$ are now natural. For example, when checking membership $$\|x \in y \|$$, we have to consider both the degree to which $x$ is equal to an element of $y$, and the degree to which this element is indeed a member of $y$:
 
-$$ \| x \in y \| = \biglor_{
+$$ \| x \in y \| = \biglor_{z \in \mathcal{D}(y)} \| x = z \| \land y(z) $$
+
 
 
 

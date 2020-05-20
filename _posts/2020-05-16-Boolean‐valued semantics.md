@@ -61,9 +61,11 @@ $$ V_0^B = \emptyset $$
 
 $$ V_{\alpha^{+}}^B = \{ f : x \to B | x \in V_{\alpha} \} $$
 
-$$ V_{\lambda}^B = \cup_{\gamma < \lambda} V_{\gamma}^B $$
+$$ V_{\lambda}^B = \bigcup_{\gamma < \lambda} V_{\gamma}^B $$
 
-The class $V^B = \cup_{\alpha} V_{\alpha}$ is our candidate Boolean-valued model. The definitions of $$\| x \in y \|, \| x = y \|$$ are now natural.
+The class $V^B = \cup_{\alpha} V_{\alpha}$ is our candidate Boolean-valued model. The definitions of $$\| x \in y \|, \| x = y \|$$ are now natural. For example, when checking membership $$\|x \in y \|$$, we have to consider both the degree to which $x$ is equal to an element of $y$, and the degree to which this element is indeed a member of $y$:
+
+$$ \| x \in y \| = \biglor_{
 
 
 

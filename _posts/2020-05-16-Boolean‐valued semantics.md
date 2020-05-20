@@ -40,12 +40,9 @@ When defining $\|\|\phi\|\|$ inductively, instances of conjuction, negation and 
 
 We say that a sentence $\phi$ is *valid* if $\|\|\phi\|\| = 1$. We'd like the axioms of first-order logic to be valid for our model. Note that $\|\|\phi \Rightarrow \psi\|\| = 1 \Leftrightarrow \|\|\phi\|\| \leq \|\|\psi\|\|$. As with pure propositional logic, the propositional axioms are satisfied by virtue of the Boolean algebra homomorphism. The axioms referring to quantification and implication are also satisfied. The only axioms that aren't immediately satisfied are those referring to the equality predicate. To ensure that these are satisfied, we require that for all $x, y \in A$, and formulae $p$ with $y$ not occurring in $p$:
 
-$$ \| x = x \| = 1 $$
-
-$$ \| x = y \| = \| y = x \| $$
-
-$$ \| x = y \| \land \| y = z \| \leq \|x = z \| $$
-
+$$ \| x = x \| = 1 $$  
+$$ \| x = y \| = \| y = x \| $$  
+$$ \| x = y \| \land \| y = z \| \leq \|x = z \| $$  
 $$ \| x = y \| \leq \| p \Rightarrow p[y/x] \| $$
 
 These guarantee that the axioms concerning the equality relation are valid. In the case that $L$ is the language of set theory, the final axiom can be replaced with the more specific
@@ -66,7 +63,7 @@ $$ V_{\alpha^{+}}^B = \{ f : x \to B | x \in V_{\alpha} \} $$
 
 $$ V_{\lambda}^B = \cup_{\gamma < \lambda} V_{\gamma}^B $$
 
-The class $V^B = \cup_{\alpha} V_{\alpha}$ is our candidate Boolean-valued model. The definitions of $$\| x \in y \|, \| x = y \|$ are now natural.
+The class $V^B = \cup_{\alpha} V_{\alpha}$ is our candidate Boolean-valued model. The definitions of $$\| x \in y \|, \| x = y \|$$ are now natural.
 
 
 

@@ -65,14 +65,14 @@ $$ V_{\lambda}^B = \bigcup_{\gamma < \lambda} V_{\gamma}^B $$
 
 The class $V^B = \cup_{\alpha} V_{\alpha}$ is our candidate Boolean-valued model. The definitions of $$\| x \in y \|, \| x = y \|$$ are now natural. For example, when checking membership $$\|x \in y \|$$, we have to consider both the degree to which $x$ is equal to an element of $y$, and the degree to which this element is indeed a member of $y$. We 
 
-$$ \| x \in y \| = \lor_\limits{z \in \mathcal{D}(y)} \| x = z \| . y(z) $$  
-$$ \| x \subset y \| = \land_\limits{z \in \mathcal{D}(x)} \| z \in x \| \Rightarrow y(z) $$  
+$$ \| x \in y \| = \lor\limits_{z \in \mathcal{D}(y)} \| x = z \| . y(z) $$  
+$$ \| x \subset y \| = \land\limits_{z \in \mathcal{D}(x)} \| z \in x \| \Rightarrow y(z) $$  
 $$ \| x = y \| = \| x \subset y \| . \| y \subset x \| $$
 
 It is easily checked that $V^B$ satisfies the axioms of a Boolean-valued model of set theory. There exist distinct elements $x,y$ of $V^B$ that nevertheless satisfy $$\| x = y \| = 1$$. For example, we could construct $y$ by adding a new element $z$ to the domain of $x$, such that $y(z) = 0$. For this reason, we refer to the elements of $V^B$ as **names**. Showing that the axioms of ZFC are valid for $V^B$ is not too challenging.
 
-
-
 ## Quotienting by a filter
+
+When studying the model theory of set theory, legitimate models are the primary objects of study. The goal of the technique of forcing is the construction of new legitimate models of ZFC with interesting properties.
 
 ## Building V[G]

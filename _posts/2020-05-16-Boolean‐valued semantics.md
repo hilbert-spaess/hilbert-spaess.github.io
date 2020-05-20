@@ -63,10 +63,10 @@ $$ V_{\alpha^{+}}^B = \{ f : x \to B | x \subset V_{\alpha} \} $$
 
 $$ V_{\lambda}^B = \bigcup_{\gamma < \lambda} V_{\gamma}^B $$
 
-The class $V^B = \cup_{\alpha} V_{\alpha}$ is our candidate Boolean-valued model. The definitions of $$\| x \in y \|, \| x = y \|$$ are now natural. For example, when checking membership $$\|x \in y \|$$, we have to consider both the degree to which $x$ is equal to an element of $y$, and the degree to which this element is indeed a member of $y$:
+The class $V^B = \cup_{\alpha} V_{\alpha}$ is our candidate Boolean-valued model. The definitions of $$\| x \in y \|, \| x = y \|$$ are now natural. For example, when checking membership $$\|x \in y \|$$, we have to consider both the degree to which $x$ is equal to an element of $y$, and the degree to which this element is indeed a member of $y$. We 
 
-$$ \| x \in y \| = \biglor_{z \in \mathcal{D}(y)} \| x = z \| \land y(z) $$
-
+$$ \| x \in y \| = \big \lor_{z \in \mathcal{D}(y)} \| x = z \| \land y(z) $$
+$$ \| x \subset y \| = \big \land_{z \in \mathcal
 
 
 

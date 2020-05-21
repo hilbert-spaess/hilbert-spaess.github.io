@@ -10,7 +10,7 @@ The question arises as to whether we can define logical homomorphisms to more co
 
 ## Boolean Algebras
 
-A logical structure is a set equipped with logical operations satisfying the logical axioms.
+A logical structure is a set equipped with constants 0 and 1, and operations $\land, \lor, \lnot$ satisfying the ordinary laws of logic. For example, the structure must the axiom for commutativity of $\land$: $x \land y = y \land x$, and the axiom of distributivity of $\lor$ over $\land$: $x \lor (y \land z) = (x \lor y) \land (x \lor z)$. 
 
 ## An application of BVMs to propositional logic
 

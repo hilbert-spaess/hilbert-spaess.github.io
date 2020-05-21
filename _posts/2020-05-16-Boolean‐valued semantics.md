@@ -52,13 +52,13 @@ $$ V_0^{\mathbb{B}} = \emptyset $$
 $$ V_{\alpha^{+}}^{\mathbb{B}} = \{ f : \mathcal{D}(x) \to \mathbb{B} \, | \, \mathcal{D}(x) \subset V_{\alpha}^{\mathbb{B}} \} $$  
 $$ V_{\lambda}^{\mathbb{B}} = \bigcup_{\gamma < \lambda} V_{\gamma}^{\mathbb{B}} $$
 
-The class $V^{\mathbb{B}} = \bigcup_{\alpha} V_{\alpha}^{\mathbb{B}}$ is the candidate BVM. The definitions of $$\| x \in y \|, \| x = y \|$$ are now natural. For example, when checking membership $$\|x \in y \|$$, we have to consider both the degree to which $x$ is equal to an element of $y$, and the degree to which this element is indeed a member of $y$. The **rank** of $x \in V^B$ is defined by induction. The following definitions are by double recursion on the ranks of $x$ and $y$: 
+The class $V^{\mathbb{B}} = \bigcup_{\alpha} V_{\alpha}^{\mathbb{B}}$ is the candidate BVM. The definitions of $$\| x \in y \|, \| x = y \|$$ are now natural. For example, when checking membership $$\|x \in y \|$$, we have to consider both the degree to which $x$ is equal to an element of $y$, and the degree to which this element is indeed a member of $y$. The **rank** of $x \in V^{\mathbb{B}}$ is defined by induction. The following definitions are by double recursion on the ranks of $x$ and $y$: 
 
 $$ \| x \in y \| = \bigvee\limits_{z \in \mathcal{D}(y)} \| x = z \| . y(z) $$  
 $$ \| x \subset y \| = \bigwedge\limits_{z \in \mathcal{D}(x)} \| z \in x \| \Rightarrow y(z) $$  
 $$ \| x = y \| = \| x \subset y \| . \| y \subset x \| $$
 
-It is easily checked that $V^B$ satisfies the axioms of a Boolean-valued model of set theory. There exist distinct elements $x,y$ of $V^B$ that nevertheless satisfy $$\| x = y \| = 1$$. For example, we could construct $y$ by adding a new element $z$ to the domain of $x$, such that $y(z) = 0$. For this reason, we refer to the elements of $V^B$ as **names**. Showing that the axioms of ZFC are valid for $V^B$ is not too challenging.
+Let's verify that $$\| x = x \| = 1$. The remainder of axioms $(2)-(4)$ have similar proofs. We prove by induction.
 
 ## Quotienting out $V^B$
 

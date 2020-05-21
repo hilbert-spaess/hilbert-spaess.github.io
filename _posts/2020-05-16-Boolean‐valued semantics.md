@@ -38,7 +38,7 @@ Note the useful rephrasing in terms of the partial order. These guarantee that e
 
 $$ \| x_1 = y_1 \| \land \|\phi(x_1, ..., x_n)\| \leq \| \phi(y_1, ..., x_n) \| $$.
 
-To recap, a BVM consists of 
+To recap, a BVM consists of a complete Boolean algebra $\mathbb{B}$, and a non-empty set $A$, with a logical homomorphism $$\| . \|$$ defined on the atomic formulae of $\mathcal{L}$, and satisfying (1)-(4). 
 
 So all axioms of first-order logic are valid in a Boolean-valued model. It is now easily verified that the rules of inference (generalisation and modus ponens) applied to valid sentences yield valid sentences. We thus have a form of soundness: provable sentences are valid in a Boolean-valued model. This means we can use Boolean-valued models for consistency proofs: if the axioms of a first-order theory are valid in a Boolean-valued model, and a sentence $\phi$ has $\|\| \phi \|\| \neq 0, 1$, then $\phi$ is independent of the axioms.
 

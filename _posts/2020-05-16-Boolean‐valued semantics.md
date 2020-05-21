@@ -50,10 +50,9 @@ Our model $V^B$ will consist of 'Boolean-valued sets'. A Boolean-valued set $x$ 
 
 $$ V_0^B = \emptyset $$  
 $$ V_{\alpha^{+}}^B = \{ f : \mathcal{D}(x) \to B \, | \, \mathcal{D}(x) \subset V_{\alpha}^B \} $$  
-
 $$ V_{\lambda}^B = \bigcup_{\gamma < \lambda} V_{\gamma}^B $$
 
-The class $V^B = \cup_{\alpha} V_{\alpha}$ is our candidate Boolean-valued model. The definitions of $$\| x \in y \|, \| x = y \|$$ are now natural. For example, when checking membership $$\|x \in y \|$$, we have to consider both the degree to which $x$ is equal to an element of $y$, and the degree to which this element is indeed a member of $y$. The **rank** of $x \in V^B$ is defined by induction. The following definitions are by double recursion on the ranks of $x$ and $y$: 
+The class $V^B = \bigcup_{\alpha} V_{\alpha}^B$ is the candidate BVM. The definitions of $$\| x \in y \|, \| x = y \|$$ are now natural. For example, when checking membership $$\|x \in y \|$$, we have to consider both the degree to which $x$ is equal to an element of $y$, and the degree to which this element is indeed a member of $y$. The **rank** of $x \in V^B$ is defined by induction. The following definitions are by double recursion on the ranks of $x$ and $y$: 
 
 $$ \| x \in y \| = \bigvee\limits_{z \in \mathcal{D}(y)} \| x = z \| . y(z) $$  
 $$ \| x \subset y \| = \bigwedge\limits_{z \in \mathcal{D}(x)} \| z \in x \| \Rightarrow y(z) $$  

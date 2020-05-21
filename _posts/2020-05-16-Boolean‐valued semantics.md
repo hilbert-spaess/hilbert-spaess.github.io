@@ -2,9 +2,9 @@
 
 ## What is a model?
 
-A **model** is a structure with which we can interpret sentences in a formal language. Loosely, by interpretation we mean assigning a truth value to the sentence according to whether it holds in the model. In the familiar first-order language of sets, an example of a **sentence** $\phi$ is $(\exists y)(\forall x)(x \not \in y)$. An example of a model of the language of sets might be $M$ = \{ \{1\}, \{1,2\} \}, interpreting the formal $\in$ relation as standard set inclusion. By inspection, $\phi$ is true according to its obvious M-interpretation. 
+A **model** is a structure with which we can interpret sentences in a formal language $L$. Loosely, by interpretation we mean assigning a truth value to the sentence according to whether it holds in the model. In the familiar first-order language of sets, an example of a **sentence** $\phi$ is $(\exists y)(\forall x)(x \not \in y)$. An example of a model of the language of sets might be $M$ = \{ \{1\}, \{1,2\} \}, interpreting the formal $\in$ relation as standard set inclusion. By inspection, $\phi$ is true according to its obvious M-interpretation. 
 
-If $\phi$ is true according to $M$, then we write $M \models \phi$, which is read as "$M$ models $\phi$". For every sentence $\phi$, either $M \models \phi$ or $M \models \not \phi$.  
+If $\phi$ is true according to $M$, then we write $M \models \phi$, which is read as "$M$ models $\phi$". For every sentence $\phi$, either $M \models \phi$ or $M \models \lnot \phi$. Alternatively, we might write $$M(\phi) \in \{0.1\}$$. This map can be construed as a **logical homomorphism** between the sentences of $L$ and the elements of $$\{0,1\}$$, which is a map that preserves logical functions. 
 
 ## An application of BVMs to propositional logic
 

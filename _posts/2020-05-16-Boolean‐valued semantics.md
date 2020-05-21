@@ -35,7 +35,11 @@ $$\|(x = y) \Leftrightarrow (y = x)\| = 1$$, or $$ \| x = y \| = \| y = x \| $$
 $$ \| (x = y) \land (y = z) \Rightarrow (x = z)\| = 1$$, or $$ \| x = y \| \land \| y = z \| \leq \|x = z \| $$  
 $$ \| x = y \| \leq \| p \Rightarrow p[y/x] \| $$
 
-Note the useful rephrasing in terms of the partial order. These guarantee that equality behaves like an equivalence relation. Finally, we insist that equality co-operates with variable substitution. For all $x,y \in A$, and $\pi \in \Pi$, These guarantee that the axioms concerning the equality relation are valid. In the case that $L$ is the language of set theory, the final axiom can be replaced with the more specific
+Note the useful rephrasing in terms of the partial order. These guarantee that equality behaves like an equivalence relation. Finally, we insist that equality co-operates with variable substitution. For all $x,y \in A$, and $\pi \in \Pi$, we require
+
+$$ \| x_1 = y_1 \| \land \|\phi(x_1, ..., x_n)\| \leq \| \phi(y_1, ..., x_n) \| $$.
+
+These guarantee that the axioms concerning the equality relation are valid. In the case that $L$ is the language of set theory, the final axiom can be replaced with the more specific
 
 $$\| x = v \| \land \|y = z\| \land \|x \in y \| \leq \|v \in z \|$$
 

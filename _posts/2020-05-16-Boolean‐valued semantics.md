@@ -2,11 +2,15 @@
 
 ## What is a model?
 
-A **model** is a structure with which we can interpret sentences in a formal language $L$. Loosely, by interpretation we mean assigning a truth value to the sentence according to whether it holds in the model. In the familiar first-order language of sets, an example of a **sentence** $\phi$ is $(\exists y)(\forall x)(x \not \in y)$. An example of a model of the language of sets might be $$M = \{ \{1\}, \{1,2\} \}$$, interpreting the formal $\in$ relation as standard set inclusion. By inspection, $\phi$ is true according to its obvious M-interpretation. 
+A **model** is a structure with which we can interpret sentences in a formal language $L$. Loosely, by interpretation we mean assigning a truth value to the sentence according to whether it holds in the model. In the familiar first-order language of sets, an example of a **sentence** $\phi$ is $(\exists y)(\forall x)(x \not \in y)$. An example of a model of the language of sets might be $$M = \{ \{1\}, \{1,2\} \}$$, interpreting the formal $\in$ relation with standard set inclusion. By inspection, $\phi$ is true according to its obvious M-interpretation. 
 
 If $\phi$ is true according to $M$, then we write $M \models \phi$, which is read as "$M$ models $\phi$". For every sentence $\phi$, either $M \models \phi$ or $M \models \lnot \phi$. Alternatively, we might write $$M(\phi) \in \{0,1\}$$. This map can be construed as a sort of **logical homomorphism** between the sentences of $L$ and the elements of $$\{0,1\}$$, which is a map that preserves logical operations $\land, \lor, \lnot$. For example, $M(\phi_1 \land \phi_2) = M(\phi_1) \land M(\phi_2)$.
 
-The question arises as to whether we can define logical homomorphisms to more complicated logical structures. To answer this question, we first need a precise definition of a logical structure. 
+The question arises as to whether we can define logical homomorphisms to more complicated logical structures. To answer this question, we first need a precise definition of a logical structure.
+
+## Boolean Algebras
+
+A logical structure is a set equipped with logical operations satisfying the logical axioms.
 
 ## An application of BVMs to propositional logic
 

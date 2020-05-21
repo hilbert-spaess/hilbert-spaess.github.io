@@ -6,7 +6,7 @@ A **model** is a structure with which we can interpret sentences in a formal lan
 
 If $\phi$ is true according to $M$, then we write $M \models \phi$, which is read as "$M$ models $\phi$". For every sentence $\phi$, either $M \models \phi$ or $M \models \lnot \phi$. Alternatively, we might write $$M(\phi) \in \{0,1\}$$. This map can be construed as a sort of **logical homomorphism** between the sentences of $L$ and the elements of $$\{0,1\}$$, which is a map that co-operates with logical operations $\land, \lor, \lnot$. For example, $M(\phi_1 \land \phi_2) = M(\phi_1) \land M(\phi_2)$.
 
-The question arises as to whether we can define logical homomorphisms to more complicated logical structures. To answer this question, we first need a precise definition of a logical structure.
+This post concerns the possibility of logical homomorphisms to more complicated logical structures. To answer this question, we first need a precise definition of a logical structure.
 
 ## Boolean Algebras
 
@@ -28,12 +28,10 @@ Recall that a first-order language consists of a set of function symbols $\Omega
 
 For all $x, y \in A$, we specify $$\| x = y \|$$, the truth value for the equality predicate. We also specify $$\| \pi(x_1, ...., x_n)\|$$ for all $\pi \in \Pi$. Having thus defined the logical homomorphism on atomic formulae, we extend it to all of $\mathcal{L}$ by induction on formula complexity. The completeness of $\mathbb{B}$ is necessary only when defining universal quantification. We define $$\|(\exists x)\phi(x)\| = \bigvee_{a \in A}\|\phi(a)\|$$, and $$\| (\forall x) \phi(x) \| = \bigwedge_{a \in A} \| \phi(a) \| $$.
 
-With ordinary models $M$ we would write $M \models \phi$ if $M(\phi) = 1$. For a BVM $A$, we say that $\phi$ is **valid according to $A$** if $$\|\phi\| = 1$. In order for this notion of validity to be an adequate generalisation of standard semantic entailment, we need it to co-operate with syntactic entailment. In particular, we want the axioms of first-order logic to be valid according to $A$. 
+With ordinary models $M$ we would write $M \models \phi$ if $M(\phi) = 1$. For a BVM $A$, we say that $\phi$ is **valid according to $A$** if $$\|\phi\| = 1$$. In order for this notion of validity to be an adequate generalisation of standard semantic entailment, we need it to co-operate with syntactic entailment. In particular, we want the axioms of first-order logic to be valid according to $A$, and the syntactic consequences of valid statements to also be valid. The axioms referring to quantification, implication and pure propositional logic are valid by virtue of the map being a logical homomorphism. The only axioms that are not necessarily satisfied are those referring to the equality predicate. We thus add the following constraints to the map as defined on atomic formulae. For all $x,y \in A$, we require:
 
-We say that a sentence $\phi$ is *valid* if $\|\|\phi\|\| = 1$$. We'd like the axioms of first-order logic to be valid for our model. Note that $\|\|\phi \Rightarrow \psi\|\| = 1 \Leftrightarrow \|\|\phi\|\| \leq \|\|\psi\|\|$. As with pure propositional logic, the propositional axioms are satisfied by virtue of the Boolean algebra homomorphism. The axioms referring to quantification and implication are also satisfied. The only axioms that aren't immediately satisfied are those referring to the equality predicate. To ensure that these are satisfied, we require that for all $x, y \in A$, and formulae $p$ with $y$ not occurring in $p$:
-
-$$ \| x = x \| = 1 $$  
-$$ \| x = y \| = \| y = x \| $$  
+$$ \| x = x \| = 1 $$    
+$$\|(x = y) \Leftrightarrow (y = x)\| = 1$$, or $$ \| x = y \| = \| y = x \| $$  
 $$ \| x = y \| \land \| y = z \| \leq \|x = z \| $$  
 $$ \| x = y \| \leq \| p \Rightarrow p[y/x] \| $$
 

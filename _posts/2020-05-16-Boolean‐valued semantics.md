@@ -30,7 +30,8 @@ For all $x, y \in A$, we specify $$\| x = y \|$$, the truth value for the equali
 
 With ordinary models $M$ we would write $M \models \phi$ if $M(\phi) = 1$. For a BVM $A$, we say that $\phi$ is **valid according to $A$** if $$\|\phi\| = 1$$. In order for this notion of validity to be an adequate generalisation of standard semantic entailment, we need it to co-operate with syntactic entailment. In particular, we want the axioms of first-order logic to be valid according to $A$, and the syntactic consequences of valid statements to also be valid. The axioms referring to quantification, implication and pure propositional logic are valid by virtue of the map being a logical homomorphism. The only axioms that are not necessarily satisfied are those referring to the equality predicate. We thus add the following constraints to the map as defined on atomic formulae. For all $x,y \in A$, we require:
 
-$$ \| x = x \| = 1 $$    <div style="text-align: right">(1)</div>
+$$ \| x = x \| = 1 $$
+<div style="text-align: right">(1)</div>
 $$\|(x = y) \Leftrightarrow (y = x)\| = 1$$, or $$ \| x = y \| = \| y = x \| $$  
 $$ \| (x = y) \land (y = z) \Rightarrow (x = z)\| = 1$$, or $$ \| x = y \| \land \| y = z \| \leq \|x = z \| $$  
 
@@ -38,7 +39,7 @@ Note the useful rephrasing in terms of the partial order. These guarantee that e
 
 $$ \| x_1 = y_1 \| \land \|\phi(x_1, ..., x_n)\| \leq \| \phi(y_1, ..., x_n) \| $$.
 
-To recap, a BVM consists of a complete Boolean algebra $\mathbb{B}$, and a non-empty set $A$, with a logical homomorphism $$\| . \|$$ defined on the atomic formulae of $\mathcal{L}$, and satisfying (1)-(4). 
+To recap, a BVM consists of a complete Boolean algebra $\mathbb{B}$, and a non-empty set $A$, with a logical homomorphism $$\| . \|$$ defined on the atomic formulae of $\mathcal{L}$, and satisfying (1)-(4). If these are satified, it is an easy proof that the axioms of first-order logic are valid, and the rules of inference applied to valid sentences yield valid sentences. This means we have a form of soundness
 
 So all axioms of first-order logic are valid in a Boolean-valued model. It is now easily verified that the rules of inference (generalisation and modus ponens) applied to valid sentences yield valid sentences. We thus have a form of soundness: provable sentences are valid in a Boolean-valued model. This means we can use Boolean-valued models for consistency proofs: if the axioms of a first-order theory are valid in a Boolean-valued model, and a sentence $\phi$ has $\|\| \phi \|\| \neq 0, 1$, then $\phi$ is independent of the axioms.
 

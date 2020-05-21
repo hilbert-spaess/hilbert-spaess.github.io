@@ -40,11 +40,11 @@ $$(4)\, \| x_1 = y_1 \| \land \|\phi(x_1, ..., x_n)\| \leq \| \phi(y_1, ..., x_n
 
 To recap, a BVM consists of a complete Boolean algebra $\mathbb{B}$, and a non-empty set $A$, with a logical homomorphism $$\| . \|$$ defined on the atomic formulae of $\mathcal{L}$, and satisfying $(1)-(4)$. If these are satified, it is an easy proof that the axioms of first-order logic are valid, and the rules of inference applied to valid sentences yield valid sentences. This means we have a form of soundness: provable sentences are valid in all BVMs. So if the axioms of a first-order theory are valid in a BVM, and a sentence $\phi$ has $$\| \phi \| \not \in \{0,1\}$$, then $\phi$ is independent of the axioms. This gives an inkling of the utility of BVMs for consistency proofs.
 
-The set $A$ itself is an interesting beast.
+The set $A$ itself is an interesting beast. Distinct elements $x,y \in A$ can nevertheless satisfy $$\| x = y \| = 1$. As such, its elements are not referred to as objects, but as **names**. This is a nod to the fact that distinct names can refer to the same object.
 
 ## The standard Boolean-valued model of ZFC
 
-We've now seen the full definition of a Boolean-valued model of the first-order language of set theory. The question we now turn to is: given a Boolean algebra $B$, can we construct a Boolean-valued model of ZFC taking values in $B$? Of course, we need to assume access to a transitive model $V$ of ZFC. It turns out a fairly intuitive construction yields a proper class that is interpretable as a Boolean model.
+Given a Boolean algebra $\mathbb{B}$, can we construct a BVM that models ZFC and takes values in $\mathbb{B}$? Of course, we presume access to the standard set-theoretic universe $V$. It turns out a fairly intuitive construction yields a proper class that is interpretable as a Boolean model. As such, not only is it fairly straightforward to find such a BVM, but the model is a class that is definable in the base model $V$. 
 
 Our model $V^B$ will consist of 'Boolean-valued sets'. A Boolean-valued set $x$ is a function from a domain of possible elements $\mathcal{D}(x)$ to $B$, expressing the 'degree of membership'. Of course, the domain is a set in $V$ and the function is a function in $V$. Formally, by analogy with the construction of the Von Neumann hierarchy, we build up $V^B$ by transfinite recursion:
 

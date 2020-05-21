@@ -4,7 +4,7 @@
 
 A **model** is a structure with which we can interpret sentences in a formal language $L$. Loosely, by interpretation we mean assigning a truth value to the sentence according to whether it holds in the model. In the familiar first-order language of sets, an example of a **sentence** $\phi$ is $(\exists y)(\forall x)(x \not \in y)$. An example of a model of the language of sets might be $$M = \{ \{1\}, \{1,2\} \}$$, interpreting the formal $\in$ relation with standard set inclusion. By inspection, $\phi$ is true according to its obvious M-interpretation. 
 
-If $\phi$ is true according to $M$, then we write $M \models \phi$, which is read as "$M$ models $\phi$". For every sentence $\phi$, either $M \models \phi$ or $M \models \lnot \phi$. Alternatively, we might write $$M(\phi) \in \{0,1\}$$. This map can be construed as a sort of **logical homomorphism** between the sentences of $L$ and the elements of $$\{0,1\}$$, which is a map that preserves logical operations $\land, \lor, \lnot$. For example, $M(\phi_1 \land \phi_2) = M(\phi_1) \land M(\phi_2)$.
+If $\phi$ is true according to $M$, then we write $M \models \phi$, which is read as "$M$ models $\phi$". For every sentence $\phi$, either $M \models \phi$ or $M \models \lnot \phi$. Alternatively, we might write $$M(\phi) \in \{0,1\}$$. This map can be construed as a sort of **logical homomorphism** between the sentences of $L$ and the elements of $$\{0,1\}$$, which is a map that co-operates with logical operations $\land, \lor, \lnot$. For example, $M(\phi_1 \land \phi_2) = M(\phi_1) \land M(\phi_2)$.
 
 The question arises as to whether we can define logical homomorphisms to more complicated logical structures. To answer this question, we first need a precise definition of a logical structure.
 
@@ -12,7 +12,7 @@ The question arises as to whether we can define logical homomorphisms to more co
 
 A logical structure is a set equipped with constants 0 and 1, and operations $\land, \lor, \lnot$ satisfying the ordinary laws of logic. For example, the structure must satisfy the axiom for commutativity of $\land$: $x \land y = y \land x$, and the axiom of distributivity of $\lor$ over $\land$: $x \lor (y \land z) = (x \lor y) \land (x \lor z)$. There is no standard minimal set of axioms, so there is a choice of presentation.
 
-The preferred presentation in model theory and algebra is as a particular sort of poset $(B, \leq)$, a complemented distributive lattice, or Boolean algebra. The relation $x \leq y$ is to be interpreted as $x \Rightarrow y = 1$. For example, the poset presentation of the trivial Boolean algebra $$\{0,1\}$$ is that $0 \leq 1$. Let's make this formal.
+The preferred presentation in model theory and algebra is as a particular sort of poset $(B, \leq)$, a **complemented distributive lattice**, usually referred to as a **Boolean algebra**. The relation $x \leq y$ is to be interpreted as $x \Rightarrow y = 1$. For example, the poset presentation of the trivial Boolean algebra $$\{0,1\}$$ is that $0 \leq 1$. Let's make this formal.
 
 If $S \subset B$ is a subset of a poset $B$, then $u \in B$ is an **upper bound** for $S$ if for all $s \in S, s \leq u$. If $u \leq v$ for all other upper bounds $v$ of $S$, then $u$ is the **supremum** of $S$. We similarly define a **lower bound** and **infimum**. A **bounded lattice** is a poset for which every finite subset has a supremum and infimum. In this context we call the supremum a **join** and the infimum a **meet**. We write $\bigvee S$ for the meet of $S$ and $\bigwedge S$ for the join of $S$, and we write the join and meet of $$\{x,y\}$$ as $x \lor y$ and $x \land y$ respectively. We have $\bigwedge \emptyset = 1$ is a largest element, and $\bigvee \emptyset = 0$ is a smallest element. In a **distributive lattice**, we require that the meet and join operations satisfy the axioms of distributivity. Finally, in a **complemented distributive lattice**, for every $a \in B$ there is a complement $\lnot a \in B$ satisfying $a \lor \lnot a = 1$ and $a \land \lnot a = 0$. It can be shown that complements are unique. The succinct name for a complemented distributive lattice is a **Boolean algebra**. The powerset of a given set is a canonical example of a Boolean algebra, ordered under inclusion, with meet, join, and negation interpreted as intersection, union, and complement. Another example is the set of sentences in a first-order language, ordered under syntactic implication, with meet, join and negation interpreted as formal conjuction, disjunction and negation.
 
@@ -20,7 +20,9 @@ The emphasis on the partial order of implication is unintuitive if your primary 
 
 A final note: a Boolean algebra is **complete** if arbitrary sets (not just finite sets) have meets and joins. Complete Boolean algebras will be useful when thinking about universal quantification: interpreting $\forall$ will involve taking a join of a (maybe big) arbitrary set.  
 
-## BVMs in first-order logic
+## Boolean-valued models
+
+Boolean-valued models (BVMs) are logical homomorphisms between a first-order language and an arbitrary Boolean algebra. Let's make this precise.
 
 We will now formally define a Boolean-valued model of a first-order language $L$. Recall that a first-order language consists of a set of function symbols $\Omega$, a set of relation symbols $\Pi$, and the 'arity' function $\alpha: \Omega \cup \Pi \to \mathbb{N}$. If $L$ is the language of set theory, then $\Omega = \emptyset$, and $\Pi$ contains only the binary relation $\in$. Let $B$ be a complete Boolean algebra. We want to define a model of $L$ so that sentences can be interpreted as taking truth values in $B$.
 

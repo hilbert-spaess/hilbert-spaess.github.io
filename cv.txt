@@ -1,10 +1,11 @@
 Jacob Coxon
+---
 
-Education: 
-2017-2020: Trinity College Cambridge, Mathematics. Class I in all three years.
+Education:
 
-Achievements:
-International Maths Olympiad 2016: Silver Medal.
+2017-2020: Trinity College Cambridge, Mathematics. I.
+
+---
 
 Experience:
 
@@ -13,3 +14,9 @@ June 2020 - August 2020: Intern with the macro hedge-fund Bridgewater (remote).
 Aug-Sep 2019: Worked on a fully Bayesian analysis of MTB survival data for Lalita Ramakrishnan's laboratory, comparing alternative treatments. Paper forthcoming.
 
 Sep 2019-present: Part-time role as an ML Research Intern at Huawei. Working on understanding the role of fortuitous initialisation in neural network training (so-called "Winning Tickets").
+
+---
+
+Achievements:
+
+International Maths Olympiad 2016: Silver Medal.

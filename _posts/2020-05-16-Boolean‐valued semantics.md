@@ -33,15 +33,12 @@ With ordinary models $M$ we would write $M \models \phi$ if $M(\phi) = 1$. For a
 $$ \| x = x \| = 1 $$    
 $$\|(x = y) \Leftrightarrow (y = x)\| = 1$$, or $$ \| x = y \| = \| y = x \| $$  
 $$ \| (x = y) \land (y = z) \Rightarrow (x = z)\| = 1$$, or $$ \| x = y \| \land \| y = z \| \leq \|x = z \| $$  
-$$ \| x = y \| \leq \| p \Rightarrow p[y/x] \| $$
 
 Note the useful rephrasing in terms of the partial order. These guarantee that equality behaves like an equivalence relation. Finally, we insist that equality co-operates with variable substitution. For all $x,y \in A$, and $\pi \in \Pi$, we require
 
 $$ \| x_1 = y_1 \| \land \|\phi(x_1, ..., x_n)\| \leq \| \phi(y_1, ..., x_n) \| $$.
 
-These guarantee that the axioms concerning the equality relation are valid. In the case that $L$ is the language of set theory, the final axiom can be replaced with the more specific
-
-$$\| x = v \| \land \|y = z\| \land \|x \in y \| \leq \|v \in z \|$$
+To recap
 
 So all axioms of first-order logic are valid in a Boolean-valued model. It is now easily verified that the rules of inference (generalisation and modus ponens) applied to valid sentences yield valid sentences. We thus have a form of soundness: provable sentences are valid in a Boolean-valued model. This means we can use Boolean-valued models for consistency proofs: if the axioms of a first-order theory are valid in a Boolean-valued model, and a sentence $\phi$ has $\|\| \phi \|\| \neq 0, 1$, then $\phi$ is independent of the axioms.
 

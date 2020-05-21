@@ -24,7 +24,7 @@ A final note: a Boolean algebra is **complete** if arbitrary sets (not just fini
 
 Just as ordinary models are structures that entail a logical homomorphism between a language and $$\{0,1\}$$, Boolean-valued models (BVMs) are structures entailing logical homomorphisms between a first-order language and an arbitrary Boolean algebra. Let's make this precise.
 
-Recall that a first-order language consists of a set of function symbols $\Omega$, a set of relation symbols $\Pi$, all with specified arities. As set theory is our primary interest, for now we assume that $\Omega$ is empty. Indeed, in the language of set theory, $\Omega = \emptyset$, and $\Pi$ contains only the binary relation $\in$. Let $\mathbb{B}$ be a complete Boolean algebra. Our BVM will consist of a set $A$, with which we define a map $$\| . \| \to \mathbb{B}$$, sending each $\phi \in L$ to a truth value $$\|\phi\| \in \mathbb{B}$$.
+Recall that a first-order language consists of a set of function symbols $\Omega$, a set of relation symbols $\Pi$, and the set of sentences $\mathcal{L}$. As set theory is our primary interest, for now we assume that $\Omega$ is empty. Indeed, in the language of set theory, $\Omega = \emptyset$, and $\Pi$ contains only the binary relation $\in$. Let $\mathbb{B}$ be a complete Boolean algebra. Our BVM will consist of a set $A$, with which we define a map $$\| . \| \to \mathbb{B}$$, sending each $\phi \in \mathcal{L}$ to a truth value $$\|\phi\| \in \mathbb{B}$$.
 
 For all $x, y \in A$, we specify $$\| x = y \|$$, the truth value for the equality predicate. We also specify $$\| \pi(x_1, ...., x_n)\|$$ for all $\pi \in \Pi$. 
 

@@ -58,7 +58,7 @@ $$ \| x \in y \| = \bigvee\limits_{z \in \mathcal{D}(y)} \| x = z \| . y(z) $$
 $$ \| x \subset y \| = \bigwedge\limits_{z \in \mathcal{D}(x)} \| z \in x \| \Rightarrow y(z) $$  
 $$ \| x = y \| = \| x \subset y \| . \| y \subset x \| $$
 
-Let's verify that $$\| x = x \| = 1$. The remainder of axioms $(2)-(4)$ have similar proofs. We prove by induction.
+Let's verify that $$\| x = x \| = 1$$. The remainder of axioms $(2)-(4)$ have similar proofs. We prove by induction.
 
 ## Quotienting out $V^B$
 

@@ -46,13 +46,13 @@ The set $A$ itself is an interesting beast. Distinct elements $x,y \in A$ can ne
 
 Given a Boolean algebra $\mathbb{B}$, can we construct a BVM that models ZFC and takes values in $\mathbb{B}$? Of course, we presume access to the standard set-theoretic universe $V$. It turns out a fairly intuitive construction yields a proper class that is interpretable as a Boolean model. As such, not only is it fairly straightforward to find such a BVM, but the model is a class that is definable in the base model $V$. 
 
-Our model $V^B$ will consist of 'Boolean-valued sets'. A Boolean-valued set $x$ is a function from a domain of possible elements $\mathcal{D}(x)$ to $\mathbb{B}$, expressing the degree to which the elements of $\mathcal{D}(x)$ are members of $x$. Of course, $\mathcal{D}(x)$ a set in $V$ and the function $x$ is a function in $V$. Formally, by analogy with the construction of the Von Neumann hierarchy, we build the class $V^B$ by transfinite recursion:
+Our model $V^{\mathbb{B}}$ will consist of 'Boolean-valued sets'. A Boolean-valued set $x$ is a function from a domain of possible elements $\mathcal{D}(x)$ to $\mathbb{B}$, expressing the degree to which the elements of $\mathcal{D}(x)$ are members of $x$. Of course, $\mathcal{D}(x)$ a set in $V$ and the function $x$ is a function in $V$. Formally, by analogy with the construction of the Von Neumann hierarchy, we build the class $V^{\mathcal{B}}$ by transfinite recursion:
 
-$$ V_0^B = \emptyset $$  
-$$ V_{\alpha^{+}}^B = \{ f : \mathcal{D}(x) \to B \, | \, \mathcal{D}(x) \subset V_{\alpha}^B \} $$  
-$$ V_{\lambda}^B = \bigcup_{\gamma < \lambda} V_{\gamma}^B $$
+$$ V_0^{\mathbb{B}} = \emptyset $$  
+$$ V_{\alpha^{+}}^{\mathbb{B}} = \{ f : \mathcal{D}(x) \to \mathbb{B} \, | \, \mathcal{D}(x) \subset V_{\alpha}^{\mathbb{B}} \} $$  
+$$ V_{\lambda}^{\mathbb{B}} = \bigcup_{\gamma < \lambda} V_{\gamma}^{\mathbb{B}} $$
 
-The class $V^B = \bigcup_{\alpha} V_{\alpha}^B$ is the candidate BVM. The definitions of $$\| x \in y \|, \| x = y \|$$ are now natural. For example, when checking membership $$\|x \in y \|$$, we have to consider both the degree to which $x$ is equal to an element of $y$, and the degree to which this element is indeed a member of $y$. The **rank** of $x \in V^B$ is defined by induction. The following definitions are by double recursion on the ranks of $x$ and $y$: 
+The class $V^{\mathbb{B}} = \bigcup_{\alpha} V_{\alpha}^{\mathbb{B}}$ is the candidate BVM. The definitions of $$\| x \in y \|, \| x = y \|$$ are now natural. For example, when checking membership $$\|x \in y \|$$, we have to consider both the degree to which $x$ is equal to an element of $y$, and the degree to which this element is indeed a member of $y$. The **rank** of $x \in V^B$ is defined by induction. The following definitions are by double recursion on the ranks of $x$ and $y$: 
 
 $$ \| x \in y \| = \bigvee\limits_{z \in \mathcal{D}(y)} \| x = z \| . y(z) $$  
 $$ \| x \subset y \| = \bigwedge\limits_{z \in \mathcal{D}(x)} \| z \in x \| \Rightarrow y(z) $$  

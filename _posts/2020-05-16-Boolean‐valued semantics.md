@@ -46,11 +46,10 @@ The set $A$ itself is an interesting beast. Distinct elements $x,y \in A$ can ne
 
 Given a Boolean algebra $\mathbb{B}$, can we construct a BVM that models ZFC and takes values in $\mathbb{B}$? Of course, we presume access to the standard set-theoretic universe $V$. It turns out a fairly intuitive construction yields a proper class that is interpretable as a Boolean model. As such, not only is it fairly straightforward to find such a BVM, but the model is a class that is definable in the base model $V$. 
 
-Our model $V^B$ will consist of 'Boolean-valued sets'. A Boolean-valued set $x$ is a function from a domain of possible elements $\mathcal{D}(x)$ to $B$, expressing the 'degree of membership'. Of course, the domain is a set in $V$ and the function is a function in $V$. Formally, by analogy with the construction of the Von Neumann hierarchy, we build up $V^B$ by transfinite recursion:
+Our model $V^B$ will consist of 'Boolean-valued sets'. A Boolean-valued set $x$ is a function from a domain of possible elements $\mathcal{D}(x)$ to $\mathbb{B}$, expressing the degree to which the elements of $\mathcal{D}(x)$ are members of $x$. Of course, $\mathcal{D}(x)$ a set in $V$ and the function $x$ is a function in $V$. Formally, by analogy with the construction of the Von Neumann hierarchy, we build the class $V^B$ by transfinite recursion:
 
-$$ V_0^B = \emptyset $$
-
-$$ V_{\alpha^{+}}^B = \{ f : x \to B | x \subset V_{\alpha} \} $$
+$$ V_0^B = \emptyset $$  
+$$ V_{\alpha^{+}}^B = \{ f : \mathcal{D}(x) \to B \, | \, \mathcal{D}(x) \subset V_{\alpha}^B \} $$  
 
 $$ V_{\lambda}^B = \bigcup_{\gamma < \lambda} V_{\gamma}^B $$
 

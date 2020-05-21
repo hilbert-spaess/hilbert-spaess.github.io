@@ -36,7 +36,7 @@ $$(3)\,  \| (x = y) \land (y = z) \Rightarrow (x = z)\| = 1$$, or $$ \| x = y \|
 
 Note the useful rephrasing in terms of the partial order. These guarantee that equality behaves like an equivalence relation. Finally, we insist that equality co-operates with variable substitution. For all $x,y \in A$, and $\pi \in \Pi$, we require
 
-$$ \| x_1 = y_1 \| \land \|\phi(x_1, ..., x_n)\| \leq \| \phi(y_1, ..., x_n) \| $$.
+$$(4)\, \| x_1 = y_1 \| \land \|\phi(x_1, ..., x_n)\| \leq \| \phi(y_1, ..., x_n) \| $$.
 
 To recap, a BVM consists of a complete Boolean algebra $\mathbb{B}$, and a non-empty set $A$, with a logical homomorphism $$\| . \|$$ defined on the atomic formulae of $\mathcal{L}$, and satisfying (1)-(4). If these are satified, it is an easy proof that the axioms of first-order logic are valid, and the rules of inference applied to valid sentences yield valid sentences. This means we have a form of soundness: provable sentences are valid in all BVMs. So if the axioms of a first-order theory are valid in a BVM, and a sentence $\phi$ has $$\| \phi \| \not \in \{0,1\}$$, then $\phi$ is independent of the axioms. This gives an inkling of the utility of BVMs for consistency proofs.
 

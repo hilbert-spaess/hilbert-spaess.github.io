@@ -10,11 +10,11 @@ The question arises as to whether we can define logical homomorphisms to more co
 
 ## Boolean Algebras
 
-A logical structure is a set equipped with constants 0 and 1, and operations $\land, \lor, \lnot$ satisfying the ordinary laws of logic. For example, the structure must the axiom for commutativity of $\land$: $x \land y = y \land x$, and the axiom of distributivity of $\lor$ over $\land$: $x \lor (y \land z) = (x \lor y) \land (x \lor z)$. There is no standard minimal set of axioms, so there is a choice of presentation.
+A logical structure is a set equipped with constants 0 and 1, and operations $\land, \lor, \lnot$ satisfying the ordinary laws of logic. For example, the structure must satisfy the axiom for commutativity of $\land$: $x \land y = y \land x$, and the axiom of distributivity of $\lor$ over $\land$: $x \lor (y \land z) = (x \lor y) \land (x \lor z)$. There is no standard minimal set of axioms, so there is a choice of presentation.
 
 The preferred presentation in model theory and algebra is as a particular sort of poset $(B, \leq)$, a **complemented distributive lattice**, or **Boolean algebra**. The relation $x \leq y$ is to be interpreted as $x \Rightarrow y = 1$. For example, the poset presentation of the trivial Boolean algebra $$\{0,1\}$$ is that $0 \leq 1$. Let's make this formal.
 
-If $S \subset B$ is a subset of a poset $B$, then $u \in B$ is an **upper bound** for $S$ if for all $s \in S, s \leq u$. If $u \leq v$ for all other upper bounds $v$ of $S$, then $u$ is the **supremum** of $S$. We similarly define a **lower bound** and **infimum**. A **bounded lattice** is a poset for which every finite subset has a supremum and infimum. In this context we call the supremum a **join** and the infimum a **meet**. 
+If $S \subset B$ is a subset of a poset $B$, then $u \in B$ is an **upper bound** for $S$ if for all $s \in S, s \leq u$. If $u \leq v$ for all other upper bounds $v$ of $S$, then $u$ is the **supremum** of $S$. We similarly define a **lower bound** and **infimum**. A **bounded lattice** is a poset for which every finite subset has a supremum and infimum. In this context we call the supremum a **join** and the infimum a **meet**. We write $\bigvee S$ for the meet of $S$ and $\bigwedge S$ for the join of $S$, and we write the join and meet of $$\{x,y\}$$ as $x \lor y$ and $x \land y$ respectively. We have $\bigwedge \emptyset = 1$ is a largest element, and $bigvee \emptyset = 0$ is a smallest element.  
 
 ## An application of BVMs to propositional logic
 

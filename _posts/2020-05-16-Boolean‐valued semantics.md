@@ -58,21 +58,6 @@ $$ \| x \in y \| = \bigvee\limits_{z \in \mathcal{D}(y)} \| x = z \| . y(z) $$
 $$ \| x \subset y \| = \bigwedge\limits_{z \in \mathcal{D}(x)} \| z \in x \| \Rightarrow y(z) $$  
 $$ \| x = y \| = \| x \subset y \| . \| y \subset x \| $$
 
-To show that this is a full-blooded BVM, we need to verify $(1)-(4)$. Let's verify that $$\| x = x \| = 1$$. The remainder of the axioms have similar proofs. We prove by induction. $$ \| x \subset x \| = \bigvee\limits_{z \in \mathcal{D}(x)}x(z) \Rightarrow \|z \in x \|$$. But by induction for all $z \in \mathcal{D}(x)$, $x(z) = \| z = z\| \land x(z) \leq \|z \in x \|. \qed$$
+To show that this is a full-blooded BVM, we need to verify $(1)-(4)$. Let's verify that $$\| x = x \| = 1$$. The remainder of the axioms have similar proofs. We prove by induction. $$ \| x \subset x \| = \bigvee\_{z \in \mathcal{D}(x)}x(z) \Rightarrow \|z \in x \|$$. But by induction for all $z \in \mathcal{D}(x)$, $x(z) = \| z = z\| \land x(z) \leq \|z \in x \|. \square$$
 
-## Quotienting out $V^B$
-
-When studying the model theory of set theory, ordinary models are the primary objects of study. The goal of the technique of forcing is the construction of new legitimate models of ZFC with interesting properties. How can we use $V^B$ to build a new ordinary model of ZFC?
-
-If we want to get **objects** from **names**, we might want to try quotienting $V^B$ according to the Boolean-valued equality and containment predicates. One idea is to define equivalence classes by:
-
-$$ [x] (=) [y] \Leftrightarrow \| x = y \| = 1 $$  
-$$ [x] (\in) [y] \Leftrightarrow \| x \in y \| = 1 $$
-
-We define $$V^B/\{1\} = \{[x] : x \in V_B \}$$. It's easily checked that the containment predicate on equivalence classes co-operates with the equality predicate, so $$(V^B/\{1\}, (=), (\in) )$$ is a fully-fledged model of the language of set theory. It remains to check that this is not only a model of ZFC, but is in fact a new model of ZFC. 
-
-## Quotienting by a general ultrafilter
-
-
-
-## Building $V[G]$
+Not only is $V^{\mathbb{B}}$ a BVM, but it models ZFC out of the box! This fact is a significant step towards being able to build interesting models of ZFC. The proof is a good exercise in understanding both the axioms of ZFC and the construction of $V^{\mathbb{B}}$, and is relegated to a later post.

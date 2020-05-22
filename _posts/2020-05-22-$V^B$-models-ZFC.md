@@ -7,3 +7,4 @@ layout: post
 
 ## Canonical names for $V$ in $V^\mathbb{B}$
 
+Recall the definition of $V^{\mathbb{B}}$ as a cumulative hierarchy of 'Boolean-valued sets', and the 

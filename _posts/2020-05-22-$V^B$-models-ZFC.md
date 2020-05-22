@@ -15,3 +15,4 @@ Recall the definition of $V^{\mathbb{B}}$ as a cumulative hierarchy of 'Boolean-
 
 **Axiom of extensionality:** $$(\forall x)(\forall y)[(x=y) \Leftrightarrow (\forall z)(z \in x \Leftrightarrow z \in y)]$$.
 
+To show that is is valid, we need that for each $x, y \in V^{\mathbb{B}}$, $$\| x = y \| = \bigvee_{z \in V^{\mathbb{B}}}\|z \in x\| = \| z \in y \|$$. 

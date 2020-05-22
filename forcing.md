@@ -1,3 +1,5 @@
+<script type="text/x-mathjax-config"> MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']], processEscapes: true } }); </script> <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
 ---
 title: Forcing
 layout: post
@@ -11,4 +13,4 @@ Intended pre-requisites:
 - Axioms of ZFC
 - Basic model theory of ZFC (Von Neumann hierarchy)
 
-[Boolean-valued semantics](https://hilbert-spaess.github.io/2020/05/16/Boolean-valued-semantics.html) is an introduction to Boolean-valued models of set theory. In particular, I explore how we can use Boolean-valued models of set theory to construct ordinary models.
+[Boolean-valued semantics](https://hilbert-spaess.github.io/2020/05/16/Boolean-valued-semantics.html) is an introduction to Boolean-valued models of set theory. It covers Boolean algebras and Boolean-valued models, and defines the standard $\mathbb{B}$-valued model of set theory, $V^{\mathbb{B}}$.

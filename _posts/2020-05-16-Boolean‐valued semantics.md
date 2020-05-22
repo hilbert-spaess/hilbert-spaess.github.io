@@ -60,4 +60,5 @@ $$ \| x = y \| = \| x \subset y \| . \| y \subset x \| $$
 
 To show that this is a full-blooded BVM, we need to verify $(1)-(4)$. Let's verify that $$\| x = x \| = 1$$. The remainder of the axioms have similar proofs. We prove by induction. $$ \| x \subset x \| = \bigvee\_{z \in \mathcal{D}(x)}x(z) \Rightarrow \|z \in x \|$$. But by induction for all $z \in \mathcal{D}(x)$, $x(z) = \| z = z\| \land x(z) \leq \|z \in x \|. \square$$
 
-Not only is $V^{\mathbb{B}}$ a BVM, but it models ZFC out of the box! This fact is a significant step towards being able to build interesting models of ZFC. The proof is a good exercise in understanding both the axioms of ZFC and the construction of $V^{\mathbb{B}}$, and is relegated to a later post.
+Not only is $V^{\mathbb{B}}$ a BVM, but it models ZFC out of the box! This fact is a significant step towards being able to build interesting models of ZFC. The proof is a good exercise in understanding both the axioms of ZFC and the construction of $V^{\mathbb{B}}$, and is postponed to a later post.
+

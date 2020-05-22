@@ -17,4 +17,6 @@ Recall the definition of $V^{\mathbb{B}}$ as a cumulative hierarchy of 'Boolean-
 
 To show that is is valid, we need that for each $x, y \in V^{\mathbb{B}}$, $$\| x = y \| = \bigwedge_{z \in V^{\mathbb{B}}}(\|z \in x\| \Leftrightarrow \| z \in y \|)$$. One direction follows directly from the axioms of first-order logic, so is valid in $V^{\mathbb{B}}$. To get the other direction, it suffices to show that $$ \bigwedge_{z \in V^{\mathbb{B}}}(\|z \in x \| \Rightarrow \| z \in y \|) \leq \| x \subset y \|$$. 
 
-We have that for all $z$, $$x(z) \leq \| z \in x \|$$. So for all $z$,$$(\|z \in x \| \Rightarrow \| z \in y \|) \leq (x(z) \Rightarrow \|z \in y \|$$. Taking the 
+We have that for all $z$, $$x(z) \leq \| z \in x \|$$. So for all $z$, $$(\|z \in x \| \Rightarrow \| z \in y \|) \leq (x(z) \Rightarrow \|z \in y \|)$$. Taking the conjunction over all $z$ gives the desired result.
+
+**Separation**: 

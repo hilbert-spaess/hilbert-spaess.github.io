@@ -15,4 +15,6 @@ Recall the definition of $V^{\mathbb{B}}$ as a cumulative hierarchy of 'Boolean-
 
 **Extensionality**: $$(\forall x)(\forall y)[(x=y) \Leftrightarrow (\forall z)(z \in x \Leftrightarrow z \in y)]$$. "Sets are determined by their members".
 
-To show that is is valid, we need that for each $x, y \in V^{\mathbb{B}}$, $$\| x = y \| = \bigvee_{z \in V^{\mathbb{B}}}(\|z \in x\| \Leftrightarrow \| z \in y \|)$$. One direction follows directly from the axioms of first-order logic, so is valid in $V^{\mathbb{B}}$. To get the other direction, it suffices to show that $$ \bigvee_{z \in Z}(\|z \in x \| \Rightarrow \| z \in y \|) \leq \| x \subset y \|$$. 
+To show that is is valid, we need that for each $x, y \in V^{\mathbb{B}}$, $$\| x = y \| = \bigvee_{z \in V^{\mathbb{B}}}(\|z \in x\| \Leftrightarrow \| z \in y \|)$$. One direction follows directly from the axioms of first-order logic, so is valid in $V^{\mathbb{B}}$. To get the other direction, it suffices to show that $$ \bigvee_{z \in V^{\mathbb{B}}}(\|z \in x \| \Rightarrow \| z \in y \|) \leq \| x \subset y \|$$. 
+
+We have that for all $z$, $$y(z) \leq \| z \in x \|$$. 

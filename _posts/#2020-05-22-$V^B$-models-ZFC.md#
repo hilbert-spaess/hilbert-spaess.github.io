@@ -1,0 +1,12 @@
+---
+title: $V^{\mathbb{B}}$ models ZFC
+layout: post
+---
+
+<script type="text/x-mathjax-config"> MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']], processEscapes: true } }); </script> <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
+## Canonical names for $V$ in $V^\mathbb{B}$
+
+Recall the definition of $V^{\mathbb{B}}$ as a cumulative hierarchy of 'Boolean-valued sets', and the 
+
+## 

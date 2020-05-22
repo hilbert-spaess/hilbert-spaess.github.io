@@ -13,4 +13,5 @@ Recall the definition of $V^{\mathbb{B}}$ as a cumulative hierarchy of 'Boolean-
 
 ## Extensionality and separation
 
-Axiom of extensionality
+**Axiom of extensionality:** $$(\forall x)(\forall y)[(x=y) \Leftrightarrow (\forall z)(z \in x \Leftrightarrow z \in y)]$$.
+

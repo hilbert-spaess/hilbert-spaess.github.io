@@ -1,3 +1,5 @@
+Recall that $V^{\mathbb{B}}$ is a **full** BVM: for every $\phi(x, y)$, there is some $a \in V^{\mathbb{B}}$ such that $$\| (\exists x) \phi(x,y) \| = \| \phi(a, y) \|$$. This is an important fact for the following theorem:
+
 ## An application of BVMs to propositional logic
 
 Let's show that Boolean-valued models can be used to solve an interesting problem in propositional logic.

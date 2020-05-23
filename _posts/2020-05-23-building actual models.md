@@ -30,7 +30,7 @@ Recall that $V^{\mathbb{B}}$ is a **full** BVM: for every $\phi(x, y)$, there is
 
 The proof is by induction on the complexity of $\phi$.
 
-Crucially, every axiom of ZFC is valid in $V^{\mathbb{B}}$, so holds in $V^{\mathbb{B}}/U$. Note that we don't really have a good picture of what $V^{\mathbb{B}}/U$ looks like in comparison to $V$. It was constructed in a roundabout manner with equivalence classes.
+Crucially, every axiom of ZFC is valid in $V^{\mathbb{B}}$, so holds in $V^{\mathbb{B}}/U$. Note that we don't really have a good picture of what $V^{\mathbb{B}}/U$ looks like in comparison to $V$. It was constructed in a roundabout manner with equivalence classes. When combined with Los' theorem, our [previous work](https://hilbert-spaess.github.io/2020/05/22/$V-B$-models-ZFC.html) tells us that the map $x \to [\dot{x}]$ i s an embedding of $V$ in $V^{\mathbb{B}}/U$. So there's at least as much stuff in the new quotient model. Thus far, it might have been tacitly assumed that $U \in V$. However, in this case it turns out that we haven't made anything new at all.
 
 If $U \in V$, doesn't do anything. So need something outside the model to make interesting. (Where it comes from is a question for later).
 

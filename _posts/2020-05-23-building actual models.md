@@ -22,7 +22,9 @@ $$[x] \in_U [y] \Leftrightarrow \| x \in y \| \in U$$
 
 It is easily checked that the relation $\in$ is well-defined on equivalence classes. Thus $(V^{\mathbb{B}}/U, \in_U)$ is a model of the language of set theory.
 
-## $V^{\mathbb{B}} \models$ ZFC
+## $V^{\mathbb{B}}/U \models$ ZFC
+
+Recall that $V^{\mathbb{B}}$ is a **full** BVM: for every $\phi(x, y)$, there is some $a \in V^{\mathbb{B}}$ such that $$\| (\exists x) \phi(x,y) \| = \| \phi(a, y) \|$$.
 
 If $U \in V$, doesn't do anything. So need something outside the model to make interesting. (Where it comes from is a question for later).
 

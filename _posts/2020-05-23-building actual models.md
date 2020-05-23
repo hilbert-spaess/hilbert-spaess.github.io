@@ -36,7 +36,11 @@ Thus far, it might have been tacitly assumed that $U \in V$. However, in this ca
 
 ## The extension $V[G]$
 
-Once we've chosen an ultrafilter $U$
+Suppose we've selected an ultrafilter $G$ (for reasons that will be clear later, we use an alternative letter to denote an ultrafilter in this section). Rather than indirectly constructing the elements of a model by defining equivalence classes as above, we could attempt to concretely interpret the names of $V^{\mathbb{B}}$ as subsets of $V$. For a name $x$, and $y \in \mathcal{D}(x)$, we would like to keep $y$ as a genuine member of $x$ if $x(y) \in U$, and forget about $y$ otherwise. Of course, $y$ itself is a name, so we'd want to apply the same construction all the way down. This motivates a precise recursive definition of the **interpretation** $x^G$ of a name $x \in V^{\mathbb{B}}$ by an ultrafilter $G$:
+
+$$ x^G = \{ y^G : x(y) \in G \}$$.
+
+The class $$V[G] = \{ x^G : x \in V^{\mathbb{B}} \}$ 
 
 Concrete equivalent to the quotient.
 Quotient=definitely model, weird to understand.

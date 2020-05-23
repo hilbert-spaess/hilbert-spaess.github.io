@@ -28,6 +28,10 @@ Recall that $V^{\mathbb{B}}$ is a **full** BVM: for every $\phi(x, y)$, there is
 
 **Los' theorem:** $$V^{\mathbb{B}} \models \phi([x_1], ... [x_n]) \Leftrightarrow \| \phi(x_1, ..., x_n) \| \in U$$.
 
+The proof is by induction on the complexity of $\phi$.
+
+Crucially, every axiom of ZFC is valid in $V^{\mathbb{B}}$, so holds in $V^{\mathbb{B}}/U$. Note that we don't really have a good picture of what $V^{\mathbb{B}}/U$ looks like in comparison to $V$. It was constructed in a roundabout manner with equivalence classes.
+
 If $U \in V$, doesn't do anything. So need something outside the model to make interesting. (Where it comes from is a question for later).
 
 ## The extension $V[G]$

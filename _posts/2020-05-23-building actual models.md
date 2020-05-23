@@ -20,7 +20,9 @@ If $$\| x = y \| \in U$$, then we want $x=y$ to be true in the quotient model. T
 $$[x] \equiv_U [y] \Leftrightarrow \| x = y \| \in U$$  
 $$[x] \in_U [y] \Leftrightarrow \| x \in y \| \in U$$
 
-It is easily checked that the relation $\in$ is well-defined on equivalence classes. Thus $(V^{\mathbb
+It is easily checked that the relation $\in$ is well-defined on equivalence classes. Thus $(V^{\mathbb{B}}/U, \in_U)$ is a model of the language of set theory.
+
+## $V^{\mathbb{B}} \models$ ZFC
 
 If $U \in V$, doesn't do anything. So need something outside the model to make interesting. (Where it comes from is a question for later).
 

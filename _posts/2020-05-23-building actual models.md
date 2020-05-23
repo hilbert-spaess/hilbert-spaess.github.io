@@ -9,9 +9,9 @@ When studying the model theory of set theory, ordinary models are what we really
 
 ## The quotient $V^{\mathbb{B}}/U$
 
-With a BVM of ZFC, every sentence $\phi$ has a truth value $$\| \phi \| \in \mathbb{B}$$, and every sentence provable in ZFC has value 1. Every sentence provably false in ZFC has value 0. Then there might be some sentences with an intermediate truth value, and these sentences are all independent of ZFC. To obtain a new model of ZFC, we will try and 'collapse' these intermediate truth values to a definite 0 or 1.
+With a BVM of ZFC, every sentence $\phi$ has a truth value $$\| \phi \| \in \mathbb{B}$$, and every sentence provable in ZFC has value 1. Every sentence provably false in ZFC has value 0. Then there might be some sentences with an intermediate truth value $$ \not \in \{0,1\}$$, and these sentences are all independent of ZFC. To obtain a new model of ZFC, we will try and 'collapse' these intermediate truth values to a definite 0 or 1.
 
-Before we define an ultrafilter $U$ on $\mathbb{B}$
+Before we define an ultrafilter $U$ on $\mathbb{B}$, we motivate its properties. Suppose $a, b \in \mathbb{B}$ are intermediate truth values satisfying $a \leq b$. If $$\| \phi \| = 
 
 Why you want a filter. Why you want an ultrafilter.
 

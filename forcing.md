@@ -11,7 +11,7 @@ Intended pre-requisites:
 - First-order logic up to the completeness theorem
 - Basic theory of ordinals
 - Axioms of ZFC
-- Basic model theory of ZFC (Von Neumann hierarchy)
+- Basic model theory of ZFC (Von Neumann hierarchy, constructible universe)
 
 [Boolean-valued semantics](https://hilbert-spaess.github.io/2020/05/16/Boolean-valued-semantics.html) is an introduction to Boolean-valued models of set theory. It covers Boolean algebras and Boolean-valued models, and defines the standard $\mathbb{B}$-valued model of set theory, $V^{\mathbb{B}}$.
 

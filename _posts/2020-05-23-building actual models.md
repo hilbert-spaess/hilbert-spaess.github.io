@@ -29,7 +29,12 @@ Generic model theorem.
 
 ## Quotient as extension
 
-Alternative characterisation of generic filter
+What breaks with the isomorphism when non-generic?
+
+Quotient as a forcing extension of a different base model.
 
 ## What of genericity?
 
+The two roles: new set being added, and filter on truth. This is witchcraft and I really don't understand it. Will try and understand it.
+
+So far, the reason we wanted a generic ultrafilter was to make the extension-as-quotient argument work. Is there a way of motivating it as a 'typical set?'. Something tantalasing I noticed: when adjoining a Cohen generic real, the generic real must be normal.

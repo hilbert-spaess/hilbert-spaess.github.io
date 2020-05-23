@@ -17,7 +17,7 @@ Motivated by the above discussion, we can make precise definitions. A **filter**
 
 If $$\| x = y \| \in U$$, then we want $x=y$ to be true in the quotient model. Thus we define the objects of the model $V^{\mathbb{B}}/U$ as equivalence classes $[x]$ of names of $V^{\mathbb{B}}$:
 
-$$[x] \equiv_U [y] \Leftrightarrow \| x = y \| \in U$$
+$$[x] \equiv_U [y] \Leftrightarrow \| x = y \| \in U$$  
 $$[x] \in_U [y] \Leftrightarrow \| x \in y \| \in U$$
 
 It is easily checked that the relation $\in$ is well-defined on equivalence classes. Thus $(V^{\mathbb

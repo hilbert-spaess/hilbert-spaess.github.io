@@ -16,3 +16,5 @@ Intended pre-requisites:
 [Boolean-valued semantics](https://hilbert-spaess.github.io/2020/05/16/Boolean-valued-semantics.html) is an introduction to Boolean-valued models of set theory. It covers Boolean algebras and Boolean-valued models, and defines the standard $\mathbb{B}$-valued model of set theory, $V^{\mathbb{B}}$.
 
 [$V^{\mathbb{B}}$ models ZFC](https://hilbert-spaess.github.io/2020/05/22/$V-B$-models-ZFC.html) provides the proof that all axioms of ZFC are valid in the standard BVM of set theory. (Still in progress).
+
+[

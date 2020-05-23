@@ -13,9 +13,9 @@ With a BVM of ZFC, every sentence $\phi$ has a truth value $$\| \phi \| \in \mat
 
 Suppose $a, b \in \mathbb{B}$ are intermediate truth values satisfying $a \leq b$. If $$\| \phi \| = a$$, and we want to collapse $\phi$ to a truth value of 1, then any consequences of $\phi$ had better be collapsed to 1 as well! In particular, if $$\| \psi \| = b$$, then $\psi$ should be collapsed to 1. If $\phi_1, \phi_2$ are collapsed to truth, we want $\phi_1 \land \phi_2$ to be collapsed to truth, so we require that $U$ be closed under $\land$. Additionally, exactly one of $\psi$ and $\lnot \psi$ should hold in the collapsed model, so exactly one of $a, \lnot a$ should be an element of $U$. 
 
-Motivated by the above discussion, we can make precise definitions. A **filter** $F$ is a subset of $\mathbb{B}$ that is upward-closed and closed under joins (the first two points above). An **ultrafilter** $U$ is a filter such that for all $a \in \mathbb{B}$, exactly one of $a, \lnot a$ is an element of $U$. Happily, once we have decided to quotient $V^{\mathbb{B}}$ by an ultrafilter, there are no obstacles to the construction of a fully-fledged model of ZFC.
+Motivated by the above discussion, we can make precise definitions. A **filter** $F$ is a subset of $\mathbb{B}$ that is upward-closed and closed under joins (the first two points above). An **ultrafilter** $U$ is a filter such that for all $a \in \mathbb{B}$, exactly one of $a, \lnot a$ is an element of $U$. This definition of an ultrafilter is a special case of a [more general concept](https://en.wikipedia.org/wiki/Ultrafilter) with applications in topology. Happily, once we have decided to quotient $V^{\mathbb{B}}$ by an ultrafilter, there are no obstacles to the construction of a fully-fledged model of ZFC.
 
-Theorem: the quotient is a model of the language of set theory, and Los' theorem for the model.
+If $The objects of the model $V^{\mathbb{B}}/U$ are the equivalence classes of names of $V^{\mathbb{B}}$ Theorem: the quotient is a model of the language of set theory, and Los' theorem for the model.
 
 If $U \in V$, doesn't do anything. So need something outside the model to make interesting. (Where it comes from is a question for later).
 

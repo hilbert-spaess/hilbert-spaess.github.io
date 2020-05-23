@@ -15,7 +15,7 @@ Suppose $a, b \in \mathbb{B}$ are intermediate truth values satisfying $a \leq b
 
 Motivated by the above discussion, we can make precise definitions. A **filter** $F$ is a subset of $\mathbb{B}$ that is upward-closed and closed under joins (the first two points above). An **ultrafilter** $U$ is a filter such that for all $a \in \mathbb{B}$, exactly one of $a, \lnot a$ is an element of $U$. This definition of an ultrafilter is a special case of a [more general concept](https://en.wikipedia.org/wiki/Ultrafilter) with applications in topology. Happily, once we have decided to quotient $V^{\mathbb{B}}$ by an ultrafilter, there are no obstacles to the construction of a fully-fledged model of ZFC.
 
-If $$\| x = y \| \in U$$, then we want $x=y$ to be true in the quotient model. Thus the objects of the model $V^{\mathbb{B}}/U$ should be equivalence classes $[x]$ of names of $V^{\mathbb{B}}$, with equivalence relation $$[x] \cong [y] \Leftrightarrow \| x = y \| \in U$$. The relation $\in$ is defined on equivalence classes by $$[x] \in [y] \Leftrightarrow \| x \in y \| \in U$$. It is easily checked that this relation is well-defined on equivalence classes. 
+If $$\| x = y \| \in U$$, then we want $x=y$ to be true in the quotient model. Thus the objects of the model $V^{\mathbb{B}}/U$ should be equivalence classes $[x]$ of names of $V^{\mathbb{B}}$, with equivalence relation $$[x] \equiv [y] \Leftrightarrow \| x = y \| \in U$$. The relation $\in$ is defined on equivalence classes by $$[x] \in [y] \Leftrightarrow \| x \in y \| \in U$$. It is easily checked that this relation is well-defined on equivalence classes. 
 
 If $U \in V$, doesn't do anything. So need something outside the model to make interesting. (Where it comes from is a question for later).
 

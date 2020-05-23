@@ -34,9 +34,9 @@ Crucially, every axiom of ZFC is valid in $V^{\mathbb{B}}$, so holds in $V^{\mat
 
 Thus far, it might have been tacitly assumed that $U \in V$. However, in this case it turns out that we haven't made anything new at all. For any name $x$, the set $$x' = \{y \in x : x(y) \in U\} \in V$$, so $$\| x = x^{*}\| \in U$$, and $[x] = [x']$. So the map between $V$ and $V^{\mathbb{B}}/U$ is in fact an isomorphism of models. In order for this construction to be interesting, $U$ has to come from *outside* the universe of sets we are working with. If this sounds crazy, you can assume for now that $V$ is some neutered model of ZFC, so that there are plenty of ultrafilters kicking around that $V$ doesn't have access to. If $V$ is 'our' universe of set theory, I'll try and make sense of the relevant metamathematics in a later post.
 
-If $U \in V$, doesn't do anything. So need something outside the model to make interesting. (Where it comes from is a question for later).
-
 ## The extension $V[G]$
+
+Once we've chosen an ultrafilter $U$
 
 Concrete equivalent to the quotient.
 Quotient=definitely model, weird to understand.

@@ -32,7 +32,7 @@ The proof is by induction on the complexity of $\phi$.
 
 Crucially, every axiom of ZFC is valid in $V^{\mathbb{B}}$, so holds in $V^{\mathbb{B}}/U$. Note that we don't really have a good picture of what $V^{\mathbb{B}}/U$ looks like in comparison to $V$. It was constructed in a roundabout manner with equivalence classes. When combined with Los' theorem, our [previous work](https://hilbert-spaess.github.io/2020/05/22/$V-B$-models-ZFC.html) tells us that the map $x \to [\dot{x}]$ is an embedding of $V$ in $V^{\mathbb{B}}/U$. So there's at least as much stuff in the new quotient model.
 
-Thus far, it might have been tacitly assumed that $U \in V$. However, in this case it turns out that we haven't made anything new at all. For any name $\cup{x}$.
+Thus far, it might have been tacitly assumed that $U \in V$. However, in this case it turns out that we haven't made anything new at all. For any name $x$, $$x^{*} = \{y \in x : x(y) \in U\} \in V$$, so $$\| x = x^{*}\| \in U$$, and $[x] = [x^{*}]$. So the map between $V$ and $V^{\mathbb{B}}/U$ is in fact an isomorphism of models.
 
 If $U \in V$, doesn't do anything. So need something outside the model to make interesting. (Where it comes from is a question for later).
 

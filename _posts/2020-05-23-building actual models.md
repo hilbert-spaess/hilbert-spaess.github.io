@@ -24,7 +24,9 @@ It is easily checked that the relation $\in$ is well-defined on equivalence clas
 
 ## $V^{\mathbb{B}}/U \models$ ZFC
 
-Recall that $V^{\mathbb{B}}$ is a **full** BVM: for every $\phi(x, y)$, there is some $a \in V^{\mathbb{B}}$ such that $$\| (\exists x) \phi(x,y) \| = \| \phi(a, y) \|$$.
+Recall that $V^{\mathbb{B}}$ is a **full** BVM: for every $\phi(x, y)$, there is some $a \in V^{\mathbb{B}}$ such that $$\| (\exists x) \phi(x,y) \| = \| \phi(a, y) \|$$. This is an important fact for the following theorem:
+
+**Los' theorem:** $$V^{\mathbb{B}} \models \phi([x_1], ... [x_n]) \Leftrightarrow \| \phi(x_1, ..., x_n) \| \in U$$.
 
 If $U \in V$, doesn't do anything. So need something outside the model to make interesting. (Where it comes from is a question for later).
 

@@ -9,9 +9,9 @@ When studying the model theory of set theory, ordinary models are what we really
 
 ## The quotient $V^{\mathbb{B}}/U$
 
-With a BVM of ZFC, every sentence $\phi$ has a truth value $$\| \phi \| \in \mathbb{B}$$, and every sentence provable in ZFC has value 1. Every sentence provably false in ZFC has value 0. Then there might be some sentences with an intermediate truth value $$ \not \in \{0,1\}$$, and these sentences are all independent of ZFC. To obtain a new model of ZFC, we will try and 'collapse' these intermediate truth values to a definite 0 or 1.
+With a BVM of ZFC, every sentence $\phi$ has a truth value $$\| \phi \| \in \mathbb{B}$$, and every sentence provable in ZFC has value 1. Every sentence provably false in ZFC has value 0. Then there might be some sentences with an intermediate truth value $$ \not \in \{0,1\}$$, and these sentences are all independent of ZFC. To obtain a new model of ZFC, we will try and 'collapse' these intermediate truth values to a definite 0 or 1. The most straightforward strategy for carrying out such a collapse is to pick a subset $U \subset \mathbb{B}$. Then we will try to ensure that $\phi$ is true in our collapsed model if and only if $$\| \phi \| \in U$$.
 
-Before we define an ultrafilter $U$ on $\mathbb{B}$, we motivate its properties. Suppose $a, b \in \mathbb{B}$ are intermediate truth values satisfying $a \leq b$. If $$\| \phi \| = 
+Spoiler: $U$ will be an **ultrafilter** on $\mathbb{B}$. Before defining this, we motivate its properties. Suppose $a, b \in \mathbb{B}$ are intermediate truth values satisfying $a \leq b$. If $$\| \phi \| = a$$, and we want to collapse $\phi$ to a truth value of 1, then any consequences of $\phi$ had better be collapsed to 1 as well! In particular, if $$\| \psi \| = b$$, then $\psi$ should be collapsed to 1. 
 
 Why you want a filter. Why you want an ultrafilter.
 

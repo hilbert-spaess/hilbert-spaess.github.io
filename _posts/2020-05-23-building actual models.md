@@ -41,7 +41,7 @@ Suppose we've selected an ultrafilter $G$ (for reasons that will be clear later,
 $$ \emptyset^G = \emptyset $$  
 $$ x^G = \{ y^G : x(y) \in G \}$$.
 
-The class $$V[G] = \{ x^G : x \in V^{\mathbb{B}} \}$$ is a new candidate model of ZFC. This is the **forcing extension** of $V$ by $G$. Note the contrast with the quotient model: the emphasis on the construction
+The class $$V[G] = \{ x^G : x \in V^{\mathbb{B}} \}$$ is a new candidate model of ZFC. This is the **forcing extension** of $V$ by $G$. Note the contrast with the quotient model: the emphasis on this construction of the forcing extension is the interpretability of the objects. Again, the construction is only interesting if $G \not \in V$, and my meta-mathematical recommendation is to assume that we are working in a larger set-theoretic universe than $V$, and are privy to ultrafilters such as $G$ to which $V$ doesn't have access. 
 
 Concrete equivalent to the quotient.
 Quotient=definitely model, weird to understand.

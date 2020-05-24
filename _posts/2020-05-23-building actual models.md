@@ -60,7 +60,11 @@ $$ \begin{align} \| x \subseteq y \| \in G &\Leftrightarrow \bigwedge\limits_{z 
 
 With the same argument for $$\| y \subset x\|$$, it's clear that $$\| x = y \| \in G \Leftrightarrow \{ z^G : x(z) \in G\} = \{z^G : y(z) \in G\}$$. Genericity was required to clear the meet and join over arbitrary joins and meets in the first and third line above. A similar argument suffices for the second part of the theorem. 
 
-Generic model theorem is a rephrasing of the above. 
+A rephrasing of earlier observations yields the following:
+
+**Generic model theorem:** Let $V$ be a model of set theory, and let $G$ be a $V$-generic ultrafilter on a Boolean algebra $\mathbb{B} \in V$. Then there is a model of ZFC, the **forcing extension** $V[G]$, such that $V \subseteq V[G], G \in V[G]$, and for any other model $N \supseteq V$ containing $G$, $V[G] \subseteq N$.
+
+This takes us some way to the ideal of being able to 'arbitrarily adjoin' a new set $G$ to a model $V$ of set theory. 
 
 ## Arbitrary quotient as extension
 

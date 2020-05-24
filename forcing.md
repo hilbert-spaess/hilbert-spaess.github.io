@@ -19,6 +19,8 @@ Intended pre-requisites:
 
 [Models from BVMs](https://hilbert-spaess.github.io/2020/05/23/building-actual-models.html) covers how we can use $V^{\mathbb{B}}$ to obtain new models of ZFC. We consider quotienting by an ultrafilter, and take a first look at forcing extensions.
 
+All quotients are extensions is mostly an exposition of Hamkins' paper on Boolean ultrapowers. We show that $V^{\mathbb{B}}/U$ is always a forcing extension, but the base model is not necessarily $V$. 
+
 [Frameworks for forcing](https://hilbert-spaess.github.io/2020/05/24/forcing-frameworks.html) takes a wider view on what's going on when we adjoin a generic ultrafilter to our base model.
 
 Independence of the Continuum Hypothesis goes into the first and most celebrated application of the technique- Cohen's proof the independence of the continumm hypothesis from ZFC.

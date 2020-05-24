@@ -56,7 +56,7 @@ $$x^G \in y^G \Leftrightarrow \| x \in y \| \in G$$
 
 We carry out a simultaneous proof by induction. 
 
-$$ \begin{align} \| x \subseteq y \| \in G &\Leftrightarrow \bigwedge\limits_{z \in \mathcal{D}(x)}(x(z) \Rightarrow \| z \in y \|) \in G \\ &\Leftrightarrow (\forall z \in \mathcal{D}(x)) (x(z) \Rightarrow \| z \in y \| \in G) \\ &\Leftrightarrow (\forall z in \mathcal{D}(x)) (x(z) \in G) \Rightarrow (\bigvee_{w \in \mathcal{D}(y)}\|w=z\|\wedge y(w) \in G) \\  \end{align} $$
+$$ \begin{align} \| x \subseteq y \| \in G &\Leftrightarrow \bigwedge\limits_{z \in \mathcal{D}(x)}(x(z) \Rightarrow \| z \in y \|) \in G \\ &\Leftrightarrow (\forall z \in \mathcal{D}(x)) (x(z) \Rightarrow \| z \in y \| \in G) \\ &\Leftrightarrow (\forall z \in \mathcal{D}(x)) (x(z) \in G) \Rightarrow (\vee_{w \in \mathcal{D}(y)}\|w=z\|\wedge y(w) \in G) \\ (\forall z \in mathcal{D}(x))(x(z) \in G) \Rightarrow (\exists w \in \mathcal{D}(y))(w^G = z^G \wedge y(w) \in G) \\  \end{align} $$
 
 Generic model theorem is a rephrasing of the above. 
 

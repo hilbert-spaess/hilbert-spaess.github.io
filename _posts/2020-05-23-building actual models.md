@@ -45,7 +45,9 @@ The class $$V[G] = \{ x^G : x \in V^{\mathbb{B}} \}$$ is a new candidate model o
 
 It's an easy proof by induction that $\dot{x}^G = x$, so $V \subset V[G]$. It's also an easy check that $\dot{G}^G = G$, so $G \in V[G]$. Finally, note that if $M$ is a model of ZFC with $V \subset M, G \in M$, then the construction of $V^G$ can be carried out in $M$, so that $V[G] \subset M$. These facts got some way to justfiying the suggestive extension notation. 
 
-Ideally, it would turn out that $V^{\mathbb{B}}/G = V[G]$. Then we would have the best of both worlds
+Ideally, it would turn out that $V^{\mathbb{B}}/G$ and $V[G]$ are isomorphic. This is almost the case, and it holds with one more condition on $G$. We require that $G$ be closed the joins of arbitrary $V$-subsets. In this case we call $G$ a **V-generic ultrafilter**. This extra property is precisely what is needed to show the following:
+
+**Equivalence of generic quotient and extension:** If $G$ is $V$-generic, then $V[G] = V^{\mathbb{B}}/G$. In particular, it follows that $$V[G] \models \phi(x_1^G, ..., x_n^G) \Leftrightarrow \| \phi(x_1, ..., x_n) \| \in G$$, and hence $V[G]$ is a model of ZFC.
 
 Concrete equivalent to the quotient.
 Quotient=definitely model, weird to understand.

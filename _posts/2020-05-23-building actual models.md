@@ -41,7 +41,11 @@ Suppose we've selected an ultrafilter $G$ (for reasons that will be clear later,
 $$ \emptyset^G = \emptyset $$  
 $$ x^G = \{ y^G : x(y) \in G \}$$.
 
-The class $$V[G] = \{ x^G : x \in V^{\mathbb{B}} \}$$ is a new candidate model of ZFC. This is the **forcing extension** of $V$ by $G$. Note the contrast with the quotient model: the emphasis on this construction of the forcing extension is the interpretability of the objects. Again, the construction is only interesting if $G \not \in V$, and my meta-mathematical recommendation is to assume that we are working in a larger set-theoretic universe than $V$, and are privy to ultrafilters such as $G$ to which $V$ doesn't have access. 
+The class $$V[G] = \{ x^G : x \in V^{\mathbb{B}} \}$$ is a new candidate model of ZFC. This is the **forcing extension** of $V$ by $G$. Note the contrast with the quotient model: the emphasis on this construction of the forcing extension is the interpretability of the objects. Again, the construction is only interesting if $G \not \in V$, and my meta-mathematical recommendation is to assume that we are working in a larger set-theoretic universe than $V$, and are privy to ultrafilters such as $G$ to which $V$ doesn't have access.
+
+It's an easy proof by induction that $\dot{x}^G = x$, so $V \subset V[G]$. It's also an easy check that $\dot{G}^G = G$, so $G \in V[G]$. Finally, note that if $M$ is a model of ZFC with $V \subset M, G \in M$, then the construction of $V^G$ can be carried out in $M$, so that $V[G] \subset M$. These facts got some way to justfiying the suggestive extension notation. 
+
+Ideally, it would turn out that $V^{\mathbb{B}}/G = V[G]$. Then we would have the best of both worlds
 
 Concrete equivalent to the quotient.
 Quotient=definitely model, weird to understand.

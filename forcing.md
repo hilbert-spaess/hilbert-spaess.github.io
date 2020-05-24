@@ -7,7 +7,7 @@ layout: post
 
 I'm working on an expository sequence of posts about the technique of **forcing** in set theory and its use in consistency proofs. Hopefully the sequence will go in a philosophical direction, but this is an area of philosophy for which quite a lot of (thankfully attractive) maths is needed. I'm still a total beginner in this area, so the presentation is probably very naive.
 
-## Intended pre-requisites
+### Intended pre-requisites
 
 - First-order logic up to the completeness theorem
 - Basic theory of ordinals

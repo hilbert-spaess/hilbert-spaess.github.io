@@ -56,6 +56,8 @@ $$x^G \in y^G \Leftrightarrow \| x \in y \| \in G$$
 
 We carry out a simultaneous proof by induction. 
 
+$$\| x = y \| \in G &= 2 \\ 3 &= 4 \\
+
 Generic model theorem is a rephrasing of the above. 
 
 ## Arbitrary quotient as extension

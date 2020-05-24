@@ -49,17 +49,11 @@ Ideally, it would turn out that $V^{\mathbb{B}}/G$ and $V[G]$ are isomorphic. Th
 
 **Equivalence of generic quotient and extension:** If $G$ is $V$-generic, then $V[G] = V^{\mathbb{B}}/G$. In particular, it follows that $$V[G] \models \phi(x_1^G, ..., x_n^G) \Leftrightarrow \| \phi(x_1, ..., x_n) \| \in G$$, and hence $V[G]$ is a model of ZFC.
 
-We want to show that $$x^G = y^G \Leftrightarrow \| x = y \| \in G, x^G \in y^G \Leftrightarrow \| x \in y \| \in G$$. 
+We want to show that $$x^G = y^G \Leftrightarrow \| x = y \| \in G, x^G \in y^G \Leftrightarrow \| x \in y \| \in G$$. Simultaneous proof by induction. 
 
-Concrete equivalent to the quotient.
-Quotient=definitely model, weird to understand.
-Extension=conretely built, not obviously a model.
+Generic model theorem is a rephrasing of the above. 
 
-Generic: equal to the quotient. So now not only a model, but a concrete transitive model that extends $V$.
-
-Generic model theorem.
-
-## Quotient as extension
+## Arbitrary quotient as extension
 
 What breaks with the isomorphism when non-generic?
 

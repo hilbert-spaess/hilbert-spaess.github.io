@@ -68,7 +68,7 @@ This takes us some way to the ideal of being able to 'arbitrarily adjoin' a new 
 
 ## Arbitrary quotient as extension
 
-What breaks with the isomorphism when non-generic?
+Let's explore how the isomorphism between $V^{\mathbb{B}}/U$ and $V[U]$ breaks down when $U$ isn't $V$-generic.
 
 Quotient as a forcing extension of a different base model.
 

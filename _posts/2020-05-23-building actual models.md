@@ -40,7 +40,7 @@ Suppose we've selected an ultrafilter $G$ (for reasons that will be clear later,
 
 $$ x^G = \{ y^G : x(y) \in G \}$$.
 
-The class $$V[G] = \{ x^G : x \in V^{\mathbb{B}} \}$ 
+The class $$V[G] = \{ x^G : x \in V^{\mathbb{B}} \}$$ is a new candidate model of ZFC. This is the **forcing extension** of $V$ by $G$. Note the contrast with the quotient model: 
 
 Concrete equivalent to the quotient.
 Quotient=definitely model, weird to understand.

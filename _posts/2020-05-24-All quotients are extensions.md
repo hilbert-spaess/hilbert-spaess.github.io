@@ -9,7 +9,7 @@ We [previously](https://hilbert-spaess.github.io/2020/05/23/building-actual-mode
 
 ## $\breve{V}, \hat{V}$, and $\breve{V}_U$
 
-Recall that each each set $x \in V$ has a canonical name $\breve{x} \in V^{\mathbb{B}}$. We define the name-class $\breve{V}$ via $$\| x \in V^{\mathbb{B}}\| = \bigvee_{y \in V}\| x = \breve{y}\|$$Recall that $\breve{V}$ is the class of canonical names for elements of $V$ in $V^{\mathbb{B}}$. Recall further that for $x_1, ..., x_n \in V$, $$V \models \phi(x_1, ..., x_n) \Leftrightarrow \|\phi^{\breve{V}}(\breve{x_1}, ..., \breve{x_n})\| = 1$$.
+Recall that each each set $x \in V$ has a canonical name $\breve{x} \in V^{\mathbb{B}}$. We define the name-class $\breve{V}$ via $$\| x \in V^{\mathbb{B}}\| = \bigvee_{y \in V}\| x = \breve{y}\|$$. Let $x_1, ..., x_n \in V$. Then it's a simple inductive proof to see that $$V \models \phi(x_1, ..., x_n) \Leftrightarrow \|\phi^{\breve{V}}(\breve{x_1}, ..., \breve{x_n})\| = 1$$. 
 
 
 

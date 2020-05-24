@@ -66,12 +66,6 @@ A rephrasing of earlier observations yields the following:
 
 This takes us some way to the ideal of being able to 'arbitrarily adjoin' a new set $G$ to a model $V$ of set theory. 
 
-## Arbitrary quotient as extension
-
-Let's explore how the isomorphism between $V^{\mathbb{B}}/U$ and $V[U]$ breaks down when $U$ isn't $V$-generic.
-
-Quotient as a forcing extension of a different base model.
-
 ## What of genericity?
 
 The two roles: new set being added, and filter on truth. This is witchcraft and I really don't understand it. Will try and understand it.

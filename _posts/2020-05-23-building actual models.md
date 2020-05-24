@@ -51,7 +51,7 @@ Ideally, it would turn out that $V^{\mathbb{B}}/G$ and $V[G]$ are isomorphic. Th
 
 It suffices to show that
 
-$$x^G = y^G \Leftrightarrow \| x = y \| \in G$$
+$$x^G = y^G \Leftrightarrow \| x = y \| \in G$$  
 $$x^G \in y^G \Leftrightarrow \| x \in y \| \in G$$
 
 We carry out a simultaneous proof by induction. 

@@ -13,11 +13,13 @@ Intended pre-requisites:
 - Axioms of ZFC
 - Basic model theory of ZFC (Von Neumann hierarchy, constructible universe)
 
+### Boolean-valued model approach
+
 [Boolean-valued semantics](https://hilbert-spaess.github.io/2020/05/16/Boolean-valued-semantics.html) is an introduction to Boolean-valued models of set theory. It covers Boolean algebras and Boolean-valued models, and defines the standard $\mathbb{B}$-valued model of set theory, $V^{\mathbb{B}}$.
 
 [$V^{\mathbb{B}}$ models ZFC](https://hilbert-spaess.github.io/2020/05/22/$V-B$-models-ZFC.html) provides the proof that all axioms of ZFC are valid in the standard BVM of set theory. (Still in progress).
 
-[Models from BVMs](https://hilbert-spaess.github.io/2020/05/23/building-actual-models.html) covers how we can use $V^{\mathbb{B}}$ to obtain new models of ZFC. We consider quotienting by an ultrafilter, and take a first look at forcing extensions.
+[Models from BVMs](https://hilbert-spaess.github.io/2020/05/23/building-actual-models.html) covers how we can use $V^{\mathbb{B}}$ to obtain new models of ZFC. We consider quotienting by an ultrafilter, and take a first look at forcing extensions, proving the generic model theorem.
 
 [All quotients are extensions](https://hilbert-spaess.github.io/2020/05/24/All-quotients-are-extensions.html) is mostly an exposition of Hamkins' paper on Boolean ultrapowers. We show that $V^{\mathbb{B}}/U$ is always a forcing extension, but the base model is not necessarily $V$. 
 

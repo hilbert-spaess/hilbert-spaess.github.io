@@ -58,7 +58,7 @@ We carry out a simultaneous proof by induction.
 
 $$ \begin{align} \| x \subseteq y \| \in G &\Leftrightarrow \bigwedge\limits_{z \in \mathcal{D}(x)}(x(z) \Rightarrow \| z \in y \|) \in G \\ &\Leftrightarrow (\forall z \in \mathcal{D}(x))[(x(z) \Rightarrow \| z \in y \|) \in G] \\ &\Leftrightarrow (\forall z \in \mathcal{D}(x)) (x(z) \in G) \Rightarrow (\bigvee_{w \in \mathcal{D}(y)}\|w=z\|\wedge y(w) \in G) \\ &\Leftrightarrow (\forall z \in \mathcal{D}(x))(x(z) \in G) \Rightarrow (\exists w \in \mathcal{D}(y))(w^G = z^G \wedge y(w) \in G) \end{align} $$
 
-With the same argument for $$\| y \subset x\|$$, it's clear that $$\| x = y \| \in G \Leftrightarrow \{ z^G : x(z) \in G\} = \{z^G : y(z) \in G\}$$. Genericity was required to clear the meet and join over arbitrary joins and meets in the first and third line above. A similar argument suffices for the second part of the theorem. 
+With the same argument for $$\| y \subset x\|$$, it's clear that $$\| x = y \| \in G \Leftrightarrow x^G = y^G$$. Genericity was required to clear the meet and join over arbitrary domains in the first and third line above. A similar argument suffices for the second part of the theorem. 
 
 A rephrasing of earlier observations yields the following:
 

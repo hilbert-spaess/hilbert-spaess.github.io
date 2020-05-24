@@ -49,7 +49,12 @@ Ideally, it would turn out that $V^{\mathbb{B}}/G$ and $V[G]$ are isomorphic. Th
 
 **Equivalence of generic quotient and extension:** If $G$ is $V$-generic, then $V[G]$ is isomorphic to $V^{\mathbb{B}}/G$. In particular, it follows that $$V[G] \models \phi(x_1^G, ..., x_n^G) \Leftrightarrow \| \phi(x_1, ..., x_n) \| \in G$$, and hence $V[G]$ is a model of ZFC.
 
-We want to show that $$x^G = y^G \Leftrightarrow \| x = y \| \in G, x^G \in y^G \Leftrightarrow \| x \in y \| \in G$$. Simultaneous proof by induction. 
+It suffices to show that
+
+$$x^G = y^G \Leftrightarrow \| x = y \| \in G$$
+$$x^G \in y^G \Leftrightarrow \| x \in y \| \in G$$
+
+We carry out a simultaneous proof by induction. 
 
 Generic model theorem is a rephrasing of the above. 
 

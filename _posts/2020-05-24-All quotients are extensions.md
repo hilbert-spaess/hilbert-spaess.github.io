@@ -9,4 +9,6 @@ We [previously](https://hilbert-spaess.github.io/2020/05/23/building-actual-mode
 
 ## $\breve{V}, \hat{V}$, and $\breve{V}_U$
 
-## $V^{\mathbb{B}}/U$ thinks it's a forcing extension
+Recall that $\breve{V}$ is the class of canonical names for elements of $V$ in $V^{\mathbb{B}}$. 
+
+## $V^{\mathbb{B}}/U$ is a forcing extension

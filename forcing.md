@@ -22,5 +22,3 @@ Intended pre-requisites:
 [Frameworks for forcing](https://hilbert-spaess.github.io/2020/05/24/forcing-frameworks.html) takes a wider view on what's going on when we adjoin a generic ultrafilter to our base model.
 
 Independence of the Continuum Hypothesis goes into the first and most celebrated application of the technique- Cohen's proof the independence of the continumm hypothesis from ZFC.
-
-[Partial orders and ultrafilters].

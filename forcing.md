@@ -18,3 +18,9 @@ Intended pre-requisites:
 [$V^{\mathbb{B}}$ models ZFC](https://hilbert-spaess.github.io/2020/05/22/$V-B$-models-ZFC.html) provides the proof that all axioms of ZFC are valid in the standard BVM of set theory. (Still in progress).
 
 [Models from BVMs](https://hilbert-spaess.github.io/2020/05/23/building-actual-models.html) covers how we can use $V^{\mathbb{B}}$ to obtain new models of ZFC. We consider quotienting by an ultrafilter, and take a first look at forcing extensions.
+
+[Frameworks for forcing].
+
+Independence of the Continuum Hypothesis
+
+Partial orders and ultrafilters.

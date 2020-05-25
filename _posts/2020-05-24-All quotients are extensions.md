@@ -35,7 +35,9 @@ Then $$\| \dot{G} \cap \mathbb{B} \neq \emptyset \| = \bigvee_{b \in S}\|\breve{
 
 ## $V^{\mathbb{B}}/U$ is a forcing extension
 
-We can now show that a quotient is itself a forcing extension with an exciting and important argument. The key idea is that because $V^{\mathbb{B}}$ believes it contains an inner model $\breve{V}$ of ZFC, a Boolean algebra $\breve{\mathbb{B}}$, and a $\breve{V}$-generic ultrafilter $\dot{G}$, we can actually talk about the forcing extension $\breve{V}[\dot{G}]$ inside $V^{\mathbb{B}}$. This argument will seem weird, and potentially confusing, but it's key to a view of forcing that Hamkins calls the "naturalistic conception". 
+We can now show that a quotient is itself a forcing extension with an exciting and important argument. The key idea is that because $V^{\mathbb{B}}$ believes it contains an inner model $\breve{V}$ of ZFC, a Boolean algebra $\breve{\mathbb{B}}$, and in particular a $\breve{V}$-generic ultrafilter $\dot{G}$, we can actually talk about the forcing extension $\breve{V}[\dot{G}]$ inside $V^{\mathbb{B}}$. This argument will seem weird, and potentially confusing, but it's key to a view of forcing that Hamkins calls the "naturalistic conception".
+
+Let's talk through carrying out the forcing construction inside $V^{\mathbb{B}}$. We need to reorient so that the base model is now $V^{\mathbb{B}}$. All our theorems about forcing are provable sentences of ZFC, so 
 
 Important meta-mathematical viewpoint.
 

@@ -1,3 +1,7 @@
+[$V^{\mathbb{B}}$ models ZFC](https://hilbert-spaess.github.io/2020/05/22/$V-B$-models-ZFC.html) provides the proof that all axioms of ZFC are valid in the standard BVM of set theory. (Still in progress).
+
+
+
 Recall that $V^{\mathbb{B}}$ is a **full** BVM: for every $\phi(x, y)$, there is some $a \in V^{\mathbb{B}}$ such that $$\| (\exists x) \phi(x,y) \| = \| \phi(a, y) \|$$. This is an important fact for the following theorem:
 
 ## An application of BVMs to propositional logic

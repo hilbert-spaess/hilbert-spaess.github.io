@@ -11,7 +11,7 @@ layout: post
 
 Recall that each each set $x \in V$ has a canonical name $\breve{x} \in V^{\mathbb{B}}$. We define the name-class $\breve{V}$ via $$\| x \in \breve{V}\| = \bigvee_{y \in V}\| x = \breve{y}\|$$. Let $x_1, ..., x_n \in V$. Then it's a simple inductive proof to see that $$V \models \phi(x_1, ..., x_n) \Leftrightarrow \|\phi^{\breve{V}}(\breve{x_1}, ..., \breve{x_n})\| = 1$$. But we can construct $x \in V^{\mathbb{B}}$ such that $$\| x \in \breve{V}\| = 1$$, even though $x$ is not the canonical name of a set in $V$. If $\mathbb{B}$ is non-trivial, we can find a set of values $A \subseteq \mathbb{B}$  with disjunction 1, even though none of the values is itself 1. If, for example $$\| x = \breve{a} \| = a$$ for all $a \in A$, then $x$ is a sort of 'superposition' of canonical names, but is not itself a canonical name. For this reason, it is misleading to think of the predicate $\breve{V}$ as representing a class of canonical names. Let $$\hat{V} = \{x \in V^{\mathbb{B}}: \| x \in \breve{V}\| = 1\}$$. 
 
-## The canonical generic ultrafilter
+## The canonical name for a generic ultrafilter
 
 The **canonical name for a generic ultrafilter** $\dot{G} \in V^{\mathbb{B}}$ was defined by $\mathcal{D}(\dot{G}) = \breve{\mathbb{B}}$, and for all $\breve{b} \in \mathbb{B}, \dot{G}(\breve{b}) = b$. We previously saw that if $G$ is any ultrafilter, then $\dot{G}^G = G$. More impressively, we will show that $V^{\mathbb{B}}$ believes $\dot{G}$ to be a $\breve{V}$-generic ultrafilter on $\breve{\mathbb{B}}$, in the sense that the statement that $\dot{G}$ is a generic ultrafilter has Boolean value 1. We will prove this in stages:
 

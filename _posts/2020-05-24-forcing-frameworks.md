@@ -9,6 +9,8 @@ This post will hopefully serve to clarify the big-picture view of forcing, befor
 
 ## Countable transitive models
 
+
+
 ## $V^{\mathbb{B}}$ thinks it is a forcing extension
 
 ## Naturalistic conception of forcing

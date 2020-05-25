@@ -23,7 +23,7 @@ Denote by $\phi(B, \geq)$ the statement "$(B, \geq)$ is a Boolean algebra". Then
 
 It's a straightfoward check that $$\| \dot{G} \subset \breve{mathbb{B}} \| = 1. 
 
-$$\begin{align} \| x \in \dot{G} \land \|  \end{align}$$
+$$\begin{align} \| x \in \dot{G} \land y \in \breve{\mathbb{B}} \land x \breve{\leq} y = \bigvee_{b, c \in \mathbb{B}} \|  \end{align}$$
 
 Proof this is an ultrafilter. Proof it is generic.
 

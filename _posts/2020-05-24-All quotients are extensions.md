@@ -21,7 +21,9 @@ Denote by $\phi(B, \geq)$ the statement "$(B, \geq)$ is a Boolean algebra". Then
 
 **$$V^{\mathbb{B}}$$ believes $\dot{G}$ is an ultrafilter**: $$\| \dot{G}$$ is an ultrafilter on $$\breve{\mathbb{B}} \| = 1$$.
 
-$$\begin{align} \| x \in \dot{G}\end{align}$$
+It's a straightfoward check that $$\| \dot{G} \subset \breve{mathbb{B}} \| = 1. 
+
+$$\begin{align} \| x \in \dot{G} \land \|  \end{align}$$
 
 Proof this is an ultrafilter. Proof it is generic.
 

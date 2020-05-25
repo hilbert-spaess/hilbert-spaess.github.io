@@ -13,7 +13,7 @@ Recall that each each set $x \in V$ has a canonical name $\breve{x} \in V^{\math
 
 ## The canonical generic ultrafilter
 
-The **canonical name for a generic ultrafilter** $\dot{G} \in V^{\mathbb{B}}$ was defined by $\mathcal{D}(\dot{G}) = \breve{\mathbb{B}}$, and for all $\breve{b} \in \mathbb{B}}, \dot{G}(\breve{b}} = b$. Name for canonicalgeneral ultrafilter.
+The **canonical name for a generic ultrafilter** $\dot{G} \in V^{\mathbb{B}}$ was defined by $\mathcal{D}(\dot{G}) = \breve{\mathbb{B}}$, and for all $\breve{b} \in \mathbb{B}, \dot{G}(\breve{b}) = b$. Name for canonicalgeneral ultrafilter.
 
 Proof this is an ultrafilter. Proof it is generic.
 

@@ -11,6 +11,8 @@ This post will hopefully serve to clarify the big-picture view of forcing, befor
 
 The simplest resolution of this problem is to assert that $V$ is decidedly not **the** set-theoretic universe in any Platonic sense. Indeed, we work in a bigger universe, and ensure that $V$ is fully understandable from our perspective.
 
+We could ensure that $V$ is a countable model of ZFC. 
+
 ## $V^{\mathbb{B}}$ thinks it is a forcing extension
 
 ## Naturalistic conception of forcing

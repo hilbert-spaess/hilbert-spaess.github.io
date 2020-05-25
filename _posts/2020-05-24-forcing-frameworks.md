@@ -13,7 +13,7 @@ The simplest resolution of this problem is to assert that $V$ is decidedly not *
 
 We could ensure that $V$ is a countable model of ZFC. By the proof of the model existence lemma, any first-order language with countable constant symbols must have a countable model. It's also a theorem that any countable Boolean algebra has a generic ultrafilter. So from the outside, we can always locate a generic ultrafilter. In the case of say, constructing an extension in which CH is false, we will always be able to spot new real numbers (construed as generic filters on a particular Boolean algebra) from the outside.
 
-
+This narrative is straightforward, but I find it mathematically and philosophically unsatisfying. 
 
 ## $V^{\mathbb{B}}$ thinks it is a forcing extension
 

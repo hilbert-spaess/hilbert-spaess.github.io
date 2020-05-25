@@ -15,7 +15,9 @@ Recall that each each set $x \in V$ has a canonical name $\breve{x} \in V^{\math
 
 The **canonical name for a generic ultrafilter** $\dot{G} \in V^{\mathbb{B}}$ was defined by $\mathcal{D}(\dot{G}) = \breve{\mathbb{B}}$, and for all $\breve{b} \in \mathbb{B}, \dot{G}(\breve{b}) = b$. We previously saw that if $G$ is any ultrafilter, then $\dot{G}^G = G$. More impressively, we will show that $V^{\mathbb{B}}$ believes $\dot{G}$ to be a $\breve{V}$-generic ultrafilter on $\breve{\mathbb{B}}$, in the sense that the statement that $\dot{G}$ is a generic ultrafilter has Boolean value 1. We will prove this in stages:
 
-**$V^{\mathbb{B}}$ believes that $\breve{\mathbb{B}}$ is a Boolean algebra**: $$\| \breve{\mathbb{B}}$$ is a Boolean algebra $$\| = 1$$. 
+**$V^{\mathbb{B}}$ believes that $\breve{\mathbb{B}}$ is a Boolean algebra**: $$\| \breve{\mathbb{B}}$$ is a Boolean algebra $$\| = 1$$.
+
+Denote by $\phi(B, \geq)$ the statement "$(B, \geq)$ is a Boolean algebra". Then since $\phi(B, \geq)$ is a $\Delta_0$ statement (
 
 Proof this is an ultrafilter. Proof it is generic.
 

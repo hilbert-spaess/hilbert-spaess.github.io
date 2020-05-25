@@ -16,28 +16,28 @@ This seems strong enough. But if we want to use this definition, we would have t
 
 A physical analogy is helpful here. The trajectory of a thrown ball is an involved consequence of the laws of motion. Most people don't see *why* an object will fall in a certain place, they see *that* an object will fall in a certain place. And they are correct. They have an 'inner simulator', or reliable and correct intuitions about the way physical objects behave. Likewise, I'm guessing that for most mathematicians, when reaching for a well-used theorem, they can instantly feel its truth, without necessarily having a proof at their fingertips.  
 
-**Attempt 3: You understand mathematical concepts to the extent that the things that seem true about your gut-level models correspond precisely to true statements about the concepts**
+**Attempted definition 3: You understand mathematical concepts to the extent that the things that seem true about your gut-level models correspond precisely to true statements about the concepts**
 
-This is the first attempted definition that doesn't use the word 'proof'. It looks like truth > proof.
+This is the first attempted definition that doesn't use the words 'theorem' or 'proof'. Rather than focussing on delimiting an area of maths into a linear succession of provable results, understanding requires experience and fluency with the underlying concepts. I conjecture that this form of understanding is much more important when solving exercises or problems in a field.
 
 ## How does one attain mathematical understanding?
 
-The practical question of how best to rapidly attain mathematical understanding is much more pressing for me at the moment. Taking the above definition as gospel, I want to do something like train an inner simulator with the available corpus of examples and statements, tying them to useful (probably spatial/sensory) intuitions.
+The practical question of how best to rapidly attain mathematical understanding is more pressing for me at the moment. Taking the above definition as gospel, it looks like I want to do something like train an inner simulator with the available corpus of examples and statements, tying them to useful (probably spatial/sensory) intuitions.
 
 It looks like there are two steps here: building the corpus, and then training my intuition. As far as building the corpus goes, I'll  want to make sure my set of examples is broad enough. For example, it would be easy to train my intuition into believing that every field has characteristic 0, or that every number field is a UFD. With this in mind, I should gather a cluster of examples, results, and fuzzy intuitions for each concept area I want to cover. Continuing the number field example, this should include specific examples of number fields that cover most variations in behaviour, results that hold for all number fields, and intuitive rephrasings of these results that are palatable to my inner simulator. I'm going to call the corpus an 'intuition cluster' for now.
 
 I'm envisaging the training process looking a lot like active recall learning. I should be presented with a definition, loosely phrased concept, or label for an area of maths, and attempt to produce examples, intuitions, and true statements about the area. Initially it'll be a combination of memory work (remembering what is true) as well as intuition work (checking what feels true), but the distinction between these should blur as time passes. I'll then compare against my previously assimmilated 'intuition cluster', to look for both true things that I haven't produced, as well as false things that I have. Spaced repetition seems like a natural framework for this recall process.
 
-I'll attempt to produce intuition clusters for Representation Theory and Galois Theory over the next week, and I'll post them as I go. I also expect my strategy for quickly attaining understanding to evolve over time.
+I'll attempt to produce intuition clusters for Representation Theory and Galois Theory over the next week, and I'll post them as I go. I also expect my strategy for quickly attaining understanding to evolve over time. Update: first attempt at intuition clusters for rep theory are [here](https://hilbert-spaess.github.io/2020/03/21/maths-Rep-theory-intuition-clusters.html).
 
 ## What's the role of proof?
 
 The traditional wisdom appears to be that studying and learning proofs is a vital component of a mathematical education. I'll give three reasons for studying proofs: two that don't seem relevant for what I've labelled 'understanding', and one that does.
 
-Reason 1: Seeing proofs is important for learning how to prove things. If my goal is to prove new theorems, rather than understand previously developed areas of maths, then I should be training to produce my own valid proofs.
+**Reason 1**: (Relevant if you want to do research) Seeing proofs is important for learning how to prove things. If my goal is to prove new theorems, rather than understand previously developed areas of maths, then I should be training to produce my own valid proofs.
 
-Reason 2: Seeing proofs is important for believing the statements. There's a sense of satisfaction that comes from knowing that you don't have to defer to the mathematical authorities that be, but can instead rely on the logical capacity of your past self.
+**Reason 2**: (Relevant if you have trust issues) Seeing proofs is important for believing the statements. There's a sense of satisfaction that comes from knowing that you don't have to defer to the mathematical authorities that be, but can instead rely on the logical capacity of your past self. For sufficiently trippy areas like model theory, I basically need to work through a proof to calm down. 
 
-Reason 3: (relevant) Proofs are a useful of source of intuitions, examples and perspectives on existing theorems. Often the key idea in a proof of a theorem reflects a truth that is not obvious from the statement of a theorem, but that would be a useful component of an intuition cluster.
+**Reason 3**: (relevant) Proofs are a useful of source of intuitions, examples and perspectives on existing theorems. Often the key idea in a proof of a theorem reflects a truth that is not obvious from the statement of a theorem, but that would be a useful component of an intuition cluster.
 
 Of course, if like me you've made the short-sighted move of enrolling in a formal higher education, there's a fourth, critical exam-related imperative to learn proofs.

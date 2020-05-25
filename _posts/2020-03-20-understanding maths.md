@@ -2,7 +2,7 @@ I'm currently going over three years of undergrad maths topics. They range from 
 
 ## What is (mathematical) understanding?
 
-The usual route to learning an area of maths looks something like this: first you see some definitions, and some examples of these definitions (both defined in terms of concepts you've already seen). Then you see some consequences of these definitions, phrased as theorems. Then you (often) see the proofs of these theorems. At what point should we be able to declare, "I understand these concepts"?
+The usual route to learning an area of maths looks something like this: first you see some definitions, and some examples of these definitions (both phrased in terms of concepts you've already seen). Then you see some consequences of these definitions, phrased as theorems. Then you (often) see the proofs of these theorems. At what point should one be able to declare, "I understand these concepts"?
 
 **Attempted definition 1: you understand a theorem if you are able, when asked, to define the objects it concerns, and to provide a proof**. (This is the sort of understanding that a learn-by-rote exam tests). But this sort of understanding can definitely be achieved without recourse to expensive hardware like the human brain! You could write a short script that, when triggered with the keyword "rank-nullity", regurtitates a formally verifiable proof of the theorem. 
 

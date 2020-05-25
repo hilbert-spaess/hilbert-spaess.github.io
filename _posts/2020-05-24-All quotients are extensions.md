@@ -17,7 +17,9 @@ The **canonical name for a generic ultrafilter** $\dot{G} \in V^{\mathbb{B}}$ wa
 
 **$V^{\mathbb{B}}$ believes that $\breve{\mathbb{B}}$ is a Boolean algebra**: $$\| \breve{\mathbb{B}}$$ is a Boolean algebra $$\| = 1$$.
 
-Denote by $\phi(B, \geq)$ the statement "$(B, \geq)$ is a Boolean algebra". Then since $\phi(B, \geq)$ is a $\Delta_0$ statement (it features only bounded quantification), we have $\phi^V(\breve{\mathbb{B}}, \breve{\geq}) = \phi(\breve{\mathbb{B}}, \breve{\geq})$, so by the work above, $$V \models \phi(\mathbb{B}, \geq) \Rightarrow \| \phi(\breve{\mathbb{B}}, \breve{\geq}) \| = 1$$. 
+Denote by $\phi(B, \geq)$ the statement "$(B, \geq)$ is a Boolean algebra". Then since $\phi(B, \geq)$ is a $\Delta_0$ statement (it features only bounded quantification), we have $\phi^V(\breve{\mathbb{B}}, \breve{\geq}) = \phi(\breve{\mathbb{B}}, \breve{\geq})$, so by the work above, $$V \models \phi(\mathbb{B}, \geq) \Rightarrow \| \phi(\breve{\mathbb{B}}, \breve{\geq}) \| = 1$$.
+
+**$$V^{\mathbb{B}}$$ believes \dot{G} is an ultrafilter**: $$\| \dot{G}$$ is an ultrafilter on $$\breve{\mathbb{B}} \| = 1$$. 
 
 Proof this is an ultrafilter. Proof it is generic.
 

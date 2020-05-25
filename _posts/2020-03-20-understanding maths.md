@@ -1,4 +1,4 @@
-I'm currently going over three years of undergrad maths topics (studied with a range of levels of diligence). There are a few key questions I want to consider. What does it mean to understand a mathematical concept? Why do we care about understanding? How do you go about attaining understanding? (I'm not discussing research skill here, just comprehension of previously developed areas of maths).
+I'm currently going over three years of undergrad maths topics. They range from topics I'm very happy with, such as number theory and real analysis, to areas like differential geometry and representation theory of which I have basically no recollection. The stated goal of formal mathematical education is to foster an understanding of mathematical knowledge. But what does it mean to understand a mathematical concept? Why do we care about understanding? How do you go about attaining understanding? (I'm not discussing research skill here, just comprehension of previously developed areas of maths).
 
 ## What is (mathematical) understanding?
 

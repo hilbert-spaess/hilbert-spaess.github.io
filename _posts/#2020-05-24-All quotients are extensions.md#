@@ -35,7 +35,7 @@ Then $$\| \dot{G} \cap \mathbb{B} \neq \emptyset \| = \bigvee_{b \in S}\|\breve{
 
 ## $V^{\mathbb{B}}/U$ is a forcing extension
 
-We can now show that a quotient is itself a forcing extension with an exciting and important argument. 
+We can now show that a quotient is itself a forcing extension with an exciting and important argument. The key idea is that because $V^{\mathbb{B}}$ believes it contains an inner model 
 
 Important meta-mathematical viewpoint.
 

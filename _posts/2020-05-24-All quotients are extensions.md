@@ -29,7 +29,9 @@ So $$\| \dot{G}$$ is upward-closed $$ \| = 1$$. A similar check shows that $\dot
 
 **$$V^{\mathbb{B}}$$ believes that $\dot{G}$ is a $\breve{V}$-generic ultrafilter**: $$\| \dot{G}$$ is $\breve{V}$-generic $$\| = 1$$. 
 
-Proof this is an ultrafilter. Proof it is generic.
+We use the dense-set characterisation of a generic ultrafilter. Suppose $D \subset \mathbb{B}$ is dense.
+
+Then $$\| \dot{G} \cap \mathbb{B} \neq \emptyset \| = $$
 
 ## $V^{\mathbb{B}}/U$ is a forcing extension
 

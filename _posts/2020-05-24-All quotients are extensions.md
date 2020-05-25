@@ -25,7 +25,7 @@ It's a straightfoward check that $$\| \dot{G} \subseteq \breve{\mathbb{B}} \| = 
 
 $$\begin{align} \| x \in \dot{G} \land y \in \breve{\mathbb{B}} \land x \breve{\leq} y \| &= \bigvee_{b, c \in \mathbb{B}} \| x = \breve{b} \| \land G(\breve{b}) \land \| y = \breve{c} \|  \land \| x \breve{\leq} y \| \\ &\leq \bigvee_{b \leq c \in \mathbb{B}} \| x = \breve{b} \| \land b \land \| y = \breve{c} \| \\ &\leq \bigvee_{b \leq c \in \mathbb{B}} c \land \| y = \breve{c} \| \\ &= \| y \in \dot{G} \|  \end{align}$$
 
-So $\dot{G}$ is upward-closed. A similar check shows that $\dot{G}$ is maximal and closed under intersections.
+So $$\| \dot{G}$$ is upward-closed $$ \| = 1$$. A similar check shows that $\dot{G}$ is maximal and closed under intersections.
 
 **$$V^{\mathbb{B}}$$ believes that $\dot{G}$ is a $\breve{V}$-generic ultrafilter**: $$\| \dot{G}$$ is $\breve{V}$-generic $$\| = 1$$. 
 

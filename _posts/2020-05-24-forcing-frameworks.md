@@ -11,7 +11,7 @@ This post will hopefully serve to clarify the big-picture view of forcing, befor
 
 The simplest resolution of this problem is to assert that $V$ is decidedly not **the** set-theoretic universe in any Platonic sense. Indeed, we work in a bigger universe, and ensure that $V$ is fully understandable from our perspective.
 
-We could ensure that $V$ is a countable model of ZFC. By the proof of the model existence lemma, any first-order language with countable constant symbols must have a countable model. It's also a theorem that any countable Boolean algebra has a generic ultrafilter. 
+We could ensure that $V$ is a countable model of ZFC. By the proof of the model existence lemma, any first-order language with countable constant symbols must have a countable model. It's also a theorem that any countable Boolean algebra has a generic ultrafilter. So from the outside, we can always locate a generic ultrafilter for our enjoyment. 
 
 ## $V^{\mathbb{B}}$ thinks it is a forcing extension
 

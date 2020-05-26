@@ -17,6 +17,14 @@ This narrative is straightforward, but I find it mathematically and philosophica
 
 ## Naturalist account of forcing
 
-I was happy to come across a paper by Joel Hamkins entitled ["The Set-theoretic Multiverse"](https://arxiv.org/abs/1108.4223). The author seems to have a similar aversion to restricting the possibility of constructing a forcing extension to only "degenerate models" like countable models. He succinctly presents an account of forcing that legitimises behaving as if, given a universe $V$, and a complete Boolean algebra $\mathbb{B} \in V$, you can pluck a generic ultrafilter out of a hat and move to working in $V[G}$. This rests on our previous work showing that the standard Boolean-valued model [believes it contains a generic ultrafilter](https://hilbert-spaess.github.io/2020/05/24/All-quotients-are-extensions.html). 
+I was happy to come across a paper by Joel Hamkins entitled ["The Set-theoretic Multiverse"](https://arxiv.org/abs/1108.4223). The author seems to have a similar aversion to restricting the possibility of constructing a forcing extension to only "degenerate models" like countable models. He succinctly presents an account of forcing that legitimises behaving as if, given a universe $V$, and a complete Boolean algebra $\mathbb{B} \in V$, you can pluck a generic ultrafilter out of a hat and move to working in $V[G]$. This rests on our previous work showing that the standard Boolean-valued model [believes it contains a generic ultrafilter](https://hilbert-spaess.github.io/2020/05/24/All-quotients-are-extensions.html). Hamkins' approach is replicated below, for completeness of these notes, but if you've read this far I recommend you check out the paper and get it from the horse's mouth. 
+
+**Naturalist account of forcing:** If $V$ is a universe of set theory, and $\mathbb{B}$ a complete Boolean algebra, then $V^{\mathbb{B}}/U$ is in $V$ a definable class model of the theory that axiomatises what it means to be a forcing extension of $V$. In particular, this class models the following theory in the first-order language containing $\in$, a predicate for $V$, a constant symbol $G$, and constant symbols for every element of $V$:
+(1) Every sentence that holds in $V$ (with explicit references to elements of $V$ using the constant-symbols available), relativised to the predicate for $V$. (In particular, the axioms of ZFC relativised to $V$).
+(2) The claim that $V$ is a transitive proper class.
+(3) The claim that $G$ is a $V$-generic ultrafilter on $\mathbb{B}$.
+(4) The claim that the universe is $V[G]$, and is a model of ZFC.
+
+All of this follows from the properties of $V^{\mathbb{B}}/U$ that we derived. The interpretation of the predicate for $V$ is as $\breve{V}_U$. The constant symbols for elements of $V$ are interpreted as $[\breve{x}]_U$, and $G$ is interpreted as $[\dot{G}]_U$. 
 
 

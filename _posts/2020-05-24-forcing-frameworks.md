@@ -25,12 +25,10 @@ I was happy to come across a paper by Joel Hamkins entitled ["The Set-theoretic 
 (3) The claim that $G$ is a $V$-generic ultrafilter on $\mathbb{B}$.  
 (4) The claim that the universe is $V[G]$, and is a model of ZFC.
 
-All of this follows from the properties of $V^{\mathbb{B}}/U$ that we derived. The interpretation of the predicate for $V$ is as $\breve{V}_U$. The constant symbols for elements of $V$ are interpreted as $[\breve{x}]_U$, and $G$ is interpreted as $[\dot{G}]_U$.
+All of this follows from the properties of $V^{\mathbb{B}}/U$ that we derived. The interpretation of the predicate for $V$ is as $\breve{V}_U$. The constant symbols for elements of $V$ are interpreted as $[\breve{x}]_U$, and $G$ is interpreted as $[\dot{G}]_U$. The semantic sublety here is that if $V \not \cong \breve{V}_U$, the class defined by the new predicate for $V$ is not necessarily isomorphic to $V$ as a model. But this doesn't matter, as any claims we made about $V$ still hold relativised to this predicate.
 
 The upshot is that if we are working in a universe $V$, we can arbitrarily decide to announce that we are "working in a forcing extension V[G]". This is justified by the above theorem, as we can assume that we are now working in the theory above. Any claims about $V$ still hold relativised to the predicate for $V$, $G$ behaves as a $V$-generic ultrafilter, and the universe behaves like the forcing extension $V[G]$. 
 
-The semantic sublety here is that if $V \not \cong \breve{V}_U$, the class defined by the new predicate for $V$ is not necessarily isomorphic to $V$ as a model. But this doesn't matter, as any claims we made about $V$ still hold relativised to this predicate.
-
-This account of forcing forms the backbone for an understanding of models of set theory as a diverse 'multiverse'. According to this philosophy, there is no fixed background notion of set, as from any universe we can define a class that models an extension- we have a 'view into other universes'. 
+This account of forcing forms the backbone for an understanding of models of set theory as a diverse 'multiverse'. According to this philosophy, there is no fixed background notion of set, as from any universe we can define a class that models an extension- we have a 'view into other universes'. I'm still trying to understand the implications of this view, and I hope to return to it later. But first, the Continuum Hypothesis. 
 
 

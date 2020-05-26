@@ -15,7 +15,10 @@ We could ensure that $V$ is a countable model of ZFC. By the proof of the model 
 
 This narrative is straightforward, but I find it mathematically and philosophically unsatisfying. It feels dirty to require degenerate models of ZFC to make this argument work. The approach I cover in the next section goes some way to rectifying this unpleasantness.
 
-## Naturalistic conception of forcing
+## Naturalist account of forcing
+
+I was happy to come across a paper by Joel Hamkins entitled ["The Set-theoretic Multiverse"](https://arxiv.org/abs/1108.4223). The author seems to have a similar aversion to restricting the possibility of constructing a forcing extension to only "degenerate models" like countable models. He succinctly presents an account of forcing that legitimises behaving as if, given a universe $V$, and a complete Boolean algebra $\mathbb{B} \in V$, you can pluck a generic ultrafilter out of a hat and move to working in $V[G}$.
+
 
 
 

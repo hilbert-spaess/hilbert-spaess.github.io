@@ -11,4 +11,5 @@ I'm writing up some solutions to chapter 14 of Jech's "Set Theory". I don't feel
 
 These questions are about alternative characterisations of a $V$-generic filter $G$ on a partial order $G$. Recall the standard definition of a generic filter as a filter that intersects every dense subset of $P$ in $V$.
 
-#### 14.2: A filter $G$ on $P$ is $V$-generic if and only if for every $g \in G$, if $D \in V$ is dense below $g$ then $G$ intersects $D$. 
+#### 14.2: A filter $G$ on $P$ is $V$-generic if and only if for every $g \in G$, if $D \in V$ is dense below $g$ then $G$ intersects $D$.
+

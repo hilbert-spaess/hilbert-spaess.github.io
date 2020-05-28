@@ -45,6 +45,6 @@ This condition holds for the notion of forcing $P$ used in the [proof of the ind
 
 ## 14.12 - 14.16: Boolean-valued models, quotients, and forcing extensions
 
-#### $14.12$: $$\| (\exists y \in x) \phi(y) \| = \bigvee_{y \in \mathcal{D}(x)} (x(y) \land \| \phi(y) \|), and $$\| (\forall y \in x) \phi(y) \| = \bigwedge_{y \in \mathcal{D}(x)} (x(y) \Rightarrow \| \phi(y) \| )$$.
+#### $14.12$: $$\| (\exists y \in x) \phi(y) \| = \bigvee_{y \in \mathcal{D}(x)} (x(y) \land \| \phi(y) \|)$$, and $$\| (\forall y \in x) \phi(y) \| = \bigwedge_{y \in \mathcal{D}(x)} (x(y) \Rightarrow \| \phi(y) \| )$$.
 
 

@@ -21,7 +21,7 @@ We know that ordinals are preserved in forcing extensions, but to conclude with 
 
 ## Cardinals are preserved in $V[G]$
 
-
+Since for all ordinals $\gamma$, $\gamma^V = \gamma^{V[G]}$, we use $\gamma$ for both. For our proof, we only really need to show that $\aleph_1^V = \aleph_1^{V[G]}, \aleph_2^V = \alpeh_2^{V[G]}$. 
 
 Proof using countable chain condition.
 

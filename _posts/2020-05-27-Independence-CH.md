@@ -25,7 +25,9 @@ The ordinals of $V$ are the ordinals of $V[G]$. In the following, we use $w_1$ t
 
 **Claim:** Suppose $\alpha$ is a regular ordinal. Then for $\gamma < \alpha$, there is no bijection between $\alpha$ and $\gamma$ in $V[G]$.
 
-Let $\dot{f}$ be a name in $V^{\mathbb{B}}$, representing a function $\gamma \to \alpha$ with truth value $$\| \dot{f}$$ is a function $$ \gamma \to \alpha \| = g$$. We aim to show that $$\| \dot{f}$$ is bounded $$\| \geq g$$, so that if $\dot{f}^G$ is such a function $\gamma \to \alpha$ in $V[G]$, it is not a surjection. 
+Let $\dot{f}$ be a name in $V^{\mathbb{B}}$, representing a function $\gamma \to \alpha$ with truth value $$\| \dot{f}$$ is a function $$ \gamma \to \alpha \| = g$$. We aim to show that $$\| \dot{f}$$ is bounded $$\| \geq g$$, so that if $\dot{f}^G$ is such a function $\gamma \to \alpha$ in $V[G]$, it is not a surjection.
+
+Indeed, suppose $\lambda < \gamma$. Then for each $\beta < \alpha$, let $$\lambda_beta = \| \dot{f}(\lambda) = \beta \|$$. 
 
 Proof using countable chain condition.
 

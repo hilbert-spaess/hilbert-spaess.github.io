@@ -1,0 +1,22 @@
+---
+title: Independence of the Continuum Hypothesis
+layout: post
+---
+
+<script type="text/x-mathjax-config"> MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']], processEscapes: true } }); </script> <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
+## Cohen generic reals
+
+I'll go into more detail elsewhere, but before we can define Cohen generic reals, we need to look at generic filters on arbitrary partial orders. Partial orders, notions of forcing, and Boolean algebras.
+
+Single Cohen generic real.
+
+Sets of Cohen generic reals.
+
+The proof, as long as cardinals are preserved.
+
+## Cardinals preserved
+
+Proof using countable chain condition.
+
+Proof of countable chain condition.

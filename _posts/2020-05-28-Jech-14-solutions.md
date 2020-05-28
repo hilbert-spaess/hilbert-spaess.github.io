@@ -9,14 +9,18 @@ I'm writing up some solutions to chapter 14 of Jech's "Set Theory". I don't feel
 
 ## 14.1 - 14.6: Generic filters on partial orders
 
-These questions are about alternative characterisations of a $V$-generic filter $G$ on a partial order $P. Recall the standard definition of a generic filter as a filter that intersects every dense subset of $P$ in $V$.
+These questions are about alternative characterisations of a $V$-generic filter $G$ on a partial order $P$. Recall the standard definition of a generic filter as a filter that intersects every dense subset of $P$ in $V$.
 
 #### 14.2: A filter $G$ on $P$ is $V$-generic if and only if for every $g \in G$, if $D \in V$ is dense below $g$ then $G$ intersects $D$.
 
-$\Rightarrow$: For $g \in G$, if $D \in V$ is dense below $g$ then $$\{p \in P: p \textrm{incompatible with} g \textrm{or} p \in D}$$ is dense. So it intersects $G$, and since every element of $G$ is compatible with $g$, $G$ intersects $D$.
+$\Rightarrow$: For $g \in G$, if $D \in V$ is dense below $g$ then $$\{p \in P: p \textrm{incompatible with} g \textrm{or} p \in D\}$$ is dense. So it intersects $G$, and since every element of $G$ is compatible with $g$, $G$ intersects $D$.
 
 $\Leftarrow$: Easy, as any dense set is dense below $g \in G$. 
 
 #### 14.3 Generic iff intersects every open-dense subset of $P$
 
-.
+$\Rightarrow:$ obvious.
+
+$\Leftarrow:$ if $D$ is dense then consider the open-dense set $$\{p \in P: \exists d \in D: p \leq d\}$$. This intersects generic $G$, so $G$ intersects $D$ by upward closure of $G$.
+
+#### 

@@ -24,4 +24,6 @@ I'm working on an expository sequence of posts about the technique of **forcing*
 
 [Frameworks for forcing](https://hilbert-spaess.github.io/2020/05/24/forcing-frameworks.html) takes a wider view on what's going on when we adjoin a generic ultrafilter to our base model.
 
-[Independence of CH](https://hilbert-spaess.github.io/2020/05/27/Independence-CH.html) walks through Cohen's proof that the negation of the continuum hypothesis is consistent with ZFC. 
+[Independence of CH](https://hilbert-spaess.github.io/2020/05/27/Independence-CH.html) walks through Cohen's proof that the negation of the continuum hypothesis is consistent with ZFC.
+
+[Jech "Forcing" solutions](https://hilbert-spaess.github.io/2020/05/28/Jech-14-solutions.html) has solutions to the exercises from the forcing chapter of Jech's "Set theory", which uses the BVM approach. 

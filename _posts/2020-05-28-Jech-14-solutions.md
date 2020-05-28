@@ -29,4 +29,10 @@ $\Rightarrow$: Suppose $D$ is predense. Let $\bar{D}$ be the dense closure of $D
 
 $\Leftarrow$: obvious.
 
-#### 14.5: 
+#### 14.5: Generic iff intersects every maximal antichain.
+
+$\Rightarrow:$ Every maximal antichain is pre-dense, so done by above.
+
+$\Leftarrow:$ It's easy to check that a maximal antichain of a dense subset of $P$ is also a maximal antichain of $P$. So if $D$ is a dense set, and $A$ a maximal antichain, then $G \cap A \neq emptyset$, so done.
+
+#### 14.6: [Sufficient criterion for $G \not in V$ ]. 

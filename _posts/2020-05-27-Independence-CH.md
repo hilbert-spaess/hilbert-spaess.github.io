@@ -27,7 +27,7 @@ The ordinals of $V$ are the ordinals of $V[G]$. In the following, we use $w_1$ t
 
 Let $\dot{f}$ be a name in $V^{\mathbb{B}}$, representing a function $\gamma \to \alpha$ with truth value $$\| \dot{f}$$ is a function $$ \gamma \to \alpha \| = g$$. We aim to show that $$\| \dot{f}$$ is bounded $$\| \geq g$$, so that if $\dot{f}^G$ is such a function $\gamma \to \alpha$ in $V[G]$, it is not a surjection.
 
-Indeed, suppose $\lambda < \gamma$. Then for each $\beta < \alpha$, let $$\lambda_\beta = \| \dot{f}(\lambda) = \beta \|$$. Clearly, for distinct $\beta$, the non-zero $\lambda_beta$ are incompatible, so form an antichain. At this point we use a lemma that we prove later: any antichain in $G$ is countable. Let $$S = \{ \beta < \alpha : \exists \lambda, \lambda_\beta \neq 0\}$$. Then $$\| \textrm{Im}(f) \subset S \| = g$$. But $S$ cannot be a cofinal set, since it has cardinality at most $|\gamma| < |\alpha|$. So indeed $$\| \dot{f}$$ is bounded $$\| = g$$. 
+Indeed, suppose $\lambda < \gamma$. Then for each $\beta < \alpha$, let $$\lambda_{\beta} = \| \dot{f}(\lambda) = \beta \|$$. Clearly, for distinct $\beta$, the non-zero $\lambda_{\beta}$ are incompatible, so form an antichain. At this point we use a lemma that we prove later: any antichain in $G$ is countable. Let $$S = \{ \beta < \alpha : \exists \lambda, \lambda_\beta \neq 0\}$$. Then $$\| \textrm{Im}(f) \subset S \| = g$$. But $S$ cannot be a cofinal set, since it has cardinality at most $|\gamma| < |\alpha|$. So indeed $$\| \dot{f}$$ is bounded $$\| = g$$. 
 
 Proof using countable chain condition.
 

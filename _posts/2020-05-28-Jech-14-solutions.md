@@ -41,3 +41,6 @@ For $G \in V$, consider $$D = \{p \in P: p \not \in G\}$$. Then for any $p \in P
 
 ## 14.7 - 14.11: Forcing relation, generic ultrafilters on Boolean algebras.
 
+## 14.12 - 14.16: Boolean-valued models, quotients, and forcing extensions
+
+#### $14.12$: $$\| (\exists y \in x) \phi(y) \| = \lor_{y \in \mathcal{D}(x)} (x(y) \land \| \phi(y) \|), and $$\| (\forall y \in x) \phi(y) \| = \land_{y \in \mathcal{D}(x)} (x(y) \Rightarrow \| \phi(y) \| ).  

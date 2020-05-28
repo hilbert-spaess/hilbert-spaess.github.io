@@ -15,6 +15,8 @@ These questions are about alternative characterisations of a $V$-generic filter 
 
 $\Rightarrow$: For $g \in G$, if $D \in V$ is dense below $g$ then $$\{p \in P: p \textrm{incompatible with} g \textrm{or} p \in D}$$ is dense. So it intersects $G$, and since every element of $G$ is compatible with $g$, $G$ intersects $D$.
 
-$\Leftarrow$: 
+$\Leftarrow$: Easy, as any dense set is dense below $g \in G$. 
 
-#### 14.3 Generic iff intersects every open-dense subset of $P$.
+#### 14.3 Generic iff intersects every open-dense subset of $P$
+
+.

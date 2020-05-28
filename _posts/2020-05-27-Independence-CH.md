@@ -29,6 +29,4 @@ Let $\dot{f}$ be a name in $V^{\mathbb{B}}$, representing a function $\gamma \to
 
 Indeed, suppose $\lambda < \gamma$. Then for each $\beta < \alpha$, let $$\lambda_{\beta} = \| \dot{f}(\lambda) = \beta \|$$. Clearly, for distinct $\beta$, the non-zero $\lambda_{\beta}$ are incompatible, so form an antichain. At this point we use a lemma that we prove later: any antichain in $G$ is countable. Let $$S = \{ \beta < \alpha : \exists \lambda, \lambda_\beta \neq 0\}$$. Then $$\| \textrm{Im}(f) \subset S \| = g$$. But $S$ cannot be a cofinal set, since it has cardinality at most $|\gamma| < |\alpha|$. So indeed $$\| \dot{f}$$ is bounded $$\| = g$$. 
 
-Proof using countable chain condition.
-
-Proof of countable chain condition.
+**Countable chain lemma:** If $P$ is the notion of forcing used in the proof above, and $A \subset P$ is an antichain, then $A$ is countable. 

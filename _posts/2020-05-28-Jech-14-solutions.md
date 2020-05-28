@@ -25,7 +25,7 @@ $\Leftarrow:$ if $D$ is dense then consider the open-dense set $$\{p \in P: \exi
 
 #### 14.4: Generic iff intersects every pre-dense subset of $P$.
 
-$\Rightarrow$: Suppose $D$ is predense. Let $\bar{D}$ be the dense closure of $D$. Then $G$ intersects $D$. If $g \in G \cap D$, and $g \not in D$, then $g$ was added as a point of compatibility between $D$ and another element of $P$. So $g \leq d \in D$, and done by upward closure of $G$.
+$\Rightarrow$: Suppose $D$ is predense. Let $\bar{D}$ be the dense closure of $D$. Then $G$ intersects $D$. If $g \in G \cap D$, and $g \not \in D$, then $g$ was added as a point of compatibility between $D$ and another element of $P$. So $g \leq d \in D$, and done by upward closure of $G$.
 
 $\Leftarrow$: obvious.
 
@@ -39,4 +39,4 @@ $\Leftarrow:$ It's easy to check that a maximal antichain of a dense subset of $
 
 For $G \in V$, consider $$D = \{p \in P: p \not \in G\}$$. Then for any $p \in P$, there exist incompatible $q, r \leq p$. Since any two elements of $G$ are compatible, at most one of $q,r \in G$. So at least one is in $D$. Therefore $D$ is dense, and $D \cap G = \emptyset$. So generic filters are not in $V$.
 
-## 
+## 14.7 - 14.11: Forcing relation, generic ultrafilters on Boolean algebras. 

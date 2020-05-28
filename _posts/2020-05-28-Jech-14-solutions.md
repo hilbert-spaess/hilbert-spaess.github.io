@@ -23,4 +23,10 @@ $\Rightarrow:$ obvious.
 
 $\Leftarrow:$ if $D$ is dense then consider the open-dense set $$\{p \in P: \exists d \in D: p \leq d\}$$. This intersects generic $G$, so $G$ intersects $D$ by upward closure of $G$.
 
-#### 
+#### 14.4: Generic iff intersects every pre-dense subset of $P$.
+
+$\Rightarrow$: Suppose $D$ is predense. Let $\bar{D}$ be the dense closure of $D$. Then $G$ intersects $D$. If $g \in G \cap D$, and $g \not in D$, then $g$ was added as a point of compatibility between $D$ and another element of $P$. So $g \leq d \in D$, and done by upward closure of $G$.
+
+$\Leftarrow$: obvious.
+
+#### 14.5: 

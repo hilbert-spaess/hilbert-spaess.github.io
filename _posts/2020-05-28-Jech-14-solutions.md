@@ -39,8 +39,12 @@ $\Leftarrow:$ It's easy to check that a maximal antichain of a dense subset of $
 
 For $G \in V$, consider $$D = \{p \in P: p \not \in G\}$$. Then for any $p \in P$, there exist incompatible $q, r \leq p$. Since any two elements of $G$ are compatible, at most one of $q,r \in G$. So at least one is in $D$. Therefore $D$ is dense, and $D \cap G = \emptyset$. So generic filters are not in $V$.
 
+This condition holds for the notion of forcing $P$ used in the [proof of the independence of CH from ZFC](https://hilbert-spaess.github.io/2020/05/27/Independence-CH.html). 
+
 ## 14.7 - 14.11: Forcing relation, generic ultrafilters on Boolean algebras.
 
 ## 14.12 - 14.16: Boolean-valued models, quotients, and forcing extensions
 
-#### $14.12$: $$\| (\exists y \in x) \phi(y) \| = \bigvee_{y \in \mathcal{D}(x)} (x(y) \land \| \phi(y) \|), and $$\| (\forall y \in x) \phi(y) \| = \bigwedge_{y \in \mathcal{D}(x)} (x(y) \Rightarrow \| \phi(y) \| )$$.  
+#### $14.12$: $$\| (\exists y \in x) \phi(y) \| = \bigvee_{y \in \mathcal{D}(x)} (x(y) \land \| \phi(y) \|), and $$\| (\forall y \in x) \phi(y) \| = \bigwedge_{y \in \mathcal{D}(x)} (x(y) \Rightarrow \| \phi(y) \| )$$.
+
+

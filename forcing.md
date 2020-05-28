@@ -23,3 +23,5 @@ I'm working on an expository sequence of posts about the technique of **forcing*
 [All quotients are extensions](https://hilbert-spaess.github.io/2020/05/24/All-quotients-are-extensions.html) is mostly an exposition of Hamkins' paper on Boolean ultrapowers. We show that $V^{\mathbb{B}}/U$ is always a forcing extension, but the base model is not necessarily $V$. 
 
 [Frameworks for forcing](https://hilbert-spaess.github.io/2020/05/24/forcing-frameworks.html) takes a wider view on what's going on when we adjoin a generic ultrafilter to our base model.
+
+[Independence of CH](https://hilbert-spaess.github.io/2020/05/27/Independence-CH.html).

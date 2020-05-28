@@ -24,4 +24,4 @@ I'm working on an expository sequence of posts about the technique of **forcing*
 
 [Frameworks for forcing](https://hilbert-spaess.github.io/2020/05/24/forcing-frameworks.html) takes a wider view on what's going on when we adjoin a generic ultrafilter to our base model.
 
-[Independence of CH](https://hilbert-spaess.github.io/2020/05/27/Independence-CH.html).
+[Independence of CH](https://hilbert-spaess.github.io/2020/05/27/Independence-CH.html) walks through Cohen's proof that the negation of the continuum hypothesis is consistent with ZFC. 

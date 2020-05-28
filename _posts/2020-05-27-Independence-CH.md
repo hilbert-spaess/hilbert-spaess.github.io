@@ -23,9 +23,9 @@ We know that ordinals are preserved in forcing extensions, but to conclude with 
 
 The ordinals of $V$ are the ordinals of $V[G]$. In the following, we use $w_1$ to refer to the ordinal $w_1$ in $V$, as an element of $V$ and $V[G]$. It is not necessarily equal to $w_1^{V[G]}$. We use similar notation for other ordinals. To complete the proof above, we only really need to show that $\omega_1 = \omega_1^{V[G]}, \omega_2^V = \omega_2^{V[G]}$. An injection between two ordinals in $V$ is still an injection in $V[G]$, so it suffices to show that there is no injection in $V[G]$ from $\omega_1$ to a smaller ordinal, and similarly for $\omega_2$. The property of $\omega_1$ and $\omega_2$ that we will need is that they are **regular**: any [cofinal](https://en.wikipedia.org/wiki/Cofinal_(mathematics)) subset has the same cardinality.
 
-**Claim:** Suppose $\alpha$ is a regular ordinal. Then for $\gamma < \alpha$, there is no injection $\alpha \to \gamma$ in $V[G]$.
+**Claim:** Suppose $\alpha$ is a regular ordinal. Then for $\gamma < \alpha$, there is no bijection between $\alpha$ and $\gamma$ in $V[G]$.
 
-$$\| \dot{f}: $$ is a function $$ \alpha \to gamma \| = g \in G$$. 
+$$\| \dot{f}: $$ is a function $$ \gamma \to \alpha \| = g \in G$$. 
 
 Proof using countable chain condition.
 

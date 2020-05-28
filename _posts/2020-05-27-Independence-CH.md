@@ -15,11 +15,13 @@ Let $V$ be a transitive model of ZFC. Let $(P, \leq) \in V$ be the notion of for
 
 We are now working in $V[G]$, the forcing extension of $V$ with respect to the notion of forcing $P$ (if you're confused about why I'm not requiring countability of $V$, check [this post](https://hilbert-spaess.github.io/2020/05/24/forcing-frameworks.html)). We have shown previously that $V[G]$ has the same ordinals as $V$, so in particular $\mathcal{P}(\omega)^V = \mathcal{P}(\omega)^{V[G]}$. With $G$ as above, we note that $\cup G$ is an element $\alpha$ of $\mathcal{P}(\omega)$ in $V[G]$. Further, $\alpha \not in V$, for otherwise $G$ would not intersect the dense set $$\{f \in P: f \not \subseteq \alpha\}$$. Thus we have succeeded in adjoining to $V$ a new element of the powerset of $\omega$. The element adjoined in this manner is called a **Cohen generic real**.
 
-For the proof sketched in the introduction, we don't just want a single new real, but a whole set. The notion of forcing $(P, \leq)$ in this case is the set of functions $f$ with domain a finite subset of $\omega_2 \times \omega$ and codomain $$\{0,1\}$$, partially ordered by inclusion as above. A generic ultrafilter consists of all finite approximants to a full function $$f : \omega_2 \times \omega \to \{0,1\}$$. We obtain a function from $\omega_2$ to $\mathcal{P}(\omega)$. We need to check that this function is an injection ("the new reals are all distinct"). For all $\gamma \in \omega_2$, the set 
+For the proof sketched in the introduction, we don't just want a single new real, but a whole set. The notion of forcing $(P, \leq)$ in this case is the set of functions $f$ with domain a finite subset of $\omega_2 \times \omega$ and codomain $$\{0,1\}$$, partially ordered by inclusion as above. A generic ultrafilter consists of all finite approximants to a full function $$f : \omega_2 \times \omega \to \{0,1\}$$. We obtain a function from $\omega_2$ to $\mathcal{P}(\omega)$. We need to check that this function is an injection ("the new reals are all distinct"). For all $\gamma_1, \gamma_2 \in \omega_2$, the set $$D_{\gamma_1, \gamma_2} = \{f \in P: (\exists n \in \omega) f(\gamma_1, n) \neq f(\gamma_2, n)\}$$ is dense, so intersects $G$. Hence, if $\f_\alpha = f(\alpha, .)$, the map $\alpha \to f_\alpha$ is an injection $\omega_2 \to \mathcal{P}(\omega_1)$ in $V[G]$. 
 
-The proof, as long as cardinals are preserved.
+We know that ordinals are preserved in forcing extensions, but to conclude with a statement about cardinals, we need to know that cardinalities are still the same in $V[G]$. For example, we need to explain why there isn't now a bijection between $\omega_2$ and $\omega_1$, using the raw material we've added to our model. 
 
-## Cardinals preserved
+## Cardinals are preserved in $V[G]$
+
+
 
 Proof using countable chain condition.
 

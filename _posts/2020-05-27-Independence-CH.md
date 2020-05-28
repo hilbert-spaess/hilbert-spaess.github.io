@@ -25,7 +25,7 @@ The ordinals of $V$ are the ordinals of $V[G]$. In the following, we use $w_1$ t
 
 **Claim:** Suppose $\alpha$ is a regular ordinal. Then for $\gamma < \alpha$, there is no injection $\alpha \to \gamma$ in $V[G]$.
 
-
+$$\| \dot{f}: $$ is a function $$ \alpha \to gamma \| = g \in G$$. 
 
 Proof using countable chain condition.
 

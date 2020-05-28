@@ -35,4 +35,8 @@ $\Rightarrow:$ Every maximal antichain is pre-dense, so done by above.
 
 $\Leftarrow:$ It's easy to check that a maximal antichain of a dense subset of $P$ is also a maximal antichain of $P$. So if $D$ is a dense set, and $A$ a maximal antichain, then $G \cap A \neq emptyset$, so done.
 
-#### 14.6: [Sufficient criterion for $G \not in V$ ]. 
+#### 14.6: [Sufficient criterion for $G \not \in V$ ]. Suppose for all $p \in P$, there exist $q, r \leq p$ such that $q, r$ are incompatible. Then if $G$ generic, $G \not in V$.
+
+For $G \in V$, consider $$D = \{p \in P: p \not \in G\}$$. Then for any $p \in P$, there exist incompatible $q, r \leq p$. Since any two elements of $G$ are compatible, at most one of $q,r \in G$. So at least one is in $D$. Therefore $D$ is dense, and $D \cap G = \emptyset$. So generic filters are not in $V$.
+
+## 

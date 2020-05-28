@@ -21,7 +21,7 @@ We know that ordinals are preserved in forcing extensions, but to conclude with 
 
 ## Cardinals are preserved in $V[G]$
 
-Since for all ordinals $\gamma$, $\gamma^V = \gamma^{V[G]}$, we use $\gamma$ for both. For our proof, we only really need to show that $\aleph_1^V = \aleph_1^{V[G]}, \aleph_2^V = \alpeh_2^{V[G]}$. 
+The ordinals of $V$ are the ordinals of $V[G]$. In the following, we use $w_1$ to refer to the ordinal $w_1$ in $V$, which is an ordinal in $V[G]$, although it may not be $w_1^{V[G]}$. To complete the proof above, we only really need to show that $\omega_1 = \omega_1^{V[G]}, \omega_2^V = \omega_2^{V[G]}$. An injection between two ordinals in $V$ is still an injection in $V[G]$, so it suffices to show that there is no injection in $V[G]$ from $\omega_1$ to a smaller ordinal, and similarly for $\omega_2$. The property of $\omega_1$ and $\omega_2$ that we will need is that they are **regular**: any bounded subset has strictly smaller cardinality. 
 
 Proof using countable chain condition.
 

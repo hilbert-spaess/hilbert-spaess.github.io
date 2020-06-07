@@ -29,5 +29,5 @@ In much the same way that I was taught about $\mathbb{N}$ at university, the set
 
 In fact, with an understanding of [forcing](https://hilbert-spaess.github.io/forcing.html), I think we can produce an argument illustrating the difficulties with a 'true' $\mathbb{R}$. I claim that you can't have all three of the following: a true set of naturals $\mathbb{N}$, a true powerset of the naturals $\mathcal{P}(\mathbb{N})$ (equivalent to the reals), and a universe of set theory $V$ containing the previous two sets as its own copy of $\omega$ and $\mathcal{P}(\omega)$ respectively.
 
-Indeed, suppose we had such a set-theoretic universe $V$. Then, appealing to the [naturalistic account of forcing](https://hilbert-spaess.github.io/2020/05/24/forcing-frameworks.html)
+Indeed, suppose we had such a set-theoretic universe $V$. Then, appealing to the [naturalistic account of forcing](https://hilbert-spaess.github.io/2020/05/24/forcing-frameworks.html), we can pass to a new model $V[G]$, with the same $\omega$, and containing an additional element $G$ that entails a new element of $\mathcal{P}(\omega)$. In particular, our previous notion of $\mathcal{P}(\omega)$ was **missing** an element. I don't know about you, but my Platonic powerset of the naturals isn't missing any subsets. 
 

@@ -23,5 +23,7 @@ Thus far, I've ducked out of giving an actual definition of Platonic existence, 
 
 ## The real numbers
 
-In much the same way that I was taught about $\mathbb{N}$ at university, the set of real numbers $\mathbb{R}$ played a recurring role. A Platonic conception of $\mathbb{R}$ seems much less defensible than that of $\mathbb{N}$. I can recall a sense of foreboding about casually manipulating $\mathbb{R}$ as an object, a sense that was thoroughly drummed out of me pseudo-religiously. 
+In much the same way that I was taught about $\mathbb{N}$ at university, the set of real numbers $\mathbb{R}$ played a recurring role. A Platonic conception of $\mathbb{R}$ seems much less defensible than that of $\mathbb{N}$. I can recall a sense of foreboding and confusion about casually manipulating $\mathbb{R}$ as an object, a sense that was drummed out of me pseudo-religiously. So to glibly talk about direct intuition here seems facetious. The continuum as a set is a miraculous construction, but quite likely to be an illusion. (To reiterate, I know nothing of my lecturer's attitudes about the 'true' $\mathbb{R}$. All results they taught hold has theorems in ZFC, as results about objects with the properties of $\mathbb{R}$. However, I for one was fooled into a rigid conviction as to the existence of a sole, true set object $\mathbb{R}$, with rigid properties, and I doubt I was alone).
+
+In fact, with an understanding of [forcing](https://hilbert-spaess.github.io/forcing.html), I think we can produce an argument illustrating the absurdity of a 'true' $\mathbb{R}$. 
 

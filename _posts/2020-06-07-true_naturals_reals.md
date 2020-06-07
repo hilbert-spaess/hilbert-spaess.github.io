@@ -1,5 +1,5 @@
 ---
-title: True naturals, and true reals
+title: True naturals and true reals
 layout: post
 ---
 
@@ -9,6 +9,6 @@ Disclaimer: I haven't thought long enough about the philosophical questions to b
 
 ## Platonists and formalists
 
-A lot of conversations between people studying maths concern the set of natural numbers, $\mathbb{N}$. I'll assume that anyone reading this has been part of such a conversation. A lot of conversations involve claims that could be formalised as a sentence in a first-order language like the language of PA, and concern the truth-value of these claims. I will say that someeone is **a Platonist about the naturals** if they believe that every such sentence has a definite truth value when interpreted as referring to $\mathbb{N}$. Even if they don't know whether a sentence is true or false, they have the unshakable conviction that is one or the other, and they know this because they have access to a specific, true, model of the language of PA. By contrast, I'll say that someone is a **formalist about the naturals** if they are only happy to talk about whether a sentence follows from a particular set of axioms, usually the standard axioms of arithmetic.  
+A lot of conversations between people studying maths concern the set of natural numbers, $\mathbb{N}$. I'll assume that anyone reading this has been part of such a conversation. And lots of these conversations involve claims that could be formalised as a sentence in a first-order language like the language of PA, and concern the truth-value of these claims. I will say that someeone is **a Platonist about the naturals** if they believe that every such sentence has a definite truth value when interpreted as referring to $\mathbb{N}$. Even if they don't know whether a sentence is true or false, they have the unshakable conviction that is one or the other, and they know this because they have access to a specific, true, model of the language of PA. By contrast, I'll say that someone is a **formalist about the naturals** if they are only happy to talk about whether a sentence follows from a particular set of axioms, usually the standard axioms of arithmetic.  
 
 I'm pretty confident that most working mathematicians are Platonists. This is based on three years of one-on-one interactions with PhD students and researchers in pure maths. I remember reading a quote to the effect that mathematicians are Platonists on weekdays, and formalists at the weekend. When talking about $\mathbb{N}$, when pressed we retreat to some first-order axiom schemes, but it's hard to resist the day-to-day conviction that we are dealing with a real, independent

@@ -12,3 +12,5 @@ Two post-mortem posts on three years of mathematical indoctrination: [what it me
 Some very poorly written-up work on [statistics](https://hilbert-spaess.github.io/2020/03/19/STATS-survival-curves.html) and [causal analysis](https://hilbert-spaess.github.io/2020/03/23/stats-Causality-from-correlation-Pearl's-approach.html).
 
 My [about](https://hilbert-spaess.github.io/about.html) page.
+
+![vending](/images/vending.jpg)

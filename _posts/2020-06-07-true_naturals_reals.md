@@ -33,5 +33,5 @@ It could be argued that the weak link here is ZFC, but I don't know much about a
 
 ## A conclusion
 
-The fellow at Cambridge who most embodied the spirit of enlightened and generous Platonism was Imre Leader. Writing this sort of post feels almost heretical when I remember his talks and lectures. Where the vivid shared intuition for the reality of the set of natural numbers comes from remains a beautiful mystery. But heralding the existence of objects like $\mathbb{R}$ is pretty hard to justify, and could even be considered a form of indoctrination. 
+The fellow at Cambridge who most embodied the spirit of enlightened and generous Platonism was Imre Leader. Writing this sort of post feels almost heretical when I remember his talks and lectures. Where the vivid shared intuition for the reality of the set of natural numbers comes from remains a beautiful mystery. I've always found the passionate Platonism of mathematicians like Godel to be inspiring. But heralding the existence of objects like $\mathbb{R}$ to each new generation of undergraduates is pretty hard to justify, and could even be considered a form of indoctrination. 
 

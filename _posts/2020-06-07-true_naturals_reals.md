@@ -1,5 +1,5 @@
 ---
-title: True naturals and true reals
+title: Confessions of a recovering Platonist
 layout: post
 ---
 
@@ -15,8 +15,13 @@ I'm pretty confident that most working mathematicians are Platonists. This is ba
 
 ## The natural numbers
 
-The first time I realised that there was even a question to be answered here was when studying the [incompleteness theorems](https://mathworld.wolfram.com/GoedelsFirstIncompletenessTheorem.html). In particular, the first theorem states that any formal system strong enough to contain PA must contain an undecidable sentence. This can be (and often is) more provocatively phrased to say that there exists a true, unprovable statement. I was confused about the meaning of "true" in this sentence, so I asked a lecturer. The straightforward response was that a statement about numbers was "true" if it held in $\mathbb{N}$. This, apparently, was a lecturer who was a Platonist on Sundays too- for once, this reference to $\mathbb{N}$ couldn't be rolled back to innocent formalism, but was admission of direct access to the true natural numbers. (To clarify, Godel's theorem can of course be fully formalised in a system like ZFC. It is only the lecturer's reference to unambiguous truth that defies formalisation).
+The first time I realised that there was even a question to be answered here was when studying the [incompleteness theorems](https://mathworld.wolfram.com/GoedelsFirstIncompletenessTheorem.html). In particular, the first theorem states that any formal system strong enough to contain PA must contain an undecidable sentence. This can be (and often is) more provocatively phrased to say that there exists a true, unprovable statement. I was confused about the meaning of "true" in this sentence, so I asked a lecturer. The straightforward response was that a statement about numbers was "true" if it held in $\mathbb{N}$. This, apparently, was a lecturer who was a Platonist on Sundays too- for once, this reference to $\mathbb{N}$ couldn't be rolled back to innocent formalism, but was admission of direct access to the true natural numbers. (To clarify, Godel's theorem can of course be fully formalised in a system like ZFC. It is only the lecturer's reference to the unambiguous truth-value of an arbitrary sentence that defies formalisation).
 
-The problem with unquestioned Platonism is that it's really quite a remarkable position to hold. Friends without experience in maths, but with much better practical epistemology skills than me, find the existence of $\mathbb{N}$ to be far from obvious. 
+The problem with unquestioned Platonism is that it's really quite a remarkable position to hold. Friends without experience in maths, but with much better practical epistemology skills than me, find the existence of $\mathbb{N}$ to be far from obvious. Both Roger Penrose and David Deutsch have really interesting things to say about this question. I've got a few disorganised thoughts about it. To cut to the chase, I'm undecided about whether $\mathbb{N}$ exists or not, but I'm fairly confident that it doesn't make sense to be a Platonist with respect to $\mathbb{R}$.
+
+Thus far, I've ducked out of giving an actual definition of Platonic existence, defining my terms by instead classifying people by what they're likely to say about numbers. How, concretely, would the world look different if $\mathbb{N}$ existed, and mathematicians had so-called direct access to it? For one, we wouldn't expect to arrive at contradictory statements via intuitively acceptable reasoning- we wouldn't expect to find contradictory statements that could plausibly hold in the 'one true model'. So far, this has never happened. But I don't see any reason that it might not happen. Could it not be the case that modern mathematicians are only exploring the shallows of the language of arithmetic, some unrepresentatively unambiguous region? At the moment, it seems to me that any defense of the Platonic conception of $\mathbb{N}$ must ultimately be rooted in intuition, bordering on the theological. I would like to be able to discard the naturals as superstition, were it not for the fact that I feel the intuition particularly strongly. I'll leave the question of the source of this intuition to another post, and turn to the more straightforward case of the reals. 
 
 ## The real numbers
+
+In much the same way that I was taught about $\mathbb{N}$ at university, the set of real numbers $\mathbb{R}$ played a recurring role. A Platonic conception of $\mathbb{R}$ seems much less defensible than a conception
+

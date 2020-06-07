@@ -23,5 +23,5 @@ Thus far, I've ducked out of giving an actual definition of Platonic existence, 
 
 ## The real numbers
 
-In much the same way that I was taught about $\mathbb{N}$ at university, the set of real numbers $\mathbb{R}$ played a recurring role. A Platonic conception of $\mathbb{R}$ seems much less defensible than a conception
+In much the same way that I was taught about $\mathbb{N}$ at university, the set of real numbers $\mathbb{R}$ played a recurring role. A Platonic conception of $\mathbb{R}$ seems much less defensible than that of $\mathbb{N}$. I can recall a sense of foreboding about casually manipulating $\mathbb{R}$ as an object, a sense that was thoroughly drummed out of me pseudo-religiously. 
 

@@ -12,5 +12,3 @@ I live in Oxford and Cambridge. I'm currently most interested in:
 - How to speed up language acquisition.
 
 If you want to get in touch, you can contact me at jacobcoxon [at] hotmail [dot] co [dot] uk, or just add me on Facebook.
-
-My <a href="cv.txt">CV.

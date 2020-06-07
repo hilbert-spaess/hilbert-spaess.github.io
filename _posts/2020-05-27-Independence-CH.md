@@ -33,4 +33,4 @@ It remains to prove the countable antichain lemma.
 
 **Countable antichain lemma:** If $P$ is the notion of forcing used in the proof above, and $A \subseteq P$ is an antichain, then $A$ is countable.
 
-Recall that $P$ consists of functions $$\omega_2 \times \omega \to \{0,1\}$$ with finite domain. 
+Recall that $P$ consists of functions $$\omega_2 \times \omega \to \{0,1\}$$ with finite domain. Elements $p, q \in P$ are incompatible if they have no mutual refinement. Suppose $A$ is an antichain. If $p \in A$, then let 

@@ -15,6 +15,6 @@ I'm pretty confident that most working mathematicians are Platonists. This is ba
 
 ## The natural numbers
 
-The first time I realised that there was even a question to be answered here was when studying the [incompleteness theorems](https://mathworld.wolfram.com/GoedelsFirstIncompletenessTheorem.html). In particular, the first theorem states that any formal system strong enough to contain PA must contain an undecidable sentence. This can be (and often is) more provocatively phrased in the form
+The first time I realised that there was even a question to be answered here was when studying the [incompleteness theorems](https://mathworld.wolfram.com/GoedelsFirstIncompletenessTheorem.html). In particular, the first theorem states that any formal system strong enough to contain PA must contain an undecidable sentence. This can be (and often is) more provocatively phrased to say that there exists a true, unprovable statement. I was confused about the meaning of "true" in this sentence, so I asked a lecturer. The straightforward response was that a statement about numbers was "true" if it held in $\mathbb{N}$. This, apparently, was a lecturer who was a Platonist on Sundays too- for once, this reference to $\mathbb{N}$ couldn't be rolled back to innocent formalism, but was admission of direct access to the true natural numbers. 
 
 ## The real numbers

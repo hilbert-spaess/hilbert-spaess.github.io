@@ -15,6 +15,6 @@ I'm pretty confident that most working mathematicians are Platonists. This is ba
 
 ## The natural numbers
 
-The first time I realised that there was even a question to be answered here 
+The first time I realised that there was even a question to be answered here was when studying the [incompleteness theorems](https://mathworld.wolfram.com/GoedelsFirstIncompletenessTheorem.html). In particular
 
 ## The real numbers

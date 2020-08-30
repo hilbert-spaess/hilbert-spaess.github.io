@@ -5,9 +5,9 @@ layout: page
 
 <img align="right" width="240" height="180" src="/images/me.jpg">
 
-I live in Oxford and Cambridge. I'm currently most interested in:
+I live in Oxford at the moment. I'm a proud NEET. I'm currently most interested in:
 
-- Set theory and what it can tell us about the universe.
+- Rectifying my hopeless confusion about whether numbers exist or not.
 
 - How to speed up language acquisition.
 
